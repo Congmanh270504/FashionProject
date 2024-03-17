@@ -290,6 +290,7 @@ banner::before {
         i {
             background-image: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
             border-radius: 10px;
+            color: white;
         }
     }
 
