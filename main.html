@@ -49,12 +49,20 @@
                 </a>
             </div>
         </div>
+        <div class="content Hermes">
+            <img src="img/Hermes/Hermes-Banner.png" alt="" class="img-title">
+            <p>Hermes</p>
+        </div>
+        <div class="content Gucci">
+            <img src="img/Gucci/logo-gucci.jpg" alt="" class="img-title">
+            <p>Gucci</p>
+        </div>
         <div class="carousel-box">
             <div class="carousel">
-                <a class="carousel-item">
+                <a class="carousel-item" onclick="changeTitle('Hermes')">
                     <img src="img/Channel/456080HE60_worn_2.jpg">
                 </a>
-                <a class="carousel-item">
+                <a class="carousel-item" onclick="changeTitle('Gucci')">
                     <img src="img/Gucci/3b6ff4604d11d9332ed07af09526c286.jpg">
                 </a>
                 <a class="carousel-item"><img src="img/Hermes/rib-trim-jacket--452440HG5K-worn-1-0-0-800-800_g.jpg">
@@ -74,11 +82,11 @@
     </div>
     <script src="main.js"></script>
     <script src="https://kit.fontawesome.com/966a9482a5.js" crossorigin="anonymous"></script>
-   
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             var elems = document.querySelectorAll('.carousel');
             var instances = M.Carousel.init(elems, { duration: 200 });
         });

@@ -7,7 +7,7 @@
 }
 
 :root {
-    --primary: #ff3700;
+    --primary: #C38154;
 }
 
 body {
@@ -38,7 +38,7 @@ header {
 
 .logo {
     img {
-        max-width: 4em;
+        max-width: 2.5em;
     }
 }
 
@@ -62,9 +62,24 @@ header {
         font-size: 1.3em;
     }
 
+
     a:hover {
         color: var(--primary);
+        transition: 0.3s;
+        text-decoration: underline;
     }
+
+    a::after {
+        content: '';
+        background-color: #ee2a7b !important;
+        position: absolute;
+
+        transition: 0.3s;
+    }
+
+    /* a:hover::after {
+        opacity: 1;
+    } */
 
     .shop,
     .trend,
@@ -110,7 +125,7 @@ header {
 .banner {
     position: relative;
     width: 100%;
-    min-height: 88vh;
+    min-height: 85vh;
     padding: 0 100px;
     display: flex;
     justify-content: space-between;
@@ -139,9 +154,11 @@ header {
     }
 
     .button {
-        display: inline-block;
+        position: relative;
 
         a {
+            position: relative;
+            display: inline-block;
             color: white;
             text-decoration: none;
             margin-right: 15px;
@@ -251,7 +268,7 @@ banner::before {
 
     i {
         margin-right: 1em;
-        color: black !important;
+        color: white !important;
         cursor: pointer !important;
         font-size: 20px;
     }
