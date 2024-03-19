@@ -1,9 +1,9 @@
-function changeTitle(tittle) {
-    const contents = document.querySelectorAll('.contents');
-    contents.forEach(contents => {
-        convert.classList.remove("active");
-        if (convert.classList.remove("active")) {
-            convert.classList.add("active")
+function changeTitle(title) {
+    const contents = document.querySelectorAll('.content');
+    contents.forEach(content => {
+        content.classList.remove("active");
+        if (content.classList.contains(title)) {
+            content.classList.add("active")
         }
     }
     )

@@ -20,7 +20,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -146,6 +146,11 @@ header {
         max-width: 400px;
     }
 
+    .img-title-Gucci {
+        width: 400px;
+        height: 237.5px;
+    }
+
     .content p {
         font-size: 1.3em;
         font-weight: 300;
@@ -202,7 +207,7 @@ header {
         min-width: 950px;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: start;
         background: rgba(0, 0, 0, 0.2);
         box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
         border: 1px solid rgba(255, 255, 255, 0.1);
