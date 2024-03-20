@@ -151,7 +151,7 @@ header {
         height: 237.5px;
     }
 
-    .content p {
+    .content>p {
         font-size: 1.3em;
         font-weight: 300;
         line-height: 1.6;
@@ -235,8 +235,8 @@ header {
     }
 }
 
-.content.active {
-    display: block;
+.content.active  {
+    display: block ;
     visibility: visible;
     transform: scale(1);
     transition: 0.5s;
