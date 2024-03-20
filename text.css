@@ -66,18 +66,21 @@ header {
     a:hover {
         color: var(--primary);
         transition: 0.3s;
-        text-decoration: underline;
     }
 
-    a::after {
+    /* a::after {
         content: '';
+        height: 2px;
+        width: 100%;
         background-color: #ee2a7b !important;
         position: absolute;
-
+        left: 0;
+        bottom: -8px;
+        opacity: 0;
         transition: 0.3s;
     }
 
-    /* a:hover::after {
+    a:hover::after {
         opacity: 1;
     } */
 
@@ -95,6 +98,11 @@ header {
     position: relative;
     width: 300px;
     height: 30px;
+
+    input[type=text]:not(.browser-default) {
+        width: fit-content;
+        height: 30px;
+    }
 
     input {
         position: absolute;
@@ -160,7 +168,6 @@ header {
 
     .button {
         position: relative;
-
         a {
             position: relative;
             display: inline-block;
@@ -213,18 +220,18 @@ header {
         border: 1px solid rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(20px);
     }
-    
+
     .carousel {
         position: relative;
         height: 550px;
         perspective: 1500;
         padding-top: 10em;
     }
-    
+
     .carousel-item {
         width: 250px;
         cursor: pointer;
-    
+
         img {
             max-width: 235px;
             border-radius: 10px;
@@ -235,8 +242,8 @@ header {
     }
 }
 
-.content.active  {
-    display: block ;
+.content.active {
+    display: block;
     visibility: visible;
     transform: scale(1);
     transition: 0.5s;
