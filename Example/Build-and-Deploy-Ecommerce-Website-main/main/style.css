@@ -280,6 +280,7 @@ body {
         font-weight: 700;
         color: #088178;
       }
+      
     }
 
     .fa-solid.fa-cart-shopping.cart {
@@ -300,7 +301,22 @@ body {
   .pro:hover {
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
   }
+  .image-hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 10px 12px;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .2s;
+  }
+  .pro:hover .image-hover {
+    opacity: 1;
+  }
 }
+
 
 #banner {
   display: flex;
