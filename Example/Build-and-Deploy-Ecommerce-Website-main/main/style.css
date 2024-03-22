@@ -59,7 +59,7 @@ button.normal {
   cursor: pointer;
   border: none;
   outline: none;
-  transform: 0.3s;
+  transition: 0.3s;
 }
 
 button.white {
@@ -150,8 +150,7 @@ body {
   }
 
   button {
-    background: url(/Build-and-Deploy-Ecommerce-Website-main/img/button.png)
-      no-repeat;
+    background: url(/Build-and-Deploy-Ecommerce-Website-main/img/button.png) no-repeat;
     background-color: transparent;
     color: #088178;
     border: 0;
@@ -280,7 +279,7 @@ body {
         font-weight: 700;
         color: #088178;
       }
-      
+
     }
 
     .fa-solid.fa-cart-shopping.cart {
@@ -301,6 +300,7 @@ body {
   .pro:hover {
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
   }
+
   .image-hover {
     position: absolute;
     top: 0;
@@ -312,6 +312,7 @@ body {
     opacity: 0;
     transition: opacity .2s;
   }
+
   .pro:hover .image-hover {
     opacity: 1;
   }
@@ -401,11 +402,13 @@ body {
     background-position: center;
   }
 }
+
 .banner3 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0 80px;
+
   .banner-box {
     display: flex;
     flex-direction: column;
@@ -419,25 +422,27 @@ body {
     padding: 20px;
     margin-bottom: 20px;
   }
-  h2{
+
+  h2 {
     color: white;
     font-size: 900;
     font-size: 22px;
   }
-  h3{
+
+  h3 {
     color: #ec544a;
     font-size: 800;
     font-size: 15px;
   }
-  .banner-box:nth-child(2)
-  {
+
+  .banner-box:nth-child(2) {
     background: url(/Example/Build-and-Deploy-Ecommerce-Website-main/img/banner/b4.jpg);
     background-size: cover;
     background-position: center;
 
   }
-  .banner-box:nth-child(3)
-  {
+
+  .banner-box:nth-child(3) {
     background: url(/Example/Build-and-Deploy-Ecommerce-Website-main/img/banner/b18.jpg);
     background-size: cover;
     background-position: center;
@@ -445,3 +450,56 @@ body {
   }
 }
 
+#news-letter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background: url(/Example/Build-and-Deploy-Ecommerce-Website-main/img/banner/b14.png) no-repeat;
+  background-position: 20% 30%;
+  background-color: #041e42;
+
+  .form {
+    display: flex;
+    width: 40%;
+    align-items: center;
+  }
+
+  h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+  }
+
+  p {
+
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+
+    span {
+      color: gold;
+    }
+  }
+
+  input {
+    height: 3.125em;
+    padding: 0 1.125em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius:0 ;
+    border-bottom-right-radius:0 ;
+  }
+
+  button {
+    background-color: #088178;
+    color: white;
+    width: 20%;
+    border-top-left-radius:0 ;
+    border-bottom-left-radius:0 ;
+    padding: 13.7px 30px;
+  }
+}
