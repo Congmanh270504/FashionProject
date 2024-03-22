@@ -83,12 +83,13 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 20px 80px;
-  background: #E3E6F3;
+  background: #e3e6f3;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
   z-index: 999;
   position: sticky;
   top: 0;
   left: 0;
+  width: 100%;
 }
 
 .navbar {
@@ -126,7 +127,6 @@ body {
     left: 20px;
     transition: 0.5s;
   }
-
 }
 
 .hero {
@@ -150,7 +150,8 @@ body {
   }
 
   button {
-    background: url(/Build-and-Deploy-Ecommerce-Website-main/img/button.png) no-repeat;
+    background: url(/Build-and-Deploy-Ecommerce-Website-main/img/button.png)
+      no-repeat;
     background-color: transparent;
     color: #088178;
     border: 0;
@@ -197,31 +198,31 @@ body {
 
   .fe-box:nth-child(2) {
     h6 {
-      background-color: #EFBC9B;
+      background-color: #efbc9b;
     }
   }
 
   .fe-box:nth-child(3) {
     h6 {
-      background-color: #FBF3D5;
+      background-color: #fbf3d5;
     }
   }
 
   .fe-box:nth-child(4) {
     h6 {
-      background-color: #D6DAC8;
+      background-color: #d6dac8;
     }
   }
 
   .fe-box:nth-child(5) {
     h6 {
-      background-color: #F1F5A8;
+      background-color: #f1f5a8;
     }
   }
 
   .fe-box:nth-child(6) {
     h6 {
-      background-color: #DFF5FF;
+      background-color: #dff5ff;
     }
   }
 }
@@ -325,7 +326,6 @@ body {
 
     span {
       color: red;
-
     }
   }
 
@@ -383,6 +383,49 @@ body {
     background: url(/Example/Build-and-Deploy-Ecommerce-Website-main/img/banner/b10.jpg);
     background-size: cover;
     background-position: center;
+  }
+}
+.banner3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 80px;
+  .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: url(/Example/Build-and-Deploy-Ecommerce-Website-main/img/banner/b7.jpg);
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  h2{
+    color: white;
+    font-size: 900;
+    font-size: 22px;
+  }
+  h3{
+    color: #ec544a;
+    font-size: 800;
+    font-size: 15px;
+  }
+  .banner-box:nth-child(2)
+  {
+    background: url(/Example/Build-and-Deploy-Ecommerce-Website-main/img/banner/b4.jpg);
+    background-size: cover;
+    background-position: center;
+
+  }
+  .banner-box:nth-child(3)
+  {
+    background: url(/Example/Build-and-Deploy-Ecommerce-Website-main/img/banner/b18.jpg);
+    background-size: cover;
+    background-position: center;
 
   }
 }
+
