@@ -374,11 +374,12 @@ body {
     justify-content: center;
     align-items: flex-start;
     background: url(/Example/Build-and-Deploy-Ecommerce-Website-main/img/banner/b17.jpg);
-    min-width: 580px;
-    height: 50vh;
+    min-width: 851px;
+    height: 40vh;
     background-size: cover;
     background-position: center;
     padding: 30px;
+
   }
 
   h4 {
@@ -619,6 +620,10 @@ footer {
       transition: 0.5s;
     }
 
+    #close:hover::after {
+      background: none;
+    }
+
     #close {
       display: initial;
       position: absolute;
@@ -779,7 +784,8 @@ footer {
     margin: 10px 4px 15px 0;
     align-self: center;
   }
+
   .copyright {
     padding-top: 0;
-}
+  }
 }
