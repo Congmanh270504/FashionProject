@@ -374,7 +374,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     background: url(/Example/Build-and-Deploy-Ecommerce-Website-main/img/banner/b17.jpg);
-    min-width: 851px;
+    width: 50%;
     height: 40vh;
     background-size: cover;
     background-position: center;
@@ -509,10 +509,11 @@ body {
   button {
     background-color: #088178;
     color: white;
-    width: 20%;
+    width: 30%;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     padding: 13.7px 30px;
+    height: 44px;
   }
 }
 
@@ -681,10 +682,12 @@ footer {
   }
 
   #sm-banner .banner-box {
-
     min-width: 100%;
-    height: 30vh;
+    height: 40vh;
+  }
 
+  #sm-banner .banner-box:nth-child(1) {
+    margin-bottom: 1em;
   }
 
   .banner3 {
@@ -692,8 +695,11 @@ footer {
 
     .banner-box {
       width: 28%;
+      height: 40vh;
     }
   }
+
+ 
 
   #news-letter .form {
     width: 70%;
@@ -702,6 +708,22 @@ footer {
       padding: 5.8px 30px;
     }
   }
+}
+
+@media (min-height:150px) {
+  #banner {
+    height: 40vh;
+
+    h4 {
+
+      margin-top: 0.5em;
+    }
+
+    button {
+      margin-bottom: 11px;
+    }
+  }
+
 }
 
 @media (max-width:477px) {

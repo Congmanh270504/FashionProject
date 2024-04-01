@@ -1,4 +1,6 @@
 // Script for navigation bar
+console.log(window.innerWidth);
+console.log(window.innerHeight);
 const bar = document.getElementById('bar');
 const close = document.getElementById('close');
 const nav = document.getElementById('navbar');
