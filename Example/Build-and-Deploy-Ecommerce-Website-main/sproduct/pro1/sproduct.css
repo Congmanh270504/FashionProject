@@ -157,6 +157,10 @@ body {
         }
     }
 
+    #fourth {
+        height: 18vh;
+    }
+
     .singgle-pro-details {
         width: 50%;
         padding-top: 30px;
@@ -344,7 +348,7 @@ body {
         width: 20%;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
-        padding: 13.7px 30px;
+        padding: 17px 10px 10px 10px;
     }
 }
 
@@ -414,6 +418,7 @@ footer {
     width: 100%;
     text-align: center;
 }
+
 select {
     appearance: none;
     /* Additional styling if needed */
@@ -517,6 +522,18 @@ select::-ms-expand {
         }
     }
 
+    #prodetails #fourth {
+        height: 6.4vh;
+    }
+
+    #main-img {
+        height: 32.5vh;
+    }
+
+    #prodetails .singgle-pro-details input {
+        padding-right: 10px;
+    }
+
     #banner {
         height: 20vh;
     }
@@ -540,7 +557,7 @@ select::-ms-expand {
         width: 70%;
 
         .normal {
-            padding: 5.8px 30px;
+            padding: 13px 10px;
         }
     }
 }
