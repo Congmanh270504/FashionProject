@@ -149,6 +149,7 @@ body {
         .small-img-grp {
             display: flex;
             justify-content: space-between;
+            margin-top: 0.5em;
 
             .samm-img-col {
                 flex-basis: 24%;
@@ -157,7 +158,9 @@ body {
         }
     }
 
-
+    .single-pro-img .image img {
+        width: 100%;
+    }
 
     .singgle-pro-details {
         width: 50%;
@@ -172,10 +175,25 @@ body {
 
         }
 
+
+
         select {
             display: block;
             padding: 5px 10px;
             margin-bottom: 10px;
+        }
+
+        .choose {
+            display: flex;
+        }
+
+        .choose #first {
+            margin-right: 1em;
+        }
+
+        option {
+            padding: 3px 0px;
+
         }
 
         input {
@@ -202,6 +220,10 @@ body {
             line-height: 1.6;
         }
     }
+}
+
+.hidden {
+    display: none !important;
 }
 
 #fourth {
@@ -429,6 +451,8 @@ select {
 select::-ms-expand {
     display: none;
 }
+
+
 
 
 /* ============================================================================= Media ===================================================================================== */
