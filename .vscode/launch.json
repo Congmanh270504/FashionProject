@@ -4,11 +4,12 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
         {
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "http://localhost:8080",
+            "url": "/Example/Build-and-Deploy-Ecommerce-Website-main/sproduct/pro1/sproduct1.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
