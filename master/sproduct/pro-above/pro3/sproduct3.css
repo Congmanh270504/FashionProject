@@ -157,15 +157,6 @@ body {
         }
     }
 
-    /* #third {
-        height: 114px;
-
-    }
-
-    #fourth {
-        height: 114px;
-    } */
-
     .singgle-pro-details {
         width: 50%;
         padding-top: 30px;
@@ -182,7 +173,6 @@ body {
         select {
             display: block;
             padding: 5px 10px;
-            margin-bottom: 10px;
         }
 
         input {
@@ -201,12 +191,14 @@ body {
         }
 
         button {
+            margin-left: 1.1em;
             background: linear-gradient(to left, #088178 50%, white 50%) right;
             color: white;
             background-size: 200%;
             transition: .5s ease-out;
         }
-        button:hover{
+
+        button:hover {
             background-position: left;
             color: #088178;
             background-color: white;
@@ -217,6 +209,20 @@ body {
             line-height: 1.6;
         }
     }
+}
+
+.choose {
+    display: flex;
+    margin-bottom: 1em;
+
+    .normal {
+        padding: 0 10px;
+        margin-left: 1em;
+    }
+}
+
+.hidden {
+    display: none !important;
 }
 
 #product1 {
