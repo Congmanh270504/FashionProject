@@ -145,10 +145,12 @@ body {
     h2,
     p {
         color: white;
+        font-weight: bold;
     }
 
     h2 {
         padding-bottom: 15px;
+        font-weight: bold;
     }
 
     h1 {
@@ -182,9 +184,9 @@ body {
 
         h1 {
             position: absolute;
-            top: -40px;
+            top: -46px;
             left: 0px;
-            font-size: 70px;
+            font-size: 65px;
             font-weight: 700;
             color: gray;
             z-index: -1;
@@ -225,6 +227,11 @@ body {
 
         a:hover::after {
             background-color: #088178;
+        }
+
+        p {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
         }
     }
 
