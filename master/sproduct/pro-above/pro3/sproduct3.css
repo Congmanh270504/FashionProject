@@ -149,6 +149,7 @@ body {
         .small-img-grp {
             display: flex;
             justify-content: space-between;
+            cursor: pointer;
 
             .samm-img-col {
                 flex-basis: 24%;
