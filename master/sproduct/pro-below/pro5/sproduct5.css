@@ -222,7 +222,13 @@ body {
 
             ul {
                 li {
+                    font-family: "Archivo", Times, serif;
+                    font-size: 18px;
                     margin-top: 0.5em;
+                    b{
+                        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                        font-size: 20px;
+                    }
                 }
             }
         }
