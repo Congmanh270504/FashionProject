@@ -234,6 +234,9 @@ body {
             right: 12px;
             font-size: 20px;
         }
+        .fa-solid.fa-cart-shopping.cart:hover {
+            color: #DD5746;
+          }
     }
 
     .pro:hover {
