@@ -40,7 +40,10 @@ p {
     color: #465b52;
     margin: 15px 0 20px 0;
 }
-
+b{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+}
 .section-p1 {
     padding: 40px 80px;
 }
@@ -163,12 +166,13 @@ body {
         padding-top: 30px;
 
         h4 {
-            padding: 40px 0 20px 0;
+            padding: 30px 0 10px 0;
+            font-weight: bold;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
 
         h2 {
             font-size: 26px;
-
         }
 
         select {
@@ -208,6 +212,18 @@ body {
 
         span {
             line-height: 1.6;
+            b{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 20px;
+            }
+            ul {
+                li {
+                    font-family: "Archivo", Times, serif;
+                    font-size: 20px;
+                    margin-top: 0.5em;
+                   
+                }
+            }
         }
     }
 }
