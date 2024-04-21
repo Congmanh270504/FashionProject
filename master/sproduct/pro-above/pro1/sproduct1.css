@@ -633,10 +633,19 @@ select::-ms-expand {
         width: 100%;
     }
 
-    #prodetails #fourth {
-        height: 9.6vh;
+  
+    #prodetails {
+        & .single-pro-img {
+            & .small-img-grp {
+                .samm-img-col {
+                    margin-top: 5em;
+                }
+            }
+        }
     }
-
+    .singgle-pro-details img{
+        width: 100%;
+    }
     #banner {
         height: 40vh;
     }

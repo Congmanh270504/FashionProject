@@ -130,10 +130,11 @@ body {
 }
 
 .hero {
-    background: url(../img/banner/b1.jpg);
+    background: url(../img/banner/banner_shop.jpg) no-repeat;
     width: 100%;
-    height: 40vh;
+    height: 75vh;
     background-size: cover;
+    background-position: top 20% right 0;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -555,7 +556,7 @@ footer {
 
     .hero {
         padding: 0 20px;
-        background-position: 55%;
+        background-position: 27%;
 
         h2 {
             font-size: 32px;
