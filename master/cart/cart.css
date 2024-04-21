@@ -196,6 +196,9 @@ body {
                 td {
                     padding-top: 15px;
                     font-size: 13px;
+                    i{
+                        cursor: pointer;
+                    }
                 }
             }
         }
@@ -460,7 +463,9 @@ footer {
         }
     }
 }
-
+.hidden{
+    display: none !important;
+}
 @media (max-width:676px) {
     #cart table thead td {
         font-size: 10px;

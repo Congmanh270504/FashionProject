@@ -8,7 +8,7 @@
     <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon" />
     <title>F A S H I O N </title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="./cart.css" />
 </head>
 
 <body>
@@ -46,8 +46,8 @@
     </div>
 
     <div class="hero">
-        <h2>#Contact us</h2>
-        <p>Us</p>
+        <h2>#Your Cart</h2>
+        <p>Cart</p>
     </div>
 
     <div id="cart" class="section-p1">
@@ -62,34 +62,34 @@
                     <td>Subtotal</td>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
+            <tbody class="main-cart">
+                <tr class="pro1">
                     <td>
-                        <a href=""><i class="far fa-times-circle"></a></i>
-                    <td><img src="../img/products/f1.jpg" alt=""></td>
+                        <i class="far fa-times-circle" onclick="hiddenItem()"></i>
+                    </td>
+                    <td><img src="/img/img_Edward/Brand_Owl/product7/product7_img/1.jpg" alt=""></td>
                     <td>name</td>
                     <td>price</td>
-                    <td><input type="number" value="1"></td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>$12</td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="far fa-times-circle"></i>
+                    <td><img src="/img/img_Edward/Shirt/Shirt_2/img_product2/focus1.png" alt=""></td>
+                    <td>name</td>
+                    <td>price</td>
+                    <td><input type="number" value="1" min="1"></td>
                     <td>$12</td>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <a href=""><i class="far fa-times-circle"></a></i>
-                    <td><img src="../img/products/f2.jpg" alt=""></td>
+                        <i class="far fa-times-circle"></i>
+                    <td><img src="/img/img_Edward/T-shirt/T-shirt_2/img_product2/focus2.png" alt=""></td>
                     <td>name</td>
                     <td>price</td>
-                    <td><input type="number" value="1"></td>
-                    <td>$12</td>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href=""><i class="far fa-times-circle"></a></i>
-                    <td><img src="../img/products/f3.jpg" alt=""></td>
-                    <td>name</td>
-                    <td>price</td>
-                    <td><input type="number" value="1"></td>
+                    <td><input type="number" value="1" min="1"></td>
                     <td>$12</td>
                     </td>
                 </tr>
@@ -128,7 +128,7 @@
             </table>
             <button class="normal">
                 Proceed to checkout
-                </button>
+            </button>
         </div>
     </div>
     <footer class="section-p1">
@@ -180,30 +180,40 @@
     </div>
     <div id="scollbutton" onclick="scollToTop()">
         <button class="normal">
-          <i class="fa-solid fa-arrow-up" title="Go to top"></i>
+            <i class="fa-solid fa-arrow-up" title="Go to top"></i>
         </button>
-      </div>
+    </div>
     </div>
     <!-- 1:37:19 -->
     <script>
         window.onscroll = () => {
-          scroll();
+            scroll();
         };
         function scroll() {
-          if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-            scrollbutton.style.display = "block";
-          }
-          else {
-            scrollbutton.style.display = "none";
-          }
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                scrollbutton.style.display = "block";
+            }
+            else {
+                scrollbutton.style.display = "none";
+            }
         }
         function scollToTop() {
-    
-          window.scrollTo(0, 0);
-    
+
+            window.scrollTo(0, 0);
+
         }
-    
-      </script>
+
+    </script>
+    <script>
+        const rowproduct = document.querySelector('.far.fa-times-circle');
+        const row = document.querySelector('.main-cart');
+        // function getRowIndex() {
+        // }
+        console.log(row.length);
+        function hiddenItem(x) {
+            rowproduct.classList.add("hidden");
+        }
+    </script>
     <script src="../main/script.js"></script>
     <script src="https://kit.fontawesome.com/966a9482a5.js" crossorigin="anonymous"></script>
 </body>
