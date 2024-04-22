@@ -203,13 +203,14 @@ body {
         }
 
         button {
-           
+
             background: linear-gradient(to left, #088178 50%, white 50%) right;
             color: white;
             background-size: 200%;
             transition: .5s ease-out;
         }
-        button:hover{
+
+        button:hover {
             background-position: left;
             color: #088178;
             background-color: white;
@@ -225,13 +226,49 @@ body {
                     font-family: "Archivo", Times, serif;
                     font-size: 20px;
                     margin-top: 0.5em;
-                    b{
+
+                    b {
                         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                         font-size: medium;
                     }
                 }
             }
         }
+
+
+        .color {
+            display: flex;
+            font-size: 25px;
+            padding: 10px 0;
+
+            h4 {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: large;
+                padding: 0 10px 0 0;
+
+            }
+
+            i {
+                position: relative;
+                margin-inline: 10px;
+                padding-left: 3px;
+                cursor: pointer;
+            }
+
+
+            .fa-solid.fa-square.cred {
+                color: #b50c00;
+            }
+
+            .fa-solid.fa-square.cgray {
+                color: gray;
+            }
+
+            .fa-solid.fa-square.cgreen {
+                color: #005916;
+            }
+        }
+
 
         .size {
             margin-top: 1em;
@@ -312,7 +349,8 @@ body {
             right: 12px;
             font-size: 20px;
         }
-        .fa-solid.fa-cart-shopping.cart:hover{
+
+        .fa-solid.fa-cart-shopping.cart:hover {
             color: #DD5746;
         }
     }
@@ -469,7 +507,19 @@ select {
 select::-ms-expand {
     display: none;
 }
-
+.bordercolor {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 11px;
+    width: 30px;
+    height: 27px;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.hidden{
+    display: none !important;
+}
 
 /* ============================================================================= Media ===================================================================================== */
 @media (max-width:799px) {
