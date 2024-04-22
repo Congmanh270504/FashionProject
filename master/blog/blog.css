@@ -28,6 +28,7 @@ h2 {
 h4 {
     font-size: 20px;
     color: #222;
+    font-family: cursive;
 }
 
 h6 {
@@ -328,7 +329,7 @@ footer {
     }
 
     h4 {
-        font-size: 14px;
+        font-size: 20px;
         padding-bottom: 20px;
     }
 
@@ -358,12 +359,15 @@ footer {
         img {
             border: 1px solid #088178;
             border-radius: 6px;
+            cursor: pointer;
         }
     }
 
     .install {
         img {
             margin: 10px 0 15px 0;
+            cursor: pointer;
+
         }
     }
 
@@ -395,6 +399,16 @@ footer {
 
 }
 
+.update-text{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 2em;
+    margin-top: 0;
+    background: url(../img/button.png) no-repeat ;
+    background-size: cover;
+    font-family: cursive;
+color: #088178;
+}
 /* ============================================================================= Media ===================================================================================== */
 @media (max-width:799px) {
     .section-p1 {
