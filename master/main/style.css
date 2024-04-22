@@ -75,6 +75,8 @@ button.white {
   transform: 0.3s;
 }
 
+button.white:hover {}
+
 body {
   width: 100%;
 }
@@ -131,7 +133,7 @@ body {
 }
 
 .hero {
-  background: url(/img/img_Edward/Brand_Owl/product6/product6_feedback/3.jpg);
+  background: url(/img/img_Edward/Brand_Owl/product6/product6_feedback/3\(1\).jpg) no-repeat;
   height: 100vh;
   width: 100%;
   background-size: cover;
@@ -163,7 +165,6 @@ body {
     color: white;
     background-size: 200%;
     transition: .5s ease-out;
-    border: 0;
     padding: 14px 80px 14px 65px;
     cursor: pointer;
     font-weight: 700;
@@ -174,7 +175,6 @@ body {
     background-position: left;
     color: #088178;
     background-color: white;
-    border: 0.1px solid;
   }
 
 
@@ -378,6 +378,7 @@ body {
     }
   }
 
+
   button:hover {
     background-color: #088178;
     color: white;
@@ -422,10 +423,19 @@ body {
     padding-bottom: 15px;
   }
 
+  button {
+    background: linear-gradient(to left, #088178 50%, white 50%) right;
+    color: white;
+    background-size: 200%;
+    transition: .5s ease-out;
+    border: none;
+  }
+
   .banner-box:hover {
     button {
-      background-color: #088178;
-      border: 1px solid #088178;
+      background-position: left;
+      color: #088178;
+      background-color: white;
     }
   }
 

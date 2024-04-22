@@ -14,7 +14,7 @@
 <body>
 
     <div class="header">
-        <a href="#"><img src="/favicon/favicon-32x32.png" alt="" class="logo" /></a>
+        <a href="../../../main/index.html"><img src="/favicon/favicon-32x32.png" alt="" class="logo" /></a>
         <div>
             <ul id="navbar">
                 <li><a href="../../../main/index.html">Home</a></li>
@@ -47,9 +47,12 @@
 
     <div id="prodetails" class="section-p1">
         <div class="single-pro-img">
-            <div class="img-grp" id="reveal">
-                <img src="/img/img_Edward/Shirt/Shirt_3/img_product3/focus1.png" width="100%" id="main-img" alt="">
-                <div class="small-img-grp ">
+            <div class="img" id="main-img">
+                <img class="product" src="/img/img_Edward/Shirt/Shirt_3/img_product3/focus1.png" width="100%" alt="">
+                <img class="model hidden" src="/img/img_Edward/Shirt/Shirt_3/feedback/1.jpg" width="100%" alt="">
+            </div>
+            <div class="img-grp">
+                <div class="small-img-grp " id="reveal">
                     <div class="samm-img-col ">
                         <img src="/img/img_Edward/Shirt/Shirt_3/img_product3/focus1.png" alt="" width="100%"
                             class="small-img">
@@ -61,18 +64,13 @@
                     </div>
                     <div class="samm-img-col">
                         <img src="/img/img_Edward/Shirt/Shirt_3/img_product3/focus3.png" alt="" width="100%"
-                            class="small-img" >
+                            class="small-img">
                     </div>
                     <div class="samm-img-col">
-                        <img src="/img/img_Edward/Shirt/Shirt_3/feedback/2.jpg" alt="" width="100%" class="small-img"
-                            >
+                        <img src="/img/img_Edward/Shirt/Shirt_3/feedback/2.jpg" alt="" width="100%" class="small-img">
                     </div>
                 </div>
-            </div>
-            <div class="img-grp hidden" id="hide">
-                <img src="/img/img_Edward/Shirt/Shirt_3/feedback/1.jpg" width="100%" id="main-img" alt="">
-
-                <div class="small-img-grp">
+                <div class="small-img-grp hidden" id="hide">
                     <div class="samm-img-col">
                         <img src="/img/img_Edward/Shirt/Shirt_3/feedback/1.jpg" alt="" width="100%" class="small-img">
                     </div>
@@ -91,6 +89,7 @@
                 </div>
             </div>
 
+
         </div>
         <div class="singgle-pro-details">
             <h6>Home/Shirt</h6>
@@ -108,20 +107,21 @@
             </div>
             <input type="number" value="1" min="1">
             <button class="normal">Add To Cart</button>
-            <h4>Product Details</h4>
-            <span>
-                <ul>
-                    <b>MÔ TẢ SẢN PHẨM:</b>
-                    <li>Chất liệu: Cotton viscose có lót.</li>
-                    <li> Áo blazer dáng rộng, thiết kế unisex.</li>
-                    <li>Cổ ve lật, phom áo đứng dáng. Hai nút cài giữa hiện đại.</li>
-                    <li>Tay áo rã trước và sau tạo điểm nhấn.</li>
-                    <li>Cổ áo, gấu áo và tay áo được xử lý rách tua rua dọc theo cổ áo.</li>
-                    <b>
-                        SẢN PHẨM ĐƯỢC GIA CÔNG HOÀN TOÀN TẠI VIỆT NAM.
-                    </b>
-                </ul>
-            </span>
+            <div class="details">
+                <h4>MÔ TẢ SẢN PHẨM:</h4>
+                <span>
+                    <ul>
+                        <li><b>Chất liệu:</b> Cotton viscose có lót.</li>
+                        <li> Áo blazer dáng rộng, thiết kế unisex.</li>
+                        <li>Cổ ve lật, phom áo đứng dáng. Hai nút cài giữa hiện đại.</li>
+                        <li>Tay áo rã trước và sau tạo điểm nhấn.</li>
+                        <li>Cổ áo, gấu áo và tay áo được xử lý rách tua rua dọc theo cổ áo.</li>
+                        <b>
+                            SẢN PHẨM ĐƯỢC GIA CÔNG HOÀN TOÀN TẠI VIỆT NAM.
+                        </b>
+                    </ul>
+                </span>
+            </div>
         </div>
     </div>
 
@@ -132,7 +132,7 @@
         <div class="pro-contetner">
             <div class="pro">
                 <img src="/img/img_Edward/Shirt/Shirt_1/img_product1/focus1.jpg" alt="" />
-                <img class="image-hover" src="img/img_Edward/Shirt/Shirt_1/img_product1/focus2.jpg" />
+                <img class="image-hover" src="/img/img_Edward/Shirt/Shirt_1/img_product1/focus2.jpg" />
 
                 <div class="description">
                     <span>E.T</span>
@@ -153,7 +153,7 @@
 
             <div class="pro">
                 <img src="/img/img_Edward/Shirt/Shirt_3/img_product3/focus1.png" alt="" />
-                <img class="image-hover" src="img/img_Edward/Shirt/Shirt_3/img_product3/focus3.png" />
+                <img class="image-hover" src="/img/img_Edward/Shirt/Shirt_3/img_product3/focus3.png" />
 
                 <div class="description">
                     <span>E.T</span>
@@ -294,7 +294,7 @@
         // samllimg[3].onclick = function () {
         //     mainimg.src = samllimg[3].src;
         // }
-       
+
         var mainimg = document.getElementById('main-img');
         var samllimg = document.querySelectorAll('.samm-img-col img.small-img');
 
@@ -305,24 +305,33 @@
             });
         });
     </script>
+
     <script>
         function show() {
             const text = document.getElementById('show').innerHTML;
             var reveal = document.getElementById('reveal');
             var hide = document.getElementById('hide');
+            const product = document.querySelector(".img#main-img .product");
+            const model = document.querySelector(".img#main-img .model");
+
             if (text == 'Show model') {
                 document.getElementById('show').innerHTML = "Show product";
-                reveal.classList.add("hide");
-                hide.classList.remove("hide");
+                reveal.classList.add("hidden");
+                hide.classList.remove("hidden");
+                product.classList.add("hidden");
+                model.classList.remove("hidden");
             }
             else {
                 document.getElementById('show').innerHTML = "Show model";
-                reveal.classList.remove("hide");
-                hide.classList.add("hide");
+                reveal.classList.remove("hidden");
+                hide.classList.add("hidden");
+                product.classList.remove("hidden");
+                model.classList.add("hidden");
             }
 
         }
     </script>
+
     <script src="../../../main/script.js"></script>
     <script src="https://kit.fontawesome.com/966a9482a5.js" crossorigin="anonymous"></script>
 </body>

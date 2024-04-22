@@ -8,28 +8,28 @@
     <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon" />
     <title>F A S H I O N </title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="./cart.css" />
 </head>
 
 <body>
 
     <div class="header">
-        <a href="#"><img src="/favicon/favicon-32x32.png" alt="" class="logo" /></a>
+        <a href="../main/index.html"><img src="/favicon/favicon-32x32.png" alt="" class="logo" /></a>
         <div>
             <ul id="navbar">
-                <li><a href="/Example/Build-and-Deploy-Ecommerce-Website-main/main/index.html">Home</a></li>
+                <li><a href="../main/index.html">Home</a></li>
                 <li>
-                    <a href="/Example/Build-and-Deploy-Ecommerce-Website-main/shop/shop.html">Shop</a>
+                    <a href="../shop/shop.html">Shop</a>
                 </li>
                 <li>
-                    <a href="/Example/Build-and-Deploy-Ecommerce-Website-main/blog/blog.html">Blog</a>
+                    <a href="../blog/blog.html">Blog</a>
                 </li>
                 <li>
-                    <a href="/Example/Build-and-Deploy-Ecommerce-Website-main/aboutus/about.html">About
+                    <a href="../aboutus/about.html">About
                         us</a>
                 </li>
                 <li>
-                    <a href="/Example/Build-and-Deploy-Ecommerce-Website-main/contact/contact.html ">Contact</a>
+                    <a href="../contact/contact.html ">Contact</a>
                 </li>
                 <li id="lg-bag">
                     <a href="#" class="active"><i class="fa-brands fa-shopify"></i></a>
@@ -46,8 +46,8 @@
     </div>
 
     <div class="hero">
-        <h2>#Contact us</h2>
-        <p>Us</p>
+        <h2>#Your Cart</h2>
+        <p>Cart</p>
     </div>
 
     <div id="cart" class="section-p1">
@@ -62,34 +62,34 @@
                     <td>Subtotal</td>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
+            <tbody class="main-cart">
+                <tr class="pro1">
                     <td>
-                        <a href=""><i class="far fa-times-circle"></a></i>
-                    <td><img src="/Example/Build-and-Deploy-Ecommerce-Website-main/img/products/f1.jpg" alt=""></td>
+                        <i class="far fa-times-circle" onclick="hiddenItem()"></i>
+                    </td>
+                    <td><img src="/img/img_Edward/Brand_Owl/product7/product7_img/1.jpg" alt=""></td>
                     <td>name</td>
                     <td>price</td>
-                    <td><input type="number" value="1"></td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>$12</td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="far fa-times-circle"></i>
+                    <td><img src="/img/img_Edward/Shirt/Shirt_2/img_product2/focus1.png" alt=""></td>
+                    <td>name</td>
+                    <td>price</td>
+                    <td><input type="number" value="1" min="1"></td>
                     <td>$12</td>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <a href=""><i class="far fa-times-circle"></a></i>
-                    <td><img src="/Example/Build-and-Deploy-Ecommerce-Website-main/img/products/f2.jpg" alt=""></td>
+                        <i class="far fa-times-circle"></i>
+                    <td><img src="/img/img_Edward/T-shirt/T-shirt_2/img_product2/focus2.png" alt=""></td>
                     <td>name</td>
                     <td>price</td>
-                    <td><input type="number" value="1"></td>
-                    <td>$12</td>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href=""><i class="far fa-times-circle"></a></i>
-                    <td><img src="/Example/Build-and-Deploy-Ecommerce-Website-main/img/products/f3.jpg" alt=""></td>
-                    <td>name</td>
-                    <td>price</td>
-                    <td><input type="number" value="1"></td>
+                    <td><input type="number" value="1" min="1"></td>
                     <td>$12</td>
                     </td>
                 </tr>
@@ -128,7 +128,7 @@
             </table>
             <button class="normal">
                 Proceed to checkout
-                </button>
+            </button>
         </div>
     </div>
     <footer class="section-p1">
@@ -168,20 +168,53 @@
             <h4>Install App</h4>
             <a href="#">From App Store or Google Play</a>
             <div class="row">
-                <img src="/Example/Build-and-Deploy-Ecommerce-Website-main/img/pay/app.jpg" alt="">
-                <img src="/Example/Build-and-Deploy-Ecommerce-Website-main/img/pay/play.jpg" alt="">
+                <img src="../img/pay/app.jpg" alt="">
+                <img src="../img/pay/play.jpg" alt="">
             </div>
             <p>Secured Payment Gateways</p>
-            <img src="/Example/Build-and-Deploy-Ecommerce-Website-main/img/pay/pay.png" alt="">
+            <img src="../img/pay/pay.png" alt="">
         </div>
     </footer>
     <div class="section-p1 copyright">
         <p>Website created by Edward && Thomas 2024</p>
     </div>
+    <div id="scollbutton" onclick="scollToTop()">
+        <button class="normal">
+            <i class="fa-solid fa-arrow-up" title="Go to top"></i>
+        </button>
+    </div>
     </div>
     <!-- 1:37:19 -->
+    <script>
+        window.onscroll = () => {
+            scroll();
+        };
+        function scroll() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                scrollbutton.style.display = "block";
+            }
+            else {
+                scrollbutton.style.display = "none";
+            }
+        }
+        function scollToTop() {
 
-    <script src="/Example/Build-and-Deploy-Ecommerce-Website-main/main/script.js"></script>
+            window.scrollTo(0, 0);
+
+        }
+
+    </script>
+    <script>
+        const rowproduct = document.querySelector('.far.fa-times-circle');
+        const row = document.querySelector('.main-cart');
+        // function getRowIndex() {
+        // }
+        console.log(row.length);
+        function hiddenItem(x) {
+            rowproduct.classList.add("hidden");
+        }
+    </script>
+    <script src="../main/script.js"></script>
     <script src="https://kit.fontawesome.com/966a9482a5.js" crossorigin="anonymous"></script>
 </body>
 

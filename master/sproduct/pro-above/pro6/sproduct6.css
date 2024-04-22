@@ -226,6 +226,17 @@ body {
 
         span {
             line-height: 1.6;
+            b {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 20px;
+            }
+
+            ul {
+                li {
+                    font-family: "Archivo", Times, serif;
+                    font-size: 20px;
+                }
+            }
         }
     }
 }

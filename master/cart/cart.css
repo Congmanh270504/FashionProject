@@ -130,7 +130,7 @@ body {
 }
 
 .hero {
-    background: url(/Example/Build-and-Deploy-Ecommerce-Website-main/img/about/banner.png) no-repeat;
+    background: url(../img/about/banner.png) no-repeat;
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -196,6 +196,9 @@ body {
                 td {
                     padding-top: 15px;
                     font-size: 13px;
+                    i{
+                        cursor: pointer;
+                    }
                 }
             }
         }
@@ -345,7 +348,22 @@ footer {
     width: 100%;
     text-align: center;
 }
-
+#scollbutton {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    color: white;
+  
+    .normal {
+      border: 1px solid #A34343;
+      background-color: #A34343;
+      color: wheat;
+      border-radius: 40%;
+      padding: 10px 12px;
+      font-size: 20px;
+    }
+  
+  }
 /* ============================================================================= Media ===================================================================================== */
 @media (max-width:799px) {
     .section-p1 {
@@ -445,7 +463,9 @@ footer {
         }
     }
 }
-
+.hidden{
+    display: none !important;
+}
 @media (max-width:676px) {
     #cart table thead td {
         font-size: 10px;

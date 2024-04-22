@@ -157,21 +157,14 @@ body {
         }
     }
 
-    /* #third {
-        height: 114px;
 
-    }
-
-    #fourth {
-        height: 114px;
-    } */
 
     .singgle-pro-details {
         width: 50%;
         padding-top: 30px;
 
         h4 {
-            padding: 40px 0 20px 0;
+            padding: 30px 0 10px 0;
         }
 
         h2 {
@@ -216,6 +209,20 @@ body {
 
         span {
             line-height: 1.6;
+
+            b {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 20px;
+            }
+
+            ul {
+                li {
+                    font-family: "Archivo", Times, serif;
+                    font-size: 20px;
+                    margin-top: 0.5em;
+
+                }
+            }
         }
     }
 }

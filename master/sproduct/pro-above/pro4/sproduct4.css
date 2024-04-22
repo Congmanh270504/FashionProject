@@ -146,16 +146,16 @@ body {
         width: 40%;
         margin-right: 50px;
 
-        .main-img{
+        .main-img {
             width: 100%;
 
-            img#main-img{
+            img#main-img {
                 width: 100%;
                 height: auto;
                 object-fit: cover;
             }
         }
-        
+
         .small-img-grp {
             height: max-content;
             display: flex;
@@ -166,7 +166,8 @@ body {
                 flex-basis: 24%;
                 cursor: pointer;
                 height: 100%;
-                img.small-img{
+
+                img.small-img {
                     width: 100%;
                     height: auto;
                     object-fit: cover;
@@ -175,14 +176,16 @@ body {
         }
     }
 
-   
+
 
     .singgle-pro-details {
         width: 50%;
         padding-top: 30px;
 
         h4 {
-            padding: 40px 0 20px 0;
+            padding: 30px 0 10px 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 25px;
         }
 
         h2 {
@@ -217,7 +220,8 @@ body {
             background-size: 200%;
             transition: .5s ease-out;
         }
-        button:hover{
+
+        button:hover {
             background-position: left;
             color: #088178;
             background-color: white;
@@ -226,6 +230,18 @@ body {
 
         span {
             line-height: 1.6;
+
+            b {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 20px;
+            }
+
+            ul {
+                li {
+                    font-family: "Archivo", Times, serif;
+                    font-size: 20px;
+                }
+            }
         }
     }
 }
@@ -546,7 +562,7 @@ select::-ms-expand {
         }
     }
 
-    
+
 
     #main-img {
         height: 32.5vh;
@@ -585,7 +601,7 @@ select::-ms-expand {
 }
 
 @media (max-width:500px) {
-    
+
 
     #news-letter .form .normal {
         padding: 14px 10px;
@@ -600,7 +616,7 @@ select::-ms-expand {
     #prodetails .singgle-pro-details input {
         margin-bottom: 0.5em;
     }
-   
+
 }
 
 @media (max-width:477px) {
