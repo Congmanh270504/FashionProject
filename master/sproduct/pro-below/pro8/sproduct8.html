@@ -47,26 +47,70 @@
     <div id="prodetails" class="section-p1">
         <div class="single-pro-img">
             <div class="main-img">
-                <img src="/img/img_Edward/Brand_Owl/product8/product8_img/color1/AO-NI-OWL-MINI-TYPO-SWEATSHIRT-RED.jpg"
+                <img class="red"
+                    src="/img/img_Edward/Brand_Owl/product8/product8_img/color1/AO-NI-OWL-MINI-TYPO-SWEATSHIRT-RED.jpg"
                     width="100%" id="main-img" alt="">
+                <img class="gray hidden" src="/img/img_Edward/Brand_Owl/product8/product8_img/color2/GREY-1.jpg" alt=""
+                    width="100%">
+                <img class="green hidden"
+                    src="/img/img_Edward/Brand_Owl/product8/product8_img/color3/AO-NI-OWL-MINI-TYPO-SWEATSHIRT-GREEN.jpg"
+                    alt="" width="100%">
             </div>
+            <div class="img-grp">
 
-            <div class="small-img-grp">
-                <div class="samm-img-col">
-                    <img src="/img/img_Edward/Brand_Owl/product8/product8_img/color1/AO-NI-OWL-MINI-TYPO-SWEATSHIRT-RED.jpg"
-                        alt="" width="100%" class="small-img">
+                <div class="small-img-grp red">
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/Brand_Owl/product8/product8_img/color1/AO-NI-OWL-MINI-TYPO-SWEATSHIRT-RED.jpg"
+                            alt="" width="100%" class="small-img">
+                    </div>
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/Brand_Owl/product8/product8_img/color1/hover.jpg" alt="" width="100%"
+                            class="small-img">
+                    </div>
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/Brand_Owl/product8/product8_feedback/color1/DSC01257.jpg" alt=""
+                            width="100%" class="small-img">
+                    </div>
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/Brand_Owl/product8/product8_feedback/color1/DSC01300.jpg" alt=""
+                            width="100%" class="small-img" id="fourth">
+                    </div>
                 </div>
-                <div class="samm-img-col">
-                    <img src="/img/img_Edward/Brand_Owl/product8/product8_img/color1/hover.jpg" alt="" width="100%"
-                        class="small-img">
+                <div class="small-img-grp gray hidden">
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/Brand_Owl/product8/product8_img/color2/GREY-1.jpg" alt="" width="100%"
+                            class="small-img">
+                    </div>
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/Brand_Owl/product8/product8_img/color2/DSC00921.jpg" alt=""
+                            width="100%" class="small-img">
+                    </div>
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/Brand_Owl/product8/product8_feedback/color1/DSC01257.jpg" alt=""
+                            width="100%" class="small-img">
+                    </div>
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/Brand_Owl/product8/product8_feedback/color1/DSC01300.jpg" alt=""
+                            width="100%" class="small-img" id="fourth">
+                    </div>
                 </div>
-                <div class="samm-img-col">
-                    <img src="/img/img_Edward/Brand_Owl/product8/product8_feedback/color1/DSC01257.jpg" alt=""
-                        width="100%" class="small-img">
-                </div>
-                <div class="samm-img-col">
-                    <img src="/img/img_Edward/Brand_Owl/product8/product8_feedback/color1/DSC01300.jpg" alt=""
-                        width="100%" class="small-img" id="fourth">
+                <div class="small-img-grp green hidden">
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/Brand_Owl/product8/product8_img/color3/AO-NI-OWL-MINI-TYPO-SWEATSHIRT-GREEN.jpg"
+                            alt="" width="100%" class="small-img">
+                    </div>
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/Brand_Owl/product8/product8_img/color3/hover.jpg" alt="" width="100%"
+                            class="small-img">
+                    </div>
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/Brand_Owl/product8/product8_feedback/color1/DSC01257.jpg" alt=""
+                            width="100%" class="small-img">
+                    </div>
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/Brand_Owl/product8/product8_feedback/color1/DSC01300.jpg" alt=""
+                            width="100%" class="small-img" id="fourth">
+                    </div>
                 </div>
             </div>
         </div>
@@ -81,6 +125,13 @@
                 <option value="">Size L</option>
                 <option value="">Size XL</option>
             </select>
+            <div class="color">
+                <h4>Màu áo </h4>
+                <i class="fa-solid fa-square cred bordercolor"></i>
+                <i class="fa-solid fa-square cgray"></i>
+                <i class="fa-solid fa-square cgreen"></i>
+            </div>
+
             <input type="number" value="1" min="1">
             <button class="normal">Add To Cart</button>
 
@@ -279,40 +330,45 @@
 
         }
 
-        // function myFunction(x) {
-        //     if (x.matches) { // If media query matches
-        //         samllimg[2].onclick = function () {
-        //             mainimg.src = samllimg[2].src;
-        //             mainimg.style.height = "32vh";
-        //         }
-        //     }
-        // }
-        // var x = window.matchMedia("(max-width:799px)")
-        // // Call listener function at run time
-        // myFunction(x);
 
-        // // Attach listener function on state changes
-        // x.addEventListener("change", function () {
-        //     myFunction(x);
-        // });
 
-        // function myFunction(y) {
-        //     if (y.matches) { // If media query matches
-        //         samllimg[2].onclick = function () {
-        //             mainimg.src = samllimg[2].src;
-        //             mainimg.style.height = "32vh";
-        //         }
-        //     }
-        // }
-        // var y = window.matchMedia("(max-width:477px)")
-        // // Call listener function at run time
-        // myFunction(y);
 
-        // // Attach listener function on state changes
-        // y.addEventListener("change", function () {
-        //     myFunction(y);
-        // });
+    </script>
+    <script>
+        const cred = document.querySelector(".cred");
+        const cgray = document.querySelector(".cgray");
+        const cgreen = document.querySelector(".cgreen");
 
+        const red = document.querySelectorAll(".red");
+        const gray = document.querySelectorAll(".gray");
+        const green = document.querySelectorAll(".green");
+        cred.addEventListener("click", () => {
+            cred.classList.add("bordercolor");
+            cgray.classList.remove("bordercolor");
+            cgreen.classList.remove("bordercolor");
+
+            red.classList.remove(".hidden");
+            gray.classList.add(".hidden");
+            gray.classList.add(".hidden");
+        });
+        cgray.addEventListener("click", () => {
+            cred.classList.remove("bordercolor");
+            cgray.classList.add("bordercolor");
+            cgreen.classList.remove("bordercolor");
+
+            red.classList.add(".hidden");
+            gray.classList.remove(".hidden");
+            gray.classList.add(".hidden");
+        });
+        cgreen.addEventListener("click", () => {
+            cred.classList.remove("bordercolor");
+            cgray.classList.remove("bordercolor");
+            cgreen.classList.add("bordercolor");
+            
+            red.classList.remove(".hidden");
+            gray.classList.add(".hidden");
+            gray.classList.add(".hidden");
+        });
 
 
 
