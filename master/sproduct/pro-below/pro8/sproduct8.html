@@ -57,7 +57,6 @@
                     alt="" width="100%">
             </div>
             <div class="img-grp">
-
                 <div class="small-img-grp red">
                     <div class="samm-img-col">
                         <img src="/img/img_Edward/Brand_Owl/product8/product8_img/color1/AO-NI-OWL-MINI-TYPO-SWEATSHIRT-RED.jpg"
@@ -73,10 +72,10 @@
                     </div>
                     <div class="samm-img-col">
                         <img src="/img/img_Edward/Brand_Owl/product8/product8_feedback/color1/DSC01300.jpg" alt=""
-                            width="100%" class="small-img" id="fourth">
+                            width="100%" class="small-img">
                     </div>
                 </div>
-                <div class="small-img-grp gray hidden">
+                <div class="small-img-grp gray hidden ">
                     <div class="samm-img-col">
                         <img src="/img/img_Edward/Brand_Owl/product8/product8_img/color2/GREY-1.jpg" alt="" width="100%"
                             class="small-img">
@@ -86,12 +85,12 @@
                             width="100%" class="small-img">
                     </div>
                     <div class="samm-img-col">
-                        <img src="/img/img_Edward/Brand_Owl/product8/product8_feedback/color1/DSC01257.jpg" alt=""
+                        <img src="/img/img_Edward/Brand_Owl/product8/product8_feedback/color2/DSC01200.jpg" alt=""
                             width="100%" class="small-img">
                     </div>
                     <div class="samm-img-col">
-                        <img src="/img/img_Edward/Brand_Owl/product8/product8_feedback/color1/DSC01300.jpg" alt=""
-                            width="100%" class="small-img" id="fourth">
+                        <img src="/img/img_Edward/Brand_Owl/product8/product8_feedback/color2/DSC01204.jpg" alt=""
+                            width="100%" class="small-img">
                     </div>
                 </div>
                 <div class="small-img-grp green hidden">
@@ -104,12 +103,12 @@
                             class="small-img">
                     </div>
                     <div class="samm-img-col">
-                        <img src="/img/img_Edward/Brand_Owl/product8/product8_feedback/color1/DSC01257.jpg" alt=""
+                        <img src="/img/img_Edward/Brand_Owl/product8/product8_feedback/color3/DSC01515.jpg" alt=""
                             width="100%" class="small-img">
                     </div>
                     <div class="samm-img-col">
-                        <img src="/img/img_Edward/Brand_Owl/product8/product8_feedback/color1/DSC01300.jpg" alt=""
-                            width="100%" class="small-img" id="fourth">
+                        <img src="/img/img_Edward/Brand_Owl/product8/product8_feedback/color3/DSC01556.jpg" alt=""
+                            width="100%" class="small-img">
                     </div>
                 </div>
             </div>
@@ -313,24 +312,32 @@
     </div>
     <!-- 1:37:19 -->
     <script>
-        var mainimg = document.getElementById('main-img');
-        var samllimg = document.getElementsByClassName('small-img');
+        // var mainimg = document.getElementById('main-img');
+        // var samllimg = document.getElementsByClassName('small-img');
 
-        samllimg[0].onclick = function () {
-            mainimg.src = samllimg[0].src;
-        }
-        samllimg[1].onclick = function () {
-            mainimg.src = samllimg[1].src;
-        }
-        samllimg[2].onclick = function () {
-            mainimg.src = samllimg[2].src;
-        }
-        samllimg[3].onclick = function () {
-            mainimg.src = samllimg[3].src;
+        // samllimg[0].onclick = function () {
+        //     mainimg.src = samllimg[0].src;
+        // }
+        // samllimg[1].onclick = function () {
+        //     mainimg.src = samllimg[1].src;
+        // }
+        // samllimg[2].onclick = function () {
+        //     mainimg.src = samllimg[2].src;
+        // }
+        // samllimg[3].onclick = function () {
+        //     mainimg.src = samllimg[3].src;
 
-        }
+        // }
 
-
+        var mainimg = document.querySelector('.main-img');
+        var smallimg = document.querySelectorAll('.small-img');
+        
+        smallimg.forEach((item) => {
+            item.addEventListener("click", () => {
+                const img = mainimg.querySelector("img:not(.hidden)");
+                img.src = item.src;
+            });
+        });
 
 
     </script>
@@ -339,39 +346,56 @@
         const cgray = document.querySelector(".cgray");
         const cgreen = document.querySelector(".cgreen");
 
-        const red = document.querySelectorAll(".red");
-        const gray = document.querySelectorAll(".gray");
-        const green = document.querySelectorAll(".green");
+        var red = document.querySelectorAll(".red");
+        var gray = document.querySelectorAll(".gray");
+        var green = document.querySelectorAll(".green");
         cred.addEventListener("click", () => {
+
             cred.classList.add("bordercolor");
             cgray.classList.remove("bordercolor");
             cgreen.classList.remove("bordercolor");
+            red.forEach((item) => {
+                item.classList.remove("hidden");
+            });
+            gray.forEach((item) => {
+                item.classList.add("hidden");
+            });
+            green.forEach((item) => {
+                item.classList.add("hidden");
+            });
 
-            red.classList.remove(".hidden");
-            gray.classList.add(".hidden");
-            gray.classList.add(".hidden");
         });
         cgray.addEventListener("click", () => {
             cred.classList.remove("bordercolor");
             cgray.classList.add("bordercolor");
             cgreen.classList.remove("bordercolor");
 
-            red.classList.add(".hidden");
-            gray.classList.remove(".hidden");
-            gray.classList.add(".hidden");
+            red.forEach((item) => {
+                item.classList.add("hidden");
+            });
+            gray.forEach((item) => {
+                item.classList.remove("hidden");
+            });
+            green.forEach((item) => {
+                item.classList.add("hidden");
+            });
         });
         cgreen.addEventListener("click", () => {
             cred.classList.remove("bordercolor");
             cgray.classList.remove("bordercolor");
             cgreen.classList.add("bordercolor");
-            
-            red.classList.remove(".hidden");
-            gray.classList.add(".hidden");
-            gray.classList.add(".hidden");
+
+            red.forEach((item) => {
+                item.classList.add("hidden");
+            });
+            gray.forEach((item) => {
+                item.classList.add("hidden");
+            });
+            green.forEach((item) => {
+                item.classList.remove("hidden");
+            });
         });
-
-
-
+        var test = document.querySelector(".test");
     </script>
     <script src="../../../main/script.js"></script>
     <script src="https://kit.fontawesome.com/966a9482a5.js" crossorigin="anonymous"></script>
