@@ -177,18 +177,19 @@ body {
         width: 100%;
         position: relative;
         padding-bottom: 90px;
+        justify-content: space-between;
 
         .blog-img {
             width: 50%;
             margin-right: 40px;
-           
+
         }
 
         .blog-img2 {
             margin-right: 50px;
-            width: 550px; 
+            width: 550px;
         }
-        
+
 
         h1 {
             position: absolute;
@@ -404,16 +405,17 @@ footer {
 
 }
 
-.update-text{
+.update-text {
     text-align: center;
     font-size: 30px;
     margin-bottom: 2em;
     margin-top: 0;
-    background: url(../img/button.png) no-repeat ;
+    background: url(../img/button.png) no-repeat;
     background-size: cover;
     font-family: cursive;
-color: #088178;
+    color: #088178;
 }
+
 /* ============================================================================= Media ===================================================================================== */
 @media (max-width:799px) {
     .section-p1 {
