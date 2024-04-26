@@ -244,7 +244,7 @@ body {
 
         .size {
             img {
-                width: 60%;
+                width: 63%;
                 cursor: pointer;
             }
         }
@@ -254,25 +254,58 @@ body {
     .comment-box {
         border: 1px solid;
         border-radius: 10px;
-
-        ul {
-            list-style: none;
-
-            li {}
-        }
+        position: relative;
 
         .user {
-            display: flex;
             margin-bottom: 10px;
             padding: 10px;
+            display: flex;
             justify-content: space-between;
 
             img {
-                width: 2.5rem;
-                height: 2.5rem;
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+
+            .details {
+                margin: 0px 20px;
+
+                p {
+                    margin: 0;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                }
+
+                ul {
+                    display: flex;
+                    list-style: none;
+
+                    li {
+                        line-height: 1.6;
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        color: gray;
+                        margin-right: 10px;
+                        font-size: small;
+                    }
+                }
+            }
+            i{
+                margin-top: 5px;
+                cursor: pointer;
             }
         }
+
+        .comment {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+       
     }
+}
+
+.fa-solid.fa-heart {
+    color: red;
 }
 
 #product1 {
@@ -488,13 +521,8 @@ footer {
     text-align: center;
 }
 
-select {
-    appearance: none;
-    /* Additional styling if needed */
-}
-
-select::-ms-expand {
-    display: none;
+.hidden {
+    display: none !important;
 }
 
 

@@ -104,17 +104,22 @@
         <div class="comment-box">
             <div class="user">
                 <img src="/master/img/people/1.png" alt="">
-                <ul class="details">
-                    <li>Chất liệu: mát</li>
-                    <li>Đúng với mô tả: giống hình</li>
-                    <li>Màu sắc: đỏ</li>
-                    <li>Ao dep</li>
-                </ul>
+                <div class="details">
+                    <p><b>meo con dilang</b> Ao nay chim ung nha </p>
+                    <ul>
+                        <li>1w</li>
+                        <li>1,049 likes</li>
+                        <li>Reply</li>
+                    </ul>
+                </div>
+                <i class="fa-regular fa-heart "></i>
+                <i class="fa-solid fa-heart hidden"></i>
             </div>
             <div class="comment">
                 <i class="fa-regular fa-face-smile"></i>
                 <input type="text" placeholder="Add a comment">
             </div>
+
         </div>
     </div>
 
@@ -271,62 +276,29 @@
         <p>Website created by Edward && Thomas 2024</p>
     </div>
     </div>
-    <!-- 1:37:19 -->
     <script>
-        var mainimg = document.getElementById('main-img');
-        var samllimg = document.getElementsByClassName('small-img');
 
-        samllimg[0].onclick = function () {
-            mainimg.src = samllimg[0].src;
-        }
-        samllimg[1].onclick = function () {
-            mainimg.src = samllimg[1].src;
-        }
-        samllimg[2].onclick = function () {
-            mainimg.src = samllimg[2].src;
-        }
-        samllimg[3].onclick = function () {
-            mainimg.src = samllimg[3].src;
+        var mainimg = document.querySelector('.main-img');
+        var smallimg = document.querySelectorAll('.small-img');
 
-        }
-
-        // function myFunction(x) {
-        //     if (x.matches) { // If media query matches
-        //         samllimg[2].onclick = function () {
-        //             mainimg.src = samllimg[2].src;
-        //             mainimg.style.height = "32vh";
-        //         }
-        //     }
-        // }
-        // var x = window.matchMedia("(max-width:799px)")
-        // // Call listener function at run time
-        // myFunction(x);
-
-        // // Attach listener function on state changes
-        // x.addEventListener("change", function () {
-        //     myFunction(x);
-        // });
-
-        // function myFunction(y) {
-        //     if (y.matches) { // If media query matches
-        //         samllimg[2].onclick = function () {
-        //             mainimg.src = samllimg[2].src;
-        //             mainimg.style.height = "32vh";
-        //         }
-        //     }
-        // }
-        // var y = window.matchMedia("(max-width:477px)")
-        // // Call listener function at run time
-        // myFunction(y);
-
-        // // Attach listener function on state changes
-        // y.addEventListener("change", function () {
-        //     myFunction(y);
-        // });
-
-
-
-
+        smallimg.forEach((item) => {
+            item.addEventListener("click", () => {
+                const img = mainimg.querySelector("img:not(.hidden)");
+                img.src = item.src;
+            });
+        });
+    </script>
+    <script>
+        const heart = document.querySelector(".fa-regular.fa-heart");
+        const redheart = document.querySelector(".fa-solid.fa-heart");
+        heart.addEventListener("click", () => {
+            heart.classList.add("hidden");
+            redheart.classList.remove("hidden");
+        });
+        redheart.addEventListener("click", () => {
+            redheart.classList.add("hidden");
+            heart.classList.remove("hidden");
+        });
     </script>
     <script src="../../../main/script.js"></script>
     <script src="https://kit.fontawesome.com/966a9482a5.js" crossorigin="anonymous"></script>
