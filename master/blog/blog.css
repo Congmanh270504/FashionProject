@@ -169,7 +169,7 @@ body {
 }
 
 .blog {
-    padding: 150px 150px 0 150px;
+    padding: 130px 150px 0 150px;
 
     .blog-box {
         display: flex;
@@ -414,6 +414,11 @@ footer {
     background-size: cover;
     font-family: cursive;
     color: #088178;
+}
+#content{
+    margin: 0;
+    padding: 10px;
+    margin-top: 1em;
 }
 
 /* ============================================================================= Media ===================================================================================== */
