@@ -181,6 +181,7 @@ body {
     .singgle-pro-details {
         width: 40%;
         padding-top: 30px;
+        margin-right: 1em;
 
         h4 {
             padding: 30px 0 10px 0;
@@ -327,11 +328,13 @@ body {
             }
 
             .post {
-                font-family: 'Courier New', Courier, monospace;
+                font-family: "Spartan", sans-serif;
+                font-style: normal;
                 color: gray;
                 padding-top: 5px;
             }
-            .post:hover{
+
+            .post:hover {
                 color: rgba(0, 149, 246, 1);
             }
         }

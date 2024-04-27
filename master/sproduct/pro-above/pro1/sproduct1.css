@@ -167,16 +167,16 @@ body {
         padding-top: 30px;
 
         h4 {
-            padding: 40px 0 20px 0;
+            padding: 30px 0 10px 0;
         }
 
         h2 {
             font-size: 26px;
 
         }
-
-
-
+        #description {
+            font-family: "Archivo", Times, serif;
+        }
         select {
             display: block;
             padding: 5px 10px;
@@ -189,12 +189,10 @@ body {
 
         .choose #first {
             margin-right: 1em;
+            padding: 5px;
         }
 
-        option {
-            padding: 3px 0px;
-
-        }
+       
 
         input {
             width: 50px;
@@ -217,7 +215,8 @@ body {
             background-size: 200%;
             transition: .5s ease-out;
         }
-        button:hover{
+
+        button:hover {
             background-position: left;
             color: #088178;
             background-color: white;
@@ -226,9 +225,121 @@ body {
 
         span {
             line-height: 1.6;
+
+            b {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 20px;
+            }
+
+            ul {
+                li {
+                    font-family: "Archivo", Times, serif;
+                    font-size: 20px;
+                    margin-top: 0.5em;
+                }
+            }
+        }
+    }
+
+    .size {
+        img {
+            width: 60%;
+            cursor: pointer;
         }
     }
 }
+
+.comment-box {
+    border: 1px solid;
+    border-radius: 10px;
+    position: relative;
+    height: 80vh;
+
+    .user {
+        margin-bottom: 10px;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .details {
+            margin: 0px 20px;
+            border-bottom: 1px solid rgba(0, 0, 0, .09);
+
+            p {
+                margin: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            ul {
+                display: flex;
+                list-style: none;
+
+                li {
+                    line-height: 1.6;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    color: gray;
+                    margin-right: 10px;
+                    font-size: small;
+                }
+            }
+        }
+
+        i {
+            margin-top: 5px;
+            cursor: pointer;
+        }
+    }
+
+    .comment {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        left: 0;
+        bottom: 10px;
+        border-top: 1px solid #000;
+        width: 100%;
+        height: 10vh;
+        padding: 10px 5px 5px 10px;
+
+        i {
+            font-size: 20px;
+            margin-right: 10px;
+            cursor: pointer;
+            margin-bottom: 6px;
+        }
+
+        textarea {
+            margin-top: 0;
+            padding-top: 10px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            width: 80%;
+            resize: none;
+            height: 40px;
+
+        }
+
+        .post {
+            font-family: "Spartan", sans-serif;
+            font-style: normal;
+            color: gray;
+            padding-top: 5px;
+        }
+
+        .post:hover {
+            color: rgba(0, 149, 246, 1);
+        }
+    }
+
+
+}
+
 
 .hidden {
     display: none !important;
@@ -633,7 +744,7 @@ select::-ms-expand {
         width: 100%;
     }
 
-  
+
     #prodetails {
         & .single-pro-img {
             & .small-img-grp {
@@ -643,9 +754,11 @@ select::-ms-expand {
             }
         }
     }
-    .singgle-pro-details img{
+
+    .singgle-pro-details img {
         width: 100%;
     }
+
     #banner {
         height: 40vh;
     }

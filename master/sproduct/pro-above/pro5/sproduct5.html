@@ -97,8 +97,8 @@
                 </ul>
             </span>
             <div class="size">
-                <img src="/img/img_Edward/T-shirt/T-shirt_1/feedback/size1.jpg" alt="" width="50%">
-                <img src="/img/img_Edward/T-shirt/T-shirt_1/feedback/size.jpg" alt="" width="50%">
+                <img src="/img/img_Edward/T-shirt/T-shirt_1/feedback/size1.jpg" alt="">
+                <img src="/img/img_Edward/T-shirt/T-shirt_1/feedback/size.jpg" alt="">
             </div>
         </div>
         <div class="comment-box">
@@ -109,7 +109,6 @@
                     <ul>
                         <li>1w</li>
                         <li>1,049 likes</li>
-                        <li>Reply</li>
                     </ul>
                 </div>
                 <i class="fa-regular fa-heart "></i>
@@ -122,7 +121,7 @@
                     <ul>
                         <li>1w</li>
                         <li>1,049 likes</li>
-                        <li>Reply</li>
+                        
                     </ul>
                 </div>
                 <i class="fa-regular fa-heart "></i>
@@ -135,7 +134,7 @@
                     <ul>
                         <li>1w</li>
                         <li>1,049 likes</li>
-                        <li>Reply</li>
+                        
                     </ul>
                 </div>
                 <i class="fa-regular fa-heart "></i>
@@ -148,7 +147,7 @@
                     <ul>
                         <li>1w</li>
                         <li>1,049 likes</li>
-                        <li>Reply</li>
+                        
                     </ul>
                 </div>
                 <i class="fa-regular fa-heart "></i>
@@ -161,7 +160,7 @@
                     <ul>
                         <li>1w</li>
                         <li>1,049 likes</li>
-                        <li>Reply</li>
+                        
                     </ul>
                 </div>
                 <i class="fa-regular fa-heart "></i>
@@ -344,17 +343,21 @@
     <script>
         const heart = document.querySelectorAll(".fa-regular.fa-heart");
         const redheart = document.querySelectorAll(".fa-solid.fa-heart");
-        heart.addEventListener("click", () => {
-            heart.forEach((item, key), () => {
-                item.classList.add("hidden");
-            });
-            heart.classList.add("hidden");
-            redheart.classList.remove("hidden");
-        });
-        // redheart.addEventListener("click", () => {
-        //     redheart.classList.add("hidden");
-        //     heart.classList.remove("hidden");
-        // });
+        for (let i = 0; i < heart.length; i++) {
+            const hide = heart[i];
+            const appear = redheart[i];
+            hide.addEventListener("click", () => {
+                hide.classList.add("hidden");
+                appear.classList.remove("hidden");
+            }
+            );
+            appear.addEventListener("click", () => {
+                hide.classList.remove("hidden");
+                appear.classList.add("hidden");
+            }
+            );
+
+        }
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.0.3/dist/index.min.js"></script>
