@@ -115,9 +115,62 @@
                 <i class="fa-regular fa-heart "></i>
                 <i class="fa-solid fa-heart hidden"></i>
             </div>
+            <div class="user">
+                <img src="/master/img/people/1.png" alt="">
+                <div class="details">
+                    <p><b>meo con dilang</b> Ao nay chim ung nha </p>
+                    <ul>
+                        <li>1w</li>
+                        <li>1,049 likes</li>
+                        <li>Reply</li>
+                    </ul>
+                </div>
+                <i class="fa-regular fa-heart "></i>
+                <i class="fa-solid fa-heart hidden"></i>
+            </div>
+            <div class="user">
+                <img src="/master/img/people/1.png" alt="">
+                <div class="details">
+                    <p><b>meo con dilang</b> Ao nay chim ung nha </p>
+                    <ul>
+                        <li>1w</li>
+                        <li>1,049 likes</li>
+                        <li>Reply</li>
+                    </ul>
+                </div>
+                <i class="fa-regular fa-heart "></i>
+                <i class="fa-solid fa-heart hidden"></i>
+            </div>
+            <div class="user">
+                <img src="/master/img/people/1.png" alt="">
+                <div class="details">
+                    <p><b>meo con dilang</b> Ao nay chim ung nha </p>
+                    <ul>
+                        <li>1w</li>
+                        <li>1,049 likes</li>
+                        <li>Reply</li>
+                    </ul>
+                </div>
+                <i class="fa-regular fa-heart "></i>
+                <i class="fa-solid fa-heart hidden"></i>
+            </div>
+            <div class="user">
+                <img src="/master/img/people/1.png" alt="">
+                <div class="details">
+                    <p><b>meo con dilang</b> Ao nay chim ung nha </p>
+                    <ul>
+                        <li>1w</li>
+                        <li>1,049 likes</li>
+                        <li>Reply</li>
+                    </ul>
+                </div>
+                <i class="fa-regular fa-heart "></i>
+                <i class="fa-solid fa-heart hidden"></i>
+            </div>
             <div class="comment">
-                <i class="fa-regular fa-face-smile"></i>
-                <input type="text" placeholder="Add a comment">
+                <i class="fa-regular fa-face-smile" id="emoji-button"></i>
+                <textarea type="text" placeholder="Add a comment..."></textarea>
+                <i class="post">Post</i>
             </div>
 
         </div>
@@ -289,19 +342,33 @@
         });
     </script>
     <script>
-        const heart = document.querySelector(".fa-regular.fa-heart");
-        const redheart = document.querySelector(".fa-solid.fa-heart");
+        const heart = document.querySelectorAll(".fa-regular.fa-heart");
+        const redheart = document.querySelectorAll(".fa-solid.fa-heart");
         heart.addEventListener("click", () => {
+            heart.forEach((item, key), () => {
+                item.classList.add("hidden");
+            });
             heart.classList.add("hidden");
             redheart.classList.remove("hidden");
         });
-        redheart.addEventListener("click", () => {
-            redheart.classList.add("hidden");
-            heart.classList.remove("hidden");
-        });
+        // redheart.addEventListener("click", () => {
+        //     redheart.classList.add("hidden");
+        //     heart.classList.remove("hidden");
+        // });
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.0.3/dist/index.min.js"></script>
     <script src="../../../main/script.js"></script>
     <script src="https://kit.fontawesome.com/966a9482a5.js" crossorigin="anonymous"></script>
+    <script>
+        const button = document.querySelector('#emoji-button');
+
+        const picker = new EmojiButton();
+
+        button.addEventListener('click', () => {
+            picker.togglePicker(button);
+        });
+    </script>
 </body>
 
 </html>
