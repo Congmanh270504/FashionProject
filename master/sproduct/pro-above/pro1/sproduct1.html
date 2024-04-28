@@ -402,6 +402,27 @@
             });
         });
     </script>
+      <script>
+        const heart = document.querySelectorAll(".fa-regular.fa-heart");
+        const redheart = document.querySelectorAll(".fa-solid.fa-heart");
+        for (let i = 0; i < heart.length; i++) {
+            const hide = heart[i];
+            const appear = redheart[i];
+            hide.addEventListener("click", () => {
+                hide.classList.add("hidden");
+                appear.classList.remove("hidden");
+            }
+            );
+            appear.addEventListener("click", () => {
+                hide.classList.remove("hidden");
+                appear.classList.add("hidden");
+            }
+            );
+
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.0.3/dist/index.min.js"></script>
     <script src="../../../main/script.js"></script>
     <script src="https://kit.fontawesome.com/966a9482a5.js" crossorigin="anonymous"></script>
 </body>

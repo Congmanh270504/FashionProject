@@ -174,9 +174,11 @@ body {
             font-size: 26px;
 
         }
+
         #description {
             font-family: "Archivo", Times, serif;
         }
+
         select {
             display: block;
             padding: 5px 10px;
@@ -192,7 +194,7 @@ body {
             padding: 5px;
         }
 
-       
+
 
         input {
             width: 50px;
@@ -337,6 +339,9 @@ body {
         }
     }
 
+    .fa-solid.fa-heart {
+        color: red;
+    }
 
 }
 

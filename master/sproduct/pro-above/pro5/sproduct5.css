@@ -341,11 +341,11 @@ body {
 
 
     }
+    .fa-solid.fa-heart {
+        color: red;
+    }
 }
 
-.fa-solid.fa-heart {
-    color: red;
-}
 
 #product1 {
     text-align: center;
