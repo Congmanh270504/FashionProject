@@ -395,7 +395,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background: url(../img/banner/b17.jpg);
+    background: url(../img/banner/b17.jpg); 
     width: 50%;
     height: 40vh;
     background-size: cover;
@@ -457,7 +457,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background: url(../img/banner/b7.jpg);
+    background: url(/img/img_Edward/banner/banner3.jpg);
     min-width: 30%;
     height: 30vh;
     background-size: cover;
@@ -479,14 +479,14 @@ body {
   }
 
   .banner-box:nth-child(2) {
-    background: url(../img/banner/b4.jpg);
+    background: url(/img/img_Edward/banner/banner4.jpg);
     background-size: cover;
     background-position: center;
 
   }
 
   .banner-box:nth-child(3) {
-    background: url(../img/banner/b18.jpg);
+    background: url(/img/img_Edward/banner/banner5.jpg);
     background-size: cover;
     background-position: center;
 
