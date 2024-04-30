@@ -245,7 +245,7 @@ body {
 
     .size {
         img {
-            width: 60%;
+            width: 45%;
             cursor: pointer;
         }
     }
@@ -255,7 +255,7 @@ body {
     border: 1px solid;
     border-radius: 10px;
     position: relative;
-    height: 80vh;
+    margin-bottom: 2em;
 
     .user {
         margin-bottom: 10px;
@@ -340,7 +340,7 @@ body {
     }
 
     .fa-solid.fa-heart {
-        color: red;
+        color: #E72929;
     }
 
 }
@@ -360,6 +360,31 @@ body {
         justify-content: space-between;
         padding-top: 20px;
         flex-wrap: wrap;
+    }
+
+    swiper-container {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        list-style: none;
+        padding: 0;
+        z-index: 1;
+    }
+
+    swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    swiper-slide img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
     }
 
     .pro {
@@ -421,6 +446,14 @@ body {
             right: 12px;
             font-size: 20px;
         }
+
+        .sell {
+            color: gray;
+            font-style: italic;
+            text-decoration: line-through;
+            margin-left: 1em;
+            font-size: 13px;
+        }
     }
 
     .pro:hover {
@@ -442,6 +475,8 @@ body {
     .pro:hover .image-hover {
         opacity: 1;
     }
+
+
 }
 
 #news-letter {

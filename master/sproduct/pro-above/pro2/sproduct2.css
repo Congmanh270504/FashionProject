@@ -230,100 +230,102 @@ body {
             }
         }
     }
-    
-.comment-box {
-    border: 1px solid;
-    border-radius: 10px;
-    position: relative;
-    height: 80vh;
 
-    .user {
-        margin-bottom: 10px;
-        padding: 10px;
-        display: flex;
-        justify-content: space-between;
+    .comment-box {
+        border: 1px solid;
+        border-radius: 10px;
+        position: relative;
+        margin-bottom: 2em;
 
-        img {
-            width: 1.5rem;
-            height: 1.5rem;
-        }
+        .user {
+            margin-bottom: 10px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
 
-        .details {
-            margin: 0px 20px;
-            border-bottom: 1px solid rgba(0, 0, 0, .09);
-
-            p {
-                margin: 0;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            img {
+                width: 1.5rem;
+                height: 1.5rem;
             }
 
-            ul {
-                display: flex;
-                list-style: none;
+            .details {
+                margin: 0px 20px;
+                border-bottom: 1px solid rgba(0, 0, 0, .09);
 
-                li {
-                    line-height: 1.6;
+                p {
+                    margin: 0;
                     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                    color: gray;
-                    margin-right: 10px;
-                    font-size: small;
+                }
+
+                ul {
+                    display: flex;
+                    list-style: none;
+
+                    li {
+                        line-height: 1.6;
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        color: gray;
+                        margin-right: 10px;
+                        font-size: small;
+                    }
                 }
             }
+
+            i {
+                margin-top: 5px;
+                cursor: pointer;
+            }
         }
 
-        i {
-            margin-top: 5px;
-            cursor: pointer;
+        .comment {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            left: 0;
+            bottom: 10px;
+            border-top: 1px solid #000;
+            width: 100%;
+            height: 10vh;
+            padding: 10px 5px 5px 10px;
+
+            i {
+                font-size: 20px;
+                margin-right: 10px;
+                cursor: pointer;
+                margin-bottom: 6px;
+            }
+
+            textarea {
+                margin-top: 0;
+                padding-top: 10px;
+                border: none;
+                outline: none;
+                font-size: 16px;
+                width: 80%;
+                resize: none;
+                height: 40px;
+
+            }
+
+            .post {
+                font-family: "Spartan", sans-serif;
+                font-style: normal;
+                color: gray;
+                padding-top: 5px;
+            }
+
+            .post:hover {
+                color: rgba(0, 149, 246, 1);
+            }
         }
+
+        .fa-solid.fa-heart {
+            color: #E72929;
+
+        }
+
+
     }
-
-    .comment {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        left: 0;
-        bottom: 10px;
-        border-top: 1px solid #000;
-        width: 100%;
-        height: 10vh;
-        padding: 10px 5px 5px 10px;
-
-        i {
-            font-size: 20px;
-            margin-right: 10px;
-            cursor: pointer;
-            margin-bottom: 6px;
-        }
-
-        textarea {
-            margin-top: 0;
-            padding-top: 10px;
-            border: none;
-            outline: none;
-            font-size: 16px;
-            width: 80%;
-            resize: none;
-            height: 40px;
-
-        }
-
-        .post {
-            font-family: "Spartan", sans-serif;
-            font-style: normal;
-            color: gray;
-            padding-top: 5px;
-        }
-
-        .post:hover {
-            color: rgba(0, 149, 246, 1);
-        }
-    }
-    .fa-solid.fa-heart {
-        color: red;
-    }
-
-
-}
 }
 
 #product1 {
@@ -547,6 +549,7 @@ select {
 select::-ms-expand {
     display: none;
 }
+
 .hidden {
     display: none !important;
 }
