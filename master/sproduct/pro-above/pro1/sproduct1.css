@@ -354,6 +354,7 @@ body {
 
 #product1 {
     text-align: center;
+    padding: 40px 0px;
 
     .pro-contetner {
         display: flex;
@@ -446,7 +447,9 @@ body {
             right: 12px;
             font-size: 20px;
         }
-
+        .fa-solid.fa-cart-shopping.cart:hover {
+            color: #DD5746;
+          }
         .sell {
             color: gray;
             font-style: italic;
@@ -705,9 +708,6 @@ select::-ms-expand {
         }
     }
 
-    #prodetails #fourth {
-        height: 6.4vh;
-    }
 
     #main-img {
         height: 32.5vh;
@@ -726,6 +726,10 @@ select::-ms-expand {
         min-width: 100%;
         height: 30vh;
 
+    }
+
+    #product1 swiper-slide {
+        margin-right: 7em !important;
     }
 
     .banner3 {
