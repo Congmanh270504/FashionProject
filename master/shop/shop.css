@@ -130,9 +130,9 @@ body {
 }
 
 .hero {
-    background: url(../img/banner/banner_shop.jpg) no-repeat;
+    background: url(/img/img_Edward/banner/bannershop.jpg) no-repeat;
     width: 100%;
-    height: 75vh;
+    height: 65vh;
     background-size: cover;
     background-position: top 20% right 0;
     display: flex;
