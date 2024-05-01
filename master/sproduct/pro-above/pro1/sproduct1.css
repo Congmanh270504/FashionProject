@@ -193,9 +193,6 @@ body {
             margin-right: 1em;
             padding: 5px;
         }
-
-
-
         input {
             width: 50px;
             height: 47px;
@@ -295,6 +292,8 @@ body {
             margin-top: 5px;
             cursor: pointer;
         }
+
+
     }
 
     .comment {
@@ -339,6 +338,9 @@ body {
         }
     }
 
+    .user-name:hover {
+        text-decoration: underline;
+    }
     .fa-solid.fa-heart {
         color: #E72929;
     }
@@ -365,12 +367,7 @@ body {
 
     swiper-container {
         width: 100%;
-        margin: 0 auto;
-        position: relative;
-        overflow: hidden;
-        list-style: none;
-        padding: 0;
-        z-index: 1;
+
     }
 
     swiper-slide {
@@ -383,7 +380,6 @@ body {
     }
 
     swiper-slide img {
-        display: block;
         width: 100%;
         object-fit: cover;
     }
@@ -447,9 +443,11 @@ body {
             right: 12px;
             font-size: 20px;
         }
+
         .fa-solid.fa-cart-shopping.cart:hover {
             color: #DD5746;
-          }
+        }
+
         .sell {
             color: gray;
             font-style: italic;
@@ -704,7 +702,7 @@ select::-ms-expand {
         justify-content: center;
 
         .pro {
-            margin: 15px;
+            margin-left: 6em;
         }
     }
 
@@ -799,8 +797,20 @@ select::-ms-expand {
         }
     }
 
+    #prodetails {
+        & .size {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
     .singgle-pro-details img {
         width: 100%;
+    }
+
+    .comment-box {
+        height: 100vh;
     }
 
     #banner {

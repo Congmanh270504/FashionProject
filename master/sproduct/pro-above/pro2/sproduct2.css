@@ -337,7 +337,24 @@ body {
         padding-top: 20px;
         flex-wrap: wrap;
     }
+    swiper-container {
+        width: 100%;
 
+    }
+
+    swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    swiper-slide img {
+        width: 100%;
+        object-fit: cover;
+    }
     .pro {
         position: relative;
         width: 23%;
