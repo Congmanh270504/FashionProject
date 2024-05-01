@@ -342,6 +342,24 @@ body {
         flex-wrap: wrap;
     }
 
+    swiper-container {
+        width: 100%;
+
+    }
+
+    swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    swiper-slide img {
+        width: 100%;
+        object-fit: cover;
+    }
     .pro {
         position: relative;
         width: 23%;
@@ -421,6 +439,13 @@ body {
 
     .pro:hover .image-hover {
         opacity: 1;
+    }
+    .sell {
+        color: gray;
+        font-style: italic;
+        text-decoration: line-through;
+        margin-left: 1em;
+        font-size: 13px;
     }
 }
 
