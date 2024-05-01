@@ -338,12 +338,16 @@ body {
                 color: rgba(0, 149, 246, 1);
             }
         }
-
-
+        
+        
+        .user-name:hover {
+            text-decoration: underline;
+        }
     }
+
     .fa-solid.fa-heart {
         color: #E72929;
-       
+
 
     }
 }
@@ -357,6 +361,25 @@ body {
         justify-content: space-between;
         padding-top: 20px;
         flex-wrap: wrap;
+    }
+
+    swiper-container {
+        width: 100%;
+
+    }
+
+    swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    swiper-slide img {
+        width: 100%;
+        object-fit: cover;
     }
 
     .pro {
@@ -417,6 +440,14 @@ body {
             bottom: 20px;
             right: 12px;
             font-size: 20px;
+        }
+
+        .sell {
+            color: gray;
+            font-style: italic;
+            text-decoration: line-through;
+            margin-left: 1em;
+            font-size: 13px;
         }
     }
 
