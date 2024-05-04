@@ -2,111 +2,66 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F a s h i o n</title>
-    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <video autoplay muted loop id="myVideo">
-            <source src="img/Hermes/Astonishing orange _ Hermès_.mp4" type="video/mp4">
-        </video>
-        <a href="#" class="logo">
-            <img src="favicon/android-chrome-192x192.png" alt="logo">
-        </a>
-        <ul class="nav">
-            <li><a href="#" class="home"><i class="fa-solid fa-house"></i></a></li>
-            <li><a href="#" class="shop">Shop</a></li>
-            <li><a href="#" class="trend">Trend</a></li>
-            <li><a href="#" class="collect">My collection</a></li>
-            <li><a href="#" class="us">About us</a></li>
-        </ul>
-        <div class="search">
-            <input type="text" placeholder="Search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-    </header>
-    <div class="banner">
-        <div class="content Hermes active">
-            <img src="img/Hermes/Hermes-Banner.png" alt="Banner-Hermes" class="img-title">
-            <p>
-                Hermès is a luxury French fashion house, founded in 1837 by Thierry Hermès. Its initial specialisation
-                lay in accessories and leather goods, given its inception as a harness and saddle manufacturer, although
-                the brand also now produces ready-to-wear clothing.
-            </p>
-        </div>
-        <div class="content Gucci">
-            <img src="img/Gucci/Gucci_logo.svg (1) (1).png" alt="" class="img-title-Gucci">
-            <p>
-                Founded in Florence, Italy, in 1921, Gucci is one of the world’s leading luxury brands. Following the
-                House’s centenary, Gucci forges ahead continuing to redefine luxury while celebrating creativity,
-                Italian craftsmanship, and innovation.
-            </p>
-        </div>
-        <div class="content Channel">
-            <img src="img/Channel/Chanel_logo_interlocking_cs.svg.png" alt="" class="img-title">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum delectus accusantium eos? Temporibus,
-                laborum ipsa adipisci voluptatibus architecto repellendus officiis quibusdam corporis molestias in
-                harum, beatae esse cumque dolorum similique.</p>
-        </div>
-        <div class="button">
-            <a href="#" class="show" aria-hidden="true">
-                <i class="fa-regular fa-eye"></i>
-                Show Shop
-            </a>
-            <a href="#" class="add" aria-hidden="true">
-                <i class="fa-solid fa-plus"></i>
-                My collection
-            </a>
-        </div>
-        <!-- <div class="carousel-box">
-            <div class="carousel">
-                <a class="carousel-item" onclick="changeTitle('Hermes')">
-                    <img src="img/Channel/456080HE60_worn_2.jpg">
-                </a>
-                <a class="carousel-item" onclick="changeTitle('Gucci')">
-                    <img src="img/Gucci/3b6ff4604d11d9332ed07af09526c286.jpg">
-                </a>
-                <a class="carousel-item" onclick="changeTitle('Channel')"><img
-                        src="img/Hermes/rib-trim-jacket--452440HG5K-worn-1-0-0-800-800_g.jpg">
-                </a>
-            </div>
-        </div> -->
-        <div class="carousel-box">
-            <div class="carousel">
-                <a class="carousel-item" href="#one!"><img
-                        src="img/Hermes/rib-trim-jacket--452440HG5K-worn-1-0-0-800-800_g.jpg"></a>
-                <a class="carousel-item" href="#two!"><img src="img/Gucci/3b6ff4604d11d9332ed07af09526c286.jpg"></a>
-                <a class="carousel-item" href="#three!"><img
-                        src="img/Hermes/rib-trim-jacket--452440HG5K-worn-1-0-0-800-800_g.jpg"></a>
-                <a class="carousel-item" href="#four!"><img src="img/Gucci/Gucci_logo.svg (1) (1).png"></a>
-                <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
-            </div>
-        </div>
 
-        <a href="#" class="feedback"><i class="fa-solid fa-message"></i>Feedback</a>
-        <ul class="contact">
-            <li><a href="#" class="fb" title="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="#" class="inta" title="Intagram"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="#" class="github" title="Github"><i class="fa-brands fa-github"></i></a></li>
-        </ul>
-    </div>
-    <script src="main.js"></script>
-    <script src="https://kit.fontawesome.com/966a9482a5.js" crossorigin="anonymous"></script>
+  <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="30"
+    slides-per-view="3">
+    <swiper-slide>Slide 1</swiper-slide>
+    <swiper-slide>Slide 2</swiper-slide>
+    <swiper-slide>Slide 3</swiper-slide>
+    <swiper-slide>Slide 4</swiper-slide>
+    <swiper-slide>Slide 5</swiper-slide>
+    <swiper-slide>Slide 6</swiper-slide>
+    <swiper-slide>Slide 7</swiper-slide>
+    <swiper-slide>Slide 8</swiper-slide>
+    <swiper-slide>Slide 9</swiper-slide>
+  </swiper-container>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.carousel');
-            var instances = M.Carousel.init(elems, { duration: 200 });
-        });
-    </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
 </body>
 
 </html>

@@ -107,6 +107,78 @@
                 <img src="/img/img_Edward/T-shirt/T-shirt_3/feedback/size2.jpg" alt="">
             </div>
         </div>
+        <div class="comment-box">
+            <div class="user">
+                <img src="/master/img/people/1.png" alt="">
+                <div class="details">
+                    <p><b>meo con dilang</b> Ao nay chim ung nha </p>
+                    <ul>
+                        <li>1w</li>
+                        <li>1,049 likes</li>
+                    </ul>
+                </div>
+                <i class="fa-regular fa-heart "></i>
+                <i class="fa-solid fa-heart hidden"></i>
+            </div>
+            <div class="user">
+                <img src="/master/img/people/1.png" alt="">
+                <div class="details">
+                    <p><b>meo con dilang</b> Ao nay chim ung nha </p>
+                    <ul>
+                        <li>1w</li>
+                        <li>1,049 likes</li>
+                        
+                    </ul>
+                </div>
+                <i class="fa-regular fa-heart "></i>
+                <i class="fa-solid fa-heart hidden"></i>
+            </div>
+            <div class="user">
+                <img src="/master/img/people/1.png" alt="">
+                <div class="details">
+                    <p><b>meo con dilang</b> Ao nay chim ung nha </p>
+                    <ul>
+                        <li>1w</li>
+                        <li>1,049 likes</li>
+                        
+                    </ul>
+                </div>
+                <i class="fa-regular fa-heart "></i>
+                <i class="fa-solid fa-heart hidden"></i>
+            </div>
+            <div class="user">
+                <img src="/master/img/people/1.png" alt="">
+                <div class="details">
+                    <p><b>meo con dilang</b> Ao nay chim ung nha </p>
+                    <ul>
+                        <li>1w</li>
+                        <li>1,049 likes</li>
+                        
+                    </ul>
+                </div>
+                <i class="fa-regular fa-heart "></i>
+                <i class="fa-solid fa-heart hidden"></i>
+            </div>
+            <div class="user">
+                <img src="/master/img/people/1.png" alt="">
+                <div class="details">
+                    <p><b>meo con dilang</b> Ao nay chim ung nha </p>
+                    <ul>
+                        <li>1w</li>
+                        <li>1,049 likes</li>
+                        
+                    </ul>
+                </div>
+                <i class="fa-regular fa-heart "></i>
+                <i class="fa-solid fa-heart hidden"></i>
+            </div>
+            <div class="comment">
+                <i class="fa-regular fa-face-smile" id="emoji-button"></i>
+                <textarea type="text" placeholder="Add a comment..."></textarea>
+                <i class="post">Post</i>
+            </div>
+
+        </div>
     </div>
 
     <div id="product1" class="section-p1">
@@ -262,7 +334,6 @@
         <p>Website created by Edward && Thomas 2024</p>
     </div>
     </div>
-    <!-- 1:37:19 -->
     <script>
         var mainimg = document.getElementById('main-img');
         var samllimg = document.getElementsByClassName('small-img');
@@ -281,44 +352,28 @@
 
         }
 
-        // function myFunction(x) {
-        //     if (x.matches) { // If media query matches
-        //         samllimg[2].onclick = function () {
-        //             mainimg.src = samllimg[2].src;
-        //             mainimg.style.height = "32vh";
-        //         }
-        //     }
-        // }
-        // var x = window.matchMedia("(max-width:799px)")
-        // // Call listener function at run time
-        // myFunction(x);
-
-        // // Attach listener function on state changes
-        // x.addEventListener("change", function () {
-        //     myFunction(x);
-        // });
-
-        // function myFunction(y) {
-        //     if (y.matches) { // If media query matches
-        //         samllimg[2].onclick = function () {
-        //             mainimg.src = samllimg[2].src;
-        //             mainimg.style.height = "32vh";
-        //         }
-        //     }
-        // }
-        // var y = window.matchMedia("(max-width:477px)")
-        // // Call listener function at run time
-        // myFunction(y);
-
-        // // Attach listener function on state changes
-        // y.addEventListener("change", function () {
-        //     myFunction(y);
-        // });
-
-
-
-
     </script>
+    <script>
+        const heart = document.querySelectorAll(".fa-regular.fa-heart");
+        const redheart = document.querySelectorAll(".fa-solid.fa-heart");
+        for (let i = 0; i < heart.length; i++) {
+            const hide = heart[i];
+            const appear = redheart[i];
+            hide.addEventListener("click", () => {
+                hide.classList.add("hidden");
+                appear.classList.remove("hidden");
+            }
+            );
+            appear.addEventListener("click", () => {
+                hide.classList.remove("hidden");
+                appear.classList.add("hidden");
+            }
+            );
+
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.0.3/dist/index.min.js"></script>
     <script src="../../../main/script.js"></script>
     <script src="https://kit.fontawesome.com/966a9482a5.js" crossorigin="anonymous"></script>
 </body>

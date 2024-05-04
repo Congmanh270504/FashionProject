@@ -75,8 +75,6 @@ button.white {
   transform: 0.3s;
 }
 
-button.white:hover {}
-
 body {
   width: 100%;
 }
@@ -308,6 +306,14 @@ body {
         color: #088178;
       }
 
+    }
+
+    .sell {
+      color: gray;
+      font-style: italic;
+      text-decoration: line-through;
+      margin-left: 1em;
+      font-size: 13px;
     }
 
     .fa-solid.fa-cart-shopping.cart {
