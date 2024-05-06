@@ -1,62 +1,116 @@
 <!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<title>Swiper demo</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-	<!-- Link Swiper's CSS -->
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Image Slider in HTML CSS and JavaScript | CodingNepal</title>
+	<!-- Google Fonts Link For Icons -->
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<link rel="stylesheet" href="test.css" />
+	<script src="script.js" defer></script>
 </head>
 
 <body>
-	<!-- Swiper -->
-	<div class="swiper-container">
-		<div class="swiper-wrapper">
-			<div class="swiper-slide">Slide 1</div>
-			<div class="swiper-slide">Slide 2</div>
-			<div class="swiper-slide">Slide 3</div>
-			<div class="swiper-slide">Slide 4</div>
-			<div class="swiper-slide">Slide 5</div>
-			<div class="swiper-slide">Slide 6</div>
-			<div class="swiper-slide">Slide 7</div>
-			<div class="swiper-slide">Slide 8</div>
-			<div class="swiper-slide">Slide 9</div>
-			<div class="swiper-slide">Slide 10</div>
+	<div class="container">
+		<div class="slider-wrapper">
+			<button id="prev-slide" class="slide-button material-symbols-rounded">
+				chevron_left
+			</button>
+			<ul class="image-list">
+				<img class="image-item" src="/img/img_Edward/banner/banner1.jpg" alt="img-1" />
+				<img class="image-item" src="/img/img_Edward/banner/banner1.jpg" alt="img-2" />
+				<img class="image-item" src="/img/img_Edward/banner/banner1.jpg" alt="img-3" />
+				<img class="image-item" src="/img/img_Edward/banner/banner1.jpg" alt="img-4" />
+				<img class="image-item" src="/img/img_Edward/banner/banner1.jpg" alt="img-5" />
+				<img class="image-item" src="/img/img_Edward/banner/banner1.jpg" alt="img-6" />
+				<img class="image-item" src="/img/img_Edward/banner/banner1.jpg" alt="img-7" />
+				<img class="image-item" src="/img/img_Edward/banner/banner1.jpg" alt="img-8" />
+				<img class="image-item" src="/img/img_Edward/banner/banner1.jpg" alt="img-9" />
+				<img class="image-item" src="/img/img_Edward/banner/banner1.jpg" alt="img-10" />
+			</ul>
+			<button id="next-slide" class="slide-button material-symbols-rounded">
+				chevron_right
+			</button>
 		</div>
-		<!-- Add Pagination -->
-		<div class="swiper-pagination"></div>
+		<div class="slider-scrollbar">
+			<div class="scrollbar-track">
+				<div class="scrollbar-thumb"></div>
+			</div>
+		</div>
 	</div>
-
-	<!-- Swiper JS -->
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-	<!-- Initialize Swiper -->
-	<script>
-		var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      // init: false,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 4,
-          spaceBetween: 40,
-        },
-        1024: {
-          slidesPerView: 5,
-          spaceBetween: 50,
-        },
-      }
-    });
-	</script>
 </body>
+<script>
+	const imageList = document.querySelector(".slider-wrapper .image-list");
+	const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
+	const sliderScrollbar = document.querySelector(".container .slider-scrollbar");
+	const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
+	const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
+	const initSlider = () => {
+
+		// Handle scrollbar thumb drag
+		scrollbarThumb.addEventListener("mousedown", (e) => {
+			const startX = e.clientX;
+			const thumbPosition = scrollbarThumb.offsetLeft;
+			const maxThumbPosition = sliderScrollbar.getBoundingClientRect().width - scrollbarThumb.offsetWidth;
+
+			// Update thumb position on mouse move
+			const handleMouseMove = (e) => {
+				const deltaX = e.clientX - startX;
+				const newThumbPosition = thumbPosition + deltaX;
+
+				// Ensure the scrollbar thumb stays within bounds
+				const boundedPosition = Math.max(0, Math.min(maxThumbPosition, newThumbPosition));
+				const scrollPosition = (boundedPosition / maxThumbPosition) * maxScrollLeft;
+
+				scrollbarThumb.style.left = `${boundedPosition}px`;
+				imageList.scrollLeft = scrollPosition;
+			}
+
+			// Remove event listeners on mouse up
+			const handleMouseUp = () => {
+				document.removeEventListener("mousemove", handleMouseMove);
+				document.removeEventListener("mouseup", handleMouseUp);
+			}
+
+			// Add event listeners for drag interaction
+			document.addEventListener("mousemove", handleMouseMove);
+			document.addEventListener("mouseup", handleMouseUp);
+		});
+
+		// Slide images according to the slide button clicks
+		slideButtons.forEach(button => {
+			button.addEventListener("click", () => {
+				const direction = button.id === "prev-slide" ? -1 : 1;
+				const scrollAmount = imageList.clientWidth * direction;
+				imageList.scrollBy({ left: scrollAmount, behavior: "smooth" });
+			});
+		});
+
+		// Show or hide slide buttons based on scroll position
+		const handleSlideButtons = () => {
+			slideButtons[0].style.display = imageList.scrollLeft <= 0 ? "none" : "flex";
+			slideButtons[1].style.display = imageList.scrollLeft >= maxScrollLeft ? "none" : "flex";
+		}
+
+		// Update scrollbar thumb position based on image scroll
+		const updateScrollThumbPosition = () => {
+			const scrollPosition = imageList.scrollLeft;
+			const thumbPosition = (scrollPosition / maxScrollLeft) * (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth);
+			scrollbarThumb.style.left = `${thumbPosition}px`;
+		}
+
+		// Call these two functions when image list scrolls
+		imageList.addEventListener("scroll", () => {
+			updateScrollThumbPosition();
+			handleSlideButtons();
+		});
+	}
+
+	window.addEventListener("resize", initSlider);
+	window.addEventListener("load", initSlider);
+</script>
 
 </html>
