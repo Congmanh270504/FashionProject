@@ -32,7 +32,7 @@
                     <a href="../../../../contact/contact.html">Contact</a>
                 </li>
                 <li id="lg-bag">
-                    <a href="#"><i class="fa-brands fa-shopify"></i></a>
+                    <a href="../../../../cart/cart.html"><i class="fa-brands fa-shopify"></i></a>
                 </li>
                 <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
             </ul>
@@ -90,20 +90,20 @@
         </div>
         <div class="singgle-pro-details">
             <h6>Home/Shirt</h6>
-            <h4>MR.SCRATCH DENIM JACKET </h4>
-            <h2>$51.12</h2>
+            <h4 class="productName">MR.SCRATCH DENIM JACKET </h4>
+            <h2 class="price">$51.12</h2>
             <div class="choose">
-                <select name="" id="">
-                    <option label="" hidden selected>Select Size</option>
-                    <option value="">Size S</option>
-                    <option value="">Size M</option>
-                    <option value="">Size L</option>
-                    <option value="">Size XL</option>
+                <select name="" id="optionSize">
+                    <option label="" hidden selected value="">Select Size</option>
+                    <option value="S">Size S</option>
+                    <option value="M">Size M</option>
+                    <option value="L">Size L</option>
+                    <option value="XL">Size XL</option>
                 </select>
                 <button class="normal" id="show" onclick="show()">Show model</button>
             </div>
-            <input type="number" value="1" min="1">
-            <button class="normal cart">Add To Cart</button>
+            <input type="number" value="1" min="1" id="quantity">
+            <button class=" normal cart">Add To Cart</button>
             <div class="details">
                 <h4>MÔ TẢ SẢN PHẨM:</h4>
                 <span>
@@ -425,7 +425,6 @@
 
         var mainimg = document.getElementById('main-img');
         var samllimg = document.querySelectorAll('.samm-img-col img.small-img');
-
         samllimg.forEach((item, key) => {
             item.addEventListener("click", () => {
                 const img = mainimg.querySelector("img:not(.hidden)");
@@ -547,7 +546,8 @@
         window.addEventListener("resize", initSlider);
         window.addEventListener("load", initSlider);
     </script>
-
+    <script src="../../../../main/addcart.js">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.0.3/dist/index.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> <!--slide-->
     <script src="../../../../main/script.js"></script>

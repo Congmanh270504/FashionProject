@@ -11,6 +11,11 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    min-width: 100%;
+    overflow-x: hidden;
+}
+
 /* Global Styles */
 
 h1 {
@@ -346,12 +351,13 @@ body {
 }
 
 #product1 {
+    overflow-x: hidden;
     text-align: center;
     position: relative;
 
     .pro-contetner {
         display: grid;
-        grid-template-columns: repeat(10, 1fr);
+        grid-template-columns: repeat(9, 1fr);
         justify-content: space-between;
         gap: 5em;
         overflow-x: auto;
@@ -739,8 +745,13 @@ select::-ms-expand {
         }
     }
 
-    #product1 .pro-contetner {
-        justify-content: center;
+
+    #product1{
+        /* justify-content: center; */
+        
+        .pro-contetner {
+
+        } 
 
         .pro {
             margin: 15px;
@@ -752,7 +763,6 @@ select::-ms-expand {
     }
 
     #main-img {
-        height: 32.5vh;
     }
 
     #prodetails .singgle-pro-details input {
