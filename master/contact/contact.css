@@ -149,10 +149,12 @@ body {
 
     h2 {
         padding-bottom: 15px;
+        color: #088178;
+
     }
 
-    h1 {
-        color: #088178;
+    p {
+        font-weight: bold;
     }
 }
 

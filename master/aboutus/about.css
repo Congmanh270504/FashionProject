@@ -149,6 +149,11 @@ body {
 
     h2 {
         padding-bottom: 15px;
+        color: #088178;
+    }
+
+    p {
+        font-weight: bold;
     }
 
     h1 {
@@ -167,7 +172,6 @@ body {
 
 #about-head {
     display: flex;
-    align-items: center;
 
     img {
         width: 50%;
@@ -175,7 +179,16 @@ body {
     }
 
     div {
+        display: inline-block;
         padding-left: 40px;
+
+        p {
+            margin-top: 2em;
+        }
+
+        marquee {
+        }
+
     }
 
 }
@@ -381,22 +394,24 @@ footer {
     width: 100%;
     text-align: center;
 }
+
 #scollbutton {
     position: fixed;
     bottom: 30px;
     right: 30px;
     color: white;
-  
+
     .normal {
-      border: 1px solid #A34343;
-      background-color: #A34343;
-      color: wheat;
-      border-radius: 40%;
-      padding: 10px 12px;
-      font-size: 20px;
+        border: 1px solid #A34343;
+        background-color: #A34343;
+        color: wheat;
+        border-radius: 40%;
+        padding: 10px 12px;
+        font-size: 20px;
     }
-  
-  }
+
+}
+
 /* ============================================================================= Media ===================================================================================== */
 @media (max-width:799px) {
     .section-p1 {
@@ -531,6 +546,7 @@ footer {
         width: 100%;
 
     }
+
     #feature {
         padding: 5px;
     }

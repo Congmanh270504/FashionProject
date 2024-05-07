@@ -147,11 +147,13 @@ body {
     p {
         color: white;
         font-weight: bold;
+        
     }
 
     h2 {
         padding-bottom: 15px;
         font-weight: bold;
+        color: #088178;
     }
 
     h1 {
@@ -496,6 +498,7 @@ footer {
         height: 70vh;
         padding: 0 80px;
         background-position: top 30% right 30%;
+        
     }
 
     #news-letter .form {
