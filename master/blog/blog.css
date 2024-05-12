@@ -150,6 +150,9 @@ body {
         
     }
 
+    p {
+        font-size: x-large;
+    }
     h2 {
         padding-bottom: 15px;
         font-weight: bold;

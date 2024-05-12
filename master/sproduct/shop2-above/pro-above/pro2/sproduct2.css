@@ -12,7 +12,10 @@ html {
 }
 
 /* Global Styles */
-
+body {
+    min-width: 100%;
+    overflow-x: hidden;
+}
 h1 {
     font-size: 50px;
     line-height: 64px;
@@ -742,7 +745,6 @@ select::-ms-expand {
     }
 
     #product1 .pro-contetner {
-        justify-content: center;
 
         .pro {
             margin: 15px;

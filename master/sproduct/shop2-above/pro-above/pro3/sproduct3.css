@@ -11,6 +11,11 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    min-width: 100%;
+    overflow-x: hidden;
+}
+
 /* Global Styles */
 
 h1 {
@@ -53,13 +58,17 @@ b {
 .section-m1 {
     margin: 40px 0;
 }
+
 .sell {
     color: gray;
     font-style: italic;
     text-decoration: line-through;
     margin-left: 1em;
     font-size: 20px;
+    font-weight: bold;
+    align-content: center;
 }
+
 button.normal {
     font-size: 14px;
     font-weight: 600;
@@ -215,6 +224,10 @@ body {
             color: #088178;
             background-color: white;
             border: 0.1px solid;
+        }
+
+        #sell {
+            display: flex;
         }
 
         span {
@@ -748,8 +761,6 @@ select::-ms-expand {
     }
 
     #product1 .pro-contetner {
-        justify-content: center;
-
         .pro {
             margin: 15px;
         }

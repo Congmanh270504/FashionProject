@@ -32,7 +32,7 @@
                     <a href="../../../../contact/contact.html">Contact</a>
                 </li>
                 <li id="lg-bag">
-                    <a href="#"><i class="fa-brands fa-shopify"></i></a>
+                    <a href="../../../../cart/cart.html"><i class="fa-brands fa-shopify"></i></a>
                 </li>
                 <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
             </ul>
@@ -88,11 +88,15 @@
         </div>
         <div class="singgle-pro-details">
             <h6>Home/Shirt</h6>
-            <h4>UNREAL SURREAL FUR SWEATER</h4>
-            <h2>$34.5 <h class="sell">$50.76</h>
-            </h2>
+            <h4 class="productName">UNREAL SURREAL FUR SWEATER</h4>
+            <span id="sell">
+                <h2 class="price">$34.5
+                </h2>
+                <h class="sell">$50.76</h>
+            </span>
+
             <div class="choose">
-                <select name="" id="">
+                <select name="" id="optionSize">
                     <option label="" hidden selected>Select Size</option>
                     <option value="">Size S</option>
                     <option value="">Size M</option>
@@ -101,7 +105,7 @@
                 </select>
                 <button class="normal" id="show" onclick="show()">Show model</button>
             </div>
-            <input type="number" value="1" min="1">
+            <input type="number" value="1" min="1" id="quantity">
             <button class="normal cart">Add To Cart</button>
             <div class="details">
                 <h4>MÔ TẢ SẢN PHẨM:</h4>
@@ -565,9 +569,11 @@
         window.addEventListener("load", initSlider);
     </script>
 
+    <script src="../../../../main/script.js"></script>
+    <script src="../../../../main/addcart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.0.3/dist/index.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> <!--slide-->
-    <script src="../../../../main/script.js"></script>
+
     <script src="https://kit.fontawesome.com/966a9482a5.js" crossorigin="anonymous"></script>
 </body>
 
