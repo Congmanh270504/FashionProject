@@ -175,16 +175,7 @@
         }
 
     </script>
-    <script>
-        const rowproduct = document.querySelector('.far.fa-times-circle');
-        const row = document.querySelector('.main-cart');
-        // function getRowIndex() {
-        // }
-        console.log(row.length);
-        function hiddenItem(x) {
-            rowproduct.classList.add("hidden");
-        }
-    </script>
+
     <script>
         window.onload = loadCart;
         function loadCart(e) {
@@ -192,9 +183,9 @@
             var currentSession = JSON.parse(localStorage.getItem("cart")) || { cart: [] };
             var cart = "";
             currentSession.cart.map(element => {
-                cart += `<tr>
-                    <td>   <i class="far fa-times-circle" onclick="hiddenItem()"></i></td>
-                    <td><img src="${element.img}" alt=""></td>
+                cart += `<tr class="row">
+                    <td> <i class="far fa-times-circle remove"></i></td>
+                    <td><img src="${element.img}"></td>
                     <td>${element.productName}</td>
                     <td>$${element.price}</td>
                     <td>${element.quantity}</td>
@@ -203,6 +194,19 @@
 
             });
             maincart.innerHTML += cart;
+
+            const x = maincart.querySelectorAll('.far.fa-times-circle.remove');
+            x.forEach((btn, index) => {
+                btn.addEventListener("click", (e) => {
+                    const row = e.target.closest(".row");
+                    row.remove();
+                    const currentCart = JSON.parse(localStorage.getItem("cart")).cart; // get current Session
+                    currentCart.pop(index);
+                    localStorage.setItem("cart", JSON.stringify({ cart: currentCart }));
+                }
+                )
+            });
+
         }
     </script>
     <script src="../main/script.js"></script>
