@@ -241,6 +241,9 @@ body {
                 }
             }
         }
+        #description {
+            font-family: "Archivo", Times, serif;
+        }
         #sell {
             display: flex;
         }
