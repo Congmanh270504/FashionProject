@@ -154,12 +154,16 @@ body {
 
     p {
         font-weight: bold;
+        font-size: x-large;
+
     }
 
     h1 {
         color: #088178;
     }
 }
+
+
 
 .mobile {
     display: none;
@@ -179,14 +183,36 @@ body {
     }
 
     div {
+        position: relative;
         display: inline-block;
         padding-left: 40px;
 
+        h2 {
+            text-align: center;
+        }
+
         p {
+            position: relative;
+            top: 50px;
             margin-top: 2em;
+            word-spacing: 2px;
+            line-height: 1.6;
+        }
+
+        p:first-letter {
+            font-size: calc(60px + 0.75vw);
+            line-height: 40px;
+            color: indianred;
+            float: left;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-left: 5px;
+            font-family: Sansita One;
         }
 
         marquee {
+            position: absolute;
+            bottom: 0;
         }
 
     }
@@ -321,10 +347,10 @@ body {
     button {
         background-color: #088178;
         color: white;
-        width: 20%;
+        width: 10em;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
-        padding: 13.7px 30px;
+        padding: 14px 28px 12px;
     }
 }
 

@@ -316,10 +316,10 @@ body {
     button {
         background-color: #088178;
         color: white;
-        width: 20%;
+        width: 10em;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
-        padding: 13.7px 30px;
+        padding: 14px 28px 12px;
     }
 }
 
