@@ -401,7 +401,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background: url(../img/banner/b17.jpg); 
+    background: url(../img/banner/b17.jpg);
     width: 50%;
     height: 40vh;
     background-size: cover;
@@ -546,11 +546,10 @@ body {
   button {
     background-color: #088178;
     color: white;
-    width: 30%;
+    width: 10em;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    padding: 13.7px 30px;
-    height: 44px;
+    padding: 14px 28px 13px;
   }
 }
 
@@ -621,6 +620,10 @@ footer {
 .copyright {
   width: 100%;
   text-align: center;
+
+  p {
+    color: #088178;
+  }
 }
 
 #scollbutton {

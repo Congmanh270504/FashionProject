@@ -1,4 +1,4 @@
-const mainImg = document.querySelector('#main-img .product');
+var smallimg = document.querySelectorAll('.samm-img-col img.small-img');
 const cart = document.querySelector(".cart");
 const productName = document.querySelector(".productName");
 const price = document.querySelector(".price");
@@ -7,7 +7,7 @@ const quantity = document.querySelector("#quantity")
 cart.addEventListener('click', () => {
     var currentSession = JSON.parse(localStorage.getItem("cart")) || { cart: [] };
     currentSession.cart.push({
-        img: mainImg.src,
+        img: smallimg[0].src,
         productName: productName.textContent,
         price: price.textContent.replace("$", ""),
         options: {

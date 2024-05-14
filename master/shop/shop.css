@@ -344,10 +344,10 @@ body {
     button {
         background-color: #088178;
         color: white;
-        width: 20%;
+        width: 10em;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
-        padding: 14px 28px;
+        padding: 14px 28px 13px;
     }
 }
 
