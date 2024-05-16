@@ -797,6 +797,16 @@ select::-ms-expand {
     padding-right: 10px;
   }
 
+  #prodetails {
+    & .singgle-pro-details {
+      & .size {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
   #banner {
     height: 20vh;
   }
@@ -938,6 +948,7 @@ select::-ms-expand {
     }
 
   }
+
   #prodetails {
     .comment-box {
       margin-top: 1em;
