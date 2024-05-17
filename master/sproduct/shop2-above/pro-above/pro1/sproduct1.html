@@ -95,10 +95,10 @@
             <div class="choose">
                 <select name="" id="optionSize">
                     <option label="" hidden selected value="">Select Size</option>
-                    <option value="S">Size S</option>
-                    <option value="M">Size M</option>
-                    <option value="L">Size L</option>
-                    <option value="XL">Size XL</option>
+                    <option value="Size S">Size S</option>
+                    <option value="Size M">Size M</option>
+                    <option value="Size L">Size L</option>
+                    <option value="Size XL">Size XL</option>
                 </select>
                 <button class="normal" id="show" onclick="show()">Show model</button>
             </div>
@@ -458,99 +458,12 @@
 
         }
     </script>
-    <script>
-        const heart = document.querySelectorAll(".fa-regular.fa-heart");
-        const redheart = document.querySelectorAll(".fa-solid.fa-heart");
-        for (let i = 0; i < heart.length; i++) {
-            const hide = heart[i];
-            const appear = redheart[i];
-            hide.addEventListener("click", () => {
-                hide.classList.add("hidden");
-                appear.classList.remove("hidden");
-            }
-            );
-            appear.addEventListener("click", () => {
-                hide.classList.remove("hidden");
-                appear.classList.add("hidden");
-            }
-            );
-        }
-    </script>
-    <script>
-        const slideButtons = document.querySelectorAll("#product1 .slide-button");
-        const proConten = document.querySelector(".pro-contetner");
-        const sliderScrollbar = document.querySelector(".slider-scrollbar");
-        const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
-        const maxScrollLeft = proConten.scrollWidth - proConten.clientWidth;
-        const initSlider = () => {
-
-            // Handle scrollbar thumb drag
-            scrollbarThumb.addEventListener("mousedown", (e) => {
-                const startX = e.clientX;
-                const thumbPosition = scrollbarThumb.offsetLeft;
-                const maxThumbPosition = sliderScrollbar.getBoundingClientRect().width - scrollbarThumb.offsetWidth;
-
-                // Update thumb position on mouse move
-                const handleMouseMove = (e) => {
-                    const deltaX = e.clientX - startX;
-                    const newThumbPosition = thumbPosition + deltaX;
-
-                    // Ensure the scrollbar thumb stays within bounds
-                    const boundedPosition = Math.max(0, Math.min(maxThumbPosition, newThumbPosition));
-                    const scrollPosition = (boundedPosition / maxThumbPosition) * maxScrollLeft;
-
-                    scrollbarThumb.style.left = `${boundedPosition}px`;
-                    proConten.scrollLeft = scrollPosition;
-                }
-
-                // Remove event listeners on mouse up
-                const handleMouseUp = () => {
-                    document.removeEventListener("mousemove", handleMouseMove);
-                    document.removeEventListener("mouseup", handleMouseUp);
-                }
-
-                // Add event listeners for drag interaction
-                document.addEventListener("mousemove", handleMouseMove);
-                document.addEventListener("mouseup", handleMouseUp);
-            });
-
-            // Slide images according to the slide button clicks
-            slideButtons.forEach(button => {
-                button.addEventListener("click", () => {
-                    const direction = button.id === "prev-slide" ? -1 : 1;
-                    const scrollAmount = proConten.clientWidth * direction;
-                    proConten.scrollBy({ left: scrollAmount, behavior: "smooth" });
-                });
-            });
-
-            // Show or hide slide buttons based on scroll position
-            const handleSlideButtons = () => {
-                slideButtons[0].style.display = proConten.scrollLeft <= 0 ? "none" : "flex";
-                slideButtons[1].style.display = proConten.scrollLeft >= maxScrollLeft ? "none" : "flex";
-            }
-
-            // Update scrollbar thumb position based on image scroll
-            const updateScrollThumbPosition = () => {
-                const scrollPosition = proConten.scrollLeft;
-                const thumbPosition = (scrollPosition / maxScrollLeft) * (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth);
-                scrollbarThumb.style.left = `${thumbPosition}px`;
-            }
-
-            // Call these two functions when image list scrolls
-            proConten.addEventListener("scroll", () => {
-                updateScrollThumbPosition();
-                handleSlideButtons();
-            });
-        }
-
-        window.addEventListener("resize", initSlider);
-        window.addEventListener("load", initSlider);
-    </script>
-    <script src="../../../../main/addcart.js">
-    </script>
+    <script src="../../../../main/heart.js"></script>
+    <script src="../../../../main/slide.js"></script>
+    <script src="../../../../main/addcart.js"></script>
+    <script src="../../../../main/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.0.3/dist/index.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> <!--slide-->
-    <script src="../../../../main/script.js"></script>
     <script src="https://kit.fontawesome.com/966a9482a5.js" crossorigin="anonymous"></script>
 </body>
 

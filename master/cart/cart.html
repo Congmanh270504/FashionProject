@@ -57,6 +57,8 @@
                     <td>Remove</td>
                     <td>Img</td>
                     <td>Product</td>
+                    <td>Size</td>
+                    <td>Color</td>
                     <td>Price</td>
                     <td>Quantity</td>
                     <td>Subtotal</td>
@@ -187,6 +189,8 @@
                     <td> <i class="far fa-times-circle remove"></i></td>
                     <td><img src="${element.img}"></td>
                     <td>${element.productName}</td>
+                    <td>${element.options.size}</td>
+                    <td>${element.options.color}</td>
                     <td>$${element.price}</td>
                     <td>${element.quantity}</td>
                     <td>$${parseInt(element.price) * parseInt(element.quantity)}</td>

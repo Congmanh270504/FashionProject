@@ -250,7 +250,7 @@ body {
 
             i {
                 position: relative;
-                margin-inline: 10px;
+                margin: 0 10px;
                 padding-left: 3px;
                 cursor: pointer;
             }

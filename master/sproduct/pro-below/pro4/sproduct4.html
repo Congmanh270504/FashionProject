@@ -31,7 +31,7 @@
                     <a href="../../../contact/contact.html">Contact</a>
                 </li>
                 <li id="lg-bag">
-                    <a href="#"><i class="fa-brands fa-shopify"></i></a>
+                    <a href="../../../cart/cart.html"><i class="fa-brands fa-shopify"></i></a>
                 </li>
                 <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
             </ul>
@@ -47,12 +47,18 @@
     <div id="prodetails" class="section-p1">
         <div class="single-pro-img">
             <div class="main-img">
-                <img src="../../../../../img/img_Edward/Brand_Owl/product4/product4_img/1.jpg" width="100%"
-                    id="main-img" alt="">
+                <img class="white" src="../../../../../img/img_Edward/Brand_Owl/product4/product4_img/1.jpg"
+                    width="100%" id="main-img" alt="">
+                <img class="black hidden" src="/img/img_Edward/Brand_Owl/product4/color2/1.jpg" alt="" width="100%">
+                <img class="blue hidden" src="../../../../img/img_Edward/Brand_Owl/product4/color3/1.jpg" alt=""
+                    width="100%">
+                <img class="red hidden" src="../../../../img/img_Edward/Brand_Owl/product4/color4/1.jpg" alt=""
+                    width="100%">
             </div>
 
-            <div class="small-img-grp">
-                <div class="samm-img-col">
+
+            <div class="small-img-grp white">
+                <div class="samm-img-col ">
                     <img src="../../../../../img/img_Edward/Brand_Owl/product4/product4_img/1.jpg" alt="" width="100%"
                         class="small-img">
                 </div>
@@ -66,23 +72,83 @@
                 </div>
                 <div class="samm-img-col">
                     <img src="../../../../../img/img_Edward/Brand_Owl/product4/product4_feedback/5.jpg" alt=""
-                        width="100%" class="small-img" id="fourth">
+                        width="100%" class="small-img">
+                </div>
+            </div>
+            <div class="small-img-grp black hidden">
+                <div class="samm-img-col">
+                    <img src="../../../../img/img_Edward/Brand_Owl/product4/color2/1.jpg" alt="" width="100%"
+                        class="small-img">
+                </div>
+                <div class="samm-img-col">
+                    <img src="../../../../img/img_Edward/Brand_Owl/product4/color2/2.jpg" alt="" width="100%"
+                        class="small-img">
+                </div>
+                <div class="samm-img-col">
+                    <img src="../../../../img/img_Edward/Brand_Owl/product4/color2/4.jpg" alt="" width="100%"
+                        class="small-img">
+                </div>
+                <div class="samm-img-col">
+                    <img src="../../../../img/img_Edward/Brand_Owl/product4/color2/5.jpg" alt="" width="100%"
+                        class="small-img">
+                </div>
+            </div>
+            <div class="small-img-grp blue hidden">
+                <div class="samm-img-col ">
+                    <img src="../../../../img/img_Edward/Brand_Owl/product4/color3/1.jpg" alt="" width="100%"
+                        class="small-img">
+                </div>
+                <div class="samm-img-col">
+                    <img src="../../../../img/img_Edward/Brand_Owl/product4/color3/2.jpg" alt="" width="100%"
+                        class="small-img">
+                </div>
+                <div class="samm-img-col">
+                    <img src="../../../../img/img_Edward/Brand_Owl/product4/color3/4.jpg" alt="" width="100%"
+                        class="small-img">
+                </div>
+                <div class="samm-img-col">
+                    <img src="../../../../img/img_Edward/Brand_Owl/product4/color3/3.jpg" alt="" width="100%"
+                        class="small-img">
+                </div>
+            </div>
+            <div class="small-img-grp red hidden">
+                <div class="samm-img-col ">
+                    <img src="../../../../img/img_Edward/Brand_Owl/product4/color4/1.jpg" alt="" width="100%"
+                        class="small-img">
+                </div>
+                <div class="samm-img-col">
+                    <img src="../../../../img/img_Edward/Brand_Owl/product4/color4/4.jpg" alt="" width="100%"
+                        class="small-img">
+                </div>
+                <div class="samm-img-col">
+                    <img src="../../../../img/img_Edward/Brand_Owl/product4/color4/2.jpg" alt="" width="100%"
+                        class="small-img">
+                </div>
+                <div class="samm-img-col">
+                    <img src="../../../../img/img_Edward/Brand_Owl/product4/color4/3.jpg" alt="" width="100%"
+                        class="small-img">
                 </div>
             </div>
         </div>
         <div class="singgle-pro-details">
             <h6>Home/Shirt</h6>
-            <h4>Owl. Striped Polo</h4>
-            <h2>$13.52</h2>
-            <select name="" id="">
-                <option label="" hidden selected>Select Size</option>
-                <option value="">Size S</option>
-                <option value="">Size M</option>
-                <option value="">Size L</option>
-                <option value="">Size XL</option>
+            <h4 class="productName">Owl. Striped Polo</h4>
+            <h2 class="price">$13.52</h2>
+            <select name="" id="optionSize">
+                <option value="Size S">Size S</option>
+                <option value="Size M">Size M</option>
+                <option value="Size L">Size L</option>
+                <option value="Size XL">Size XL</option>
             </select>
-            <input type="number" value="1" min="1">
-            <button class="normal">Add To Cart</button>
+            <div class="color">
+                <h4>Màu</h4>
+                <i class="fa-solid fa-square cwhite bordercolor"></i>
+                <i class="fa-solid fa-square cblack"></i>
+                <i class="fa-solid fa-square cblue"></i>
+                <i class="fa-solid fa-square cred"></i>
+            </div>
+            <input type="number" value="1" min="1" id="quantity">
+            <button class="normal cart">Add To Cart</button>
 
             <span>
                 <ul>
@@ -106,20 +172,94 @@
                 <img src="../../../../../img/img_Edward/Brand_Owl/product4/product4_feedback/size.png" alt="">
             </div>
         </div>
+        <div class="comment-box">
+            <div class="user">
+                <img src="/master/img/people/1.png" alt="">
+                <div class="details">
+                    <p><b>meo con dilang</b> Ao nay chim ung nha </p>
+                    <ul>
+                        <li>1w</li>
+                        <li>1,049 likes</li>
+                    </ul>
+                </div>
+                <i class="fa-regular fa-heart "></i>
+                <i class="fa-solid fa-heart hidden"></i>
+            </div>
+            <div class="user">
+                <img src="/master/img/people/1.png" alt="">
+                <div class="details">
+                    <p><b>meo con dilang</b> Ao nay chim ung nha </p>
+                    <ul>
+                        <li>1w</li>
+                        <li>1,049 likes</li>
+
+                    </ul>
+                </div>
+                <i class="fa-regular fa-heart "></i>
+                <i class="fa-solid fa-heart hidden"></i>
+            </div>
+            <div class="user">
+                <img src="/master/img/people/1.png" alt="">
+                <div class="details">
+                    <p><b>meo con dilang</b> Ao nay chim ung nha </p>
+                    <ul>
+                        <li>1w</li>
+                        <li>1,049 likes</li>
+
+                    </ul>
+                </div>
+                <i class="fa-regular fa-heart "></i>
+                <i class="fa-solid fa-heart hidden"></i>
+            </div>
+            <div class="user">
+                <img src="/master/img/people/1.png" alt="">
+                <div class="details">
+                    <p><b>meo con dilang</b> Ao nay chim ung nha </p>
+                    <ul>
+                        <li>1w</li>
+                        <li>1,049 likes</li>
+
+                    </ul>
+                </div>
+                <i class="fa-regular fa-heart "></i>
+                <i class="fa-solid fa-heart hidden"></i>
+            </div>
+            <div class="user">
+                <img src="/master/img/people/1.png" alt="">
+                <div class="details">
+                    <p><b>meo con dilang</b> Ao nay chim ung nha </p>
+                    <ul>
+                        <li>1w</li>
+                        <li>1,049 likes</li>
+
+                    </ul>
+                </div>
+                <i class="fa-regular fa-heart "></i>
+                <i class="fa-solid fa-heart hidden"></i>
+            </div>
+            <div class="comment">
+                <i class="fa-regular fa-face-smile" id="emoji-button"></i>
+                <textarea type="text" placeholder="Add a comment..."></textarea>
+                <i class="post">Post</i>
+            </div>
+
+        </div>
     </div>
 
     <div id="product1" class="section-p1">
         <h2>
             Similar Products</h2>
         <p>Summer Collection New Morden Design</p>
+        <button id="prev-slide" class="slide-button">
+            <i class="fa-solid fa-angle-left "></i>
+        </button>
         <div class="pro-contetner">
-            <div class="pro">
-                <img src="../../../../../img/img_Edward/Shirt/Shirt_1/img_product1/focus1.jpg" alt="" />
-                <img class="image-hover" src="../../../../../img/img_Edward/Shirt/Shirt_1/img_product1/focus2.jpg" />
-
+            <div class="pro" onclick="window.location.href='../../../../sproduct/pro-above/pro1/sproduct1.html'">
+                <img src="/img/img_Edward/Shirt/Shirt_1/img_product1/focus1.jpg" alt="" />
+                <img class="image-hover" src="/img/img_Edward/Shirt/Shirt_1/img_product1/focus4(index).jpg" />
                 <div class="description">
                     <span>E.T</span>
-                    <h5>Cartoon Astrornaut T-Shirts</h5>
+                    <h5>LIDERISM CUBAN SHIRT</h5>
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -127,20 +267,19 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <h4>$24,5đ</h4>
+                    <h4>$42,5</h4>
                 </div>
                 <a href="#">
                     <i class="fa-solid fa-cart-shopping cart"></i>
                 </a>
             </div>
-
-            <div class="pro">
-                <img src="../../../../../img/img_Edward/Shirt/Shirt_3/img_product3/focus1.png" alt="" />
-                <img class="image-hover" src="../../../../../img/img_Edward/Shirt/Shirt_3/img_product3/focus3.png" />
+            <div class="pro" onclick="window.location.href='../../../../sproduct/pro-above/pro2/sproduct2.html'">
+                <img src="/img/img_Edward/Shirt/Shirt_2/img_product2/focus1.png" alt="" />
+                <img class="image-hover" src="/img/img_Edward/Shirt/Shirt_2/img_product2/focus3(index).png" />
 
                 <div class="description">
                     <span>E.T</span>
-                    <h5>Cartoon Astrornaut T-Shirts</h5>
+                    <h5>EDWARD CROPPED POLO SWEATSHIRT - Pearl</h5>
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -148,20 +287,59 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <h4>$78</h4>
+                    <h4>$50 </h4>
                 </div>
                 <a href="#">
                     <i class="fa-solid fa-cart-shopping cart"></i>
                 </a>
             </div>
+            <div class="pro" onclick="window.location.href='../../../../sproduct/pro-above/pro4/sproduct4.html'">
+                <img src="/img/img_Edward/Shirt/Shirt_4/img_product4/4.jpg" alt="" />
+                <img src="/img/img_Edward/Shirt/Shirt_4/img_product4/1.jpg" alt="" class="image-hover" />
+                <div class="description">
+                    <span>E.T</span>
+                    <h5>AETHER RUFFLE SHIRT - WHITE</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$32</h4>
+                </div>
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping cart"></i>
+                </a>
+            </div>
+            <div class="pro" onclick="window.location.href='../../../../sproduct/pro-above/pro5/sproduct5.html'">
+                <img src="/img/img_Edward/T-shirt/T-shirt_1/img_product1/focus2.png" alt="" />
+                <img src="/img/img_Edward/T-shirt/T-shirt_1/img_product1/focus1(index).png" alt=""
+                    class="image-hover" />
 
-            <div class="pro">
-                <img src="../../../../../img/img_Edward/T-shirt/T-shirt_1/img_product1/focus2.png" alt="" />
-                <img src="../../../../../img/img_Edward/T-shirt/T-shirt_1/img_product1/focus3.png" alt=""
+                <div class="description">
+                    <span>E.T</span>
+                    <h5>TEE V3.0 - Polka Red</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$50</h4>
+                </div>
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping cart"></i>
+                </a>
+            </div>
+            <div class="pro" onclick="window.location.href='../../../../sproduct/pro-above/pro6/sproduct6.html'">
+                <img src="/img/img_Edward/T-shirt/T-shirt_2/img_product2/focus2.png" alt="" />
+                <img src="/img/img_Edward/T-shirt/T-shirt_2/img_product2/focus1(index).jpg" alt=""
                     class="image-hover" />
                 <div class="description">
                     <span>E.T</span>
-                    <h5>Cartoon Astrornaut T-Shirts</h5>
+                    <h5>INSIDE OUT LONG - SLEEVE TEE</h5>
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -169,20 +347,18 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <h4>$78</h4>
+                    <h4>$55</h4>
                 </div>
                 <a href="#">
                     <i class="fa-solid fa-cart-shopping cart"></i>
                 </a>
             </div>
-
-            <div class="pro">
-                <img src="../../../../../img/img_Edward/T-shirt/T-shirt_3/img_product3/focus3.png" alt="" />
-                <img src="../../../../../img/img_Edward/T-shirt/T-shirt_3/img_product3/focus2.png" alt=""
-                    class="image-hover" />
+            <div class="pro" onclick="window.location.href='../../../../sproduct/pro-above/pro7/sproduct7.html'">
+                <img src="/img/img_Edward/T-shirt/T-shirt_3/img_product3/focus3.png" alt="" />
+                <img src="/img/img_Edward/T-shirt/T-shirt_3/img_product3/focus2.jpg" alt="" class="image-hover" />
                 <div class="description">
                     <span>E.T</span>
-                    <h5>Cartoon Astrornaut T-Shirts</h5>
+                    <h5>THEEIGHTH JERSEY T-SHIRT</h5>
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -190,16 +366,42 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <h4>$78</h4>
+                    <h4>$50</h4>
                 </div>
                 <a href="#">
                     <i class="fa-solid fa-cart-shopping cart"></i>
                 </a>
             </div>
-
+            <div class="pro" onclick="window.location.href='../../../../sproduct/pro-above/pro8/sproduct8.html'">
+                <img src="/img/img_Edward/T-shirt/T-shirt_4/img_product4/1.jpg" alt="" />
+                <img src="/img/img_Edward/T-shirt/T-shirt_4/img_product4/2.jpg" alt="" class="image-hover" />
+                <div class="description">
+                    <span>E.T</span>
+                    <h5>MAT-CUP MEOW TEE</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$19,8 <h class="sell">$35</h>
+                    </h4>
+                </div>
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping cart"></i>
+                </a>
+            </div>
+        </div>
+        <button id="next-slide" class="slide-button">
+            <i class="fa-solid fa-angle-right "></i>
+        </button>
+        <div class="slider-scrollbar">
+            <div class="scrollbar-track">
+                <div class="scrollbar-thumb"></div>
+            </div>
         </div>
     </div>
-
 
     <div id="news-letter" class="section-p1 section-m1">
         <div class="news-text">
@@ -255,7 +457,7 @@
                 <img src="../../../img/pay/app.jpg" alt="">
                 <img src="../../../img/pay/play.jpg" alt="">
             </div>
-            <p>Secured Payment Gateways</p>
+            <p>Secuwhite Payment Gateways</p>
             <img src="../../../img/pay/pay.png" alt="">
         </div>
     </footer>
@@ -265,63 +467,128 @@
     </div>
     <!-- 1:37:19 -->
     <script>
-        var mainimg = document.getElementById('main-img');
-        var samllimg = document.getElementsByClassName('small-img');
+        var mainimg = document.querySelector('.main-img');
+        var smallimg = document.querySelectorAll('.small-img');
 
-        samllimg[0].onclick = function () {
-            mainimg.src = samllimg[0].src;
-        }
-        samllimg[1].onclick = function () {
-            mainimg.src = samllimg[1].src;
-        }
-        samllimg[2].onclick = function () {
-            mainimg.src = samllimg[2].src;
-        }
-        samllimg[3].onclick = function () {
-            mainimg.src = samllimg[3].src;
-
-        }
-
-        // function myFunction(x) {
-        //     if (x.matches) { // If media query matches
-        //         samllimg[2].onclick = function () {
-        //             mainimg.src = samllimg[2].src;
-        //             mainimg.style.height = "32vh";
-        //         }
-        //     }
-        // }
-        // var x = window.matchMedia("(max-width:799px)")
-        // // Call listener function at run time
-        // myFunction(x);
-
-        // // Attach listener function on state changes
-        // x.addEventListener("change", function () {
-        //     myFunction(x);
-        // });
-
-        // function myFunction(y) {
-        //     if (y.matches) { // If media query matches
-        //         samllimg[2].onclick = function () {
-        //             mainimg.src = samllimg[2].src;
-        //             mainimg.style.height = "32vh";
-        //         }
-        //     }
-        // }
-        // var y = window.matchMedia("(max-width:477px)")
-        // // Call listener function at run time
-        // myFunction(y);
-
-        // // Attach listener function on state changes
-        // y.addEventListener("change", function () {
-        //     myFunction(y);
-        // });
-
-
-
-
+        smallimg.forEach((item) => {
+            item.addEventListener("click", () => {
+                const img = mainimg.querySelector("img:not(.hidden)");
+                img.src = item.src;
+            });
+        });
     </script>
-    <script src="../../../main/script.js"></script>
+    <script>
+        const cwhite = document.querySelector(".cwhite");
+        const cblack = document.querySelector(".cblack");
+        const cblue = document.querySelector(".cblue");
+        const cred = document.querySelector(".cred");
+
+        var white = document.querySelectorAll(".white");
+        var black = document.querySelectorAll(".black");
+        var blue = document.querySelectorAll(".blue");
+        var red = document.querySelectorAll(".red");
+        cwhite.addEventListener("click", () => {
+            cwhite.classList.add("bordercolor");
+            cblack.classList.remove("bordercolor");
+            cblue.classList.remove("bordercolor");
+            cred.classList.remove("bordercolor");
+
+            white.forEach((item) => {
+                item.classList.remove("hidden");
+            });
+            black.forEach((item) => {
+                item.classList.add("hidden");
+            });
+            blue.forEach((item) => {
+                item.classList.add("hidden");
+            });
+            red.forEach((item) => {
+                item.classList.add("hidden");
+            });
+
+        });
+        cblack.addEventListener("click", () => {
+            cwhite.classList.remove("bordercolor");
+            cblack.classList.add("bordercolor");
+            cblue.classList.remove("bordercolor");
+            cred.classList.remove("bordercolor");
+
+            white.forEach((item) => {
+                item.classList.add("hidden");
+            });
+            black.forEach((item) => {
+                item.classList.remove("hidden");
+            });
+            blue.forEach((item) => {
+                item.classList.add("hidden");
+            });
+            red.forEach((item) => {
+                item.classList.add("hidden");
+            });
+        });
+        cblue.addEventListener("click", () => {
+            cwhite.classList.remove("bordercolor");
+            cblack.classList.remove("bordercolor");
+            cblue.classList.add("bordercolor");
+            cred.classList.remove("bordercolor");
+
+            white.forEach((item) => {
+                item.classList.add("hidden");
+            });
+            black.forEach((item) => {
+                item.classList.add("hidden");
+            });
+            blue.forEach((item) => {
+                item.classList.remove("hidden");
+            });
+            red.forEach((item) => {
+                item.classList.add("hidden");
+            });
+        });
+        cred.addEventListener("click", () => {
+            cwhite.classList.remove("bordercolor");
+            cblack.classList.remove("bordercolor");
+            cblue.classList.remove("bordercolor");
+            cred.classList.add("bordercolor");
+
+            white.forEach((item) => {
+                item.classList.add("hidden");
+            });
+            black.forEach((item) => {
+                item.classList.add("hidden");
+            });
+            blue.forEach((item) => {
+                item.classList.add("hidden");
+            });
+            red.forEach((item) => {
+                item.classList.remove("hidden");
+            });
+        });
+    </script>
+    <script>
+        function getColor() {
+
+            if (color[0].classList.contains("bordercolor")) {
+                return "White";
+            }
+            else if (color[1].classList.contains("bordercolor")) {
+                return "Black";
+            }
+            else if (color[2].classList.contains("bordercolor")) {
+                return "Blue";
+            }
+            else
+                return "Red";
+        }
+    </script>
+    <script src="../../../master/main/script.js"></script>
+    <script src="../../../master/main/slide.js"></script>
+    <script src="../../../master/main/heart.js"></script>
+    <script src="../../../../master/main/addcart.js"></script>
     <script src="https://kit.fontawesome.com/966a9482a5.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.0.3/dist/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> <!--slide-->
+
 </body>
 
 </html>
