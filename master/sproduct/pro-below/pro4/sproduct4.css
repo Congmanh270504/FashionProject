@@ -237,6 +237,7 @@ body {
           font-size: 20px;
           margin-top: 0.5em;
           width: 60%;
+
           b {
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: medium;
@@ -286,6 +287,7 @@ body {
 
     .size {
       margin-top: 1em;
+      margin-right: 1em;
 
       img {
         width: 45%;
@@ -807,6 +809,19 @@ select::-ms-expand {
     }
   }
 
+  #prodetails {
+    & .singgle-pro-details {
+      & span {
+        & ul {
+          li {
+
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+
   #banner {
     height: 20vh;
   }
@@ -828,7 +843,7 @@ select::-ms-expand {
     width: 70%;
 
     .normal {
-      padding: 13px 10px;
+      padding: 13px 10px 14px;
     }
   }
 }

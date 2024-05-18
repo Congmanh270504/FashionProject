@@ -193,6 +193,7 @@ body {
             margin-right: 1em;
             padding: 5px;
         }
+
         input {
             width: 50px;
             height: 47px;
@@ -268,7 +269,7 @@ body {
         .details {
             margin: 0px 20px;
             border-bottom: 1px solid rgba(0, 0, 0, .09);
-
+            width: 100%;
             p {
                 margin: 0;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -341,6 +342,7 @@ body {
     .user-name:hover {
         text-decoration: underline;
     }
+
     .fa-solid.fa-heart {
         color: #E72929;
     }
