@@ -14,7 +14,7 @@ cart.addEventListener('click', () => {
         productName: productName.textContent,
         options: {
             size: optionSize.value,
-            color: getColor()
+            color: null
            
         },
         price: price.textContent.replace("$", ""),

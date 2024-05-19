@@ -268,20 +268,14 @@ body {
         color: #E2DFD0;
       }
 
-      .fa-solid.fa-square.cbalck {
-        color: black;
-      }
 
       .fa-solid.fa-square.cblue {
         color: #00215E;
       }
 
-      .fa-solid.fa-square.cblue {
-        color: #00215E;
-      }
 
-      .fa-solid.fa-square.cred {
-        color: #A0153E;
+      .fa-solid.fa-square.cgray {
+        color: gray;
       }
     }
 
@@ -290,7 +284,7 @@ body {
       margin-right: 1em;
 
       img {
-        width: 32em;
+        width: 25.5em;
       }
     }
   }
@@ -299,7 +293,6 @@ body {
     border: 1px solid;
     border-radius: 10px;
     position: relative;
-    min-height: 90vh;
 
     .user {
       margin-bottom: 10px;
