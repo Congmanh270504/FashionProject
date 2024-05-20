@@ -134,6 +134,8 @@ body {
         bottom: -4px;
         left: 20px;
         transition: 0.5s;
+        animation: nav 0.5s ease;
+
     }
 }
 
@@ -419,7 +421,11 @@ footer {
 .copyright {
     width: 100%;
     text-align: center;
-}
+  
+    p {
+      color: #088178;
+    }
+  }
 
 #scollbutton {
     position: fixed;
@@ -436,6 +442,16 @@ footer {
         font-size: 20px;
     }
 
+}
+
+@keyframes nav {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 20px;
+    }
 }
 
 /* ============================================================================= Media ===================================================================================== */

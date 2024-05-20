@@ -131,6 +131,8 @@ body {
         bottom: -4px;
         left: 20px;
         transition: 0.5s;
+        animation: nav 0.5s ease;
+
     }
 }
 
@@ -350,8 +352,11 @@ footer {
 .copyright {
     width: 100%;
     text-align: center;
-}
-
+  
+    p {
+      color: #088178;
+    }
+  }
 #scollbutton {
     position: fixed;
     bottom: 30px;
@@ -367,7 +372,15 @@ footer {
         font-size: 20px;
     }
 }
-
+@keyframes nav {
+    from {
+      left: 0;
+    }
+  
+    to {
+      left: 20px;
+    }
+  }
 /* ============================================================================= Media ===================================================================================== */
 @media (max-width: 799px) {
     .section-p1 {

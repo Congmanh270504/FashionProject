@@ -84,19 +84,19 @@
                     <td>
                         Cart Subtotal
                     </td>
-                    <td>
-                        $423
+                    <td class="cart-subtotal">
+
                     </td>
                 </tr>
                 <tr>
                     <td>
                         Shipping
                     </td>
-                    <td>Free</td>
+                    <td class="ship"></td>
                 </tr>
                 <tr>
                     <td><strong>Total</strong></td>
-                    <td><strong>$4324</strong></td>
+                    <td><strong class="total"></strong></td>
                 </tr>
             </table>
             <button class="normal">
@@ -193,7 +193,7 @@
                     <td>${element.options.color}</td>
                     <td>$${element.price}</td>
                     <td>${element.quantity}</td>
-                    <td>$${parseInt(element.price) * parseInt(element.quantity)}</td>
+                    <td class="subtotal">$${parseInt(element.price) * parseInt(element.quantity)}</td>
                     </tr>`;
 
             });
@@ -210,7 +210,22 @@
                 }
                 )
             });
-
+            const subtotal = document.querySelectorAll("td.subtotal");
+            var cartSubtotal = document.querySelector(".cart-subtotal");
+            var sum = 0;
+            const ship = document.querySelector(".ship");
+            const total = document.querySelector(".total");
+            subtotal.forEach((e) => {
+                let a = parseInt(e.textContent.replace(/[^0-9]/g, ""));
+                sum += a;
+            });
+            cartSubtotal.innerHTML = '$' + sum;
+            const getRandomnum = randomNum(20);
+            ship.innerHTML = '$' + getRandomnum;
+            total.innerHTML = '$' + (sum + getRandomnum);
+            function randomNum(num) {
+                return Math.floor(Math.random() * num);
+            }
         }
     </script>
     <script src="../main/script.js"></script>
