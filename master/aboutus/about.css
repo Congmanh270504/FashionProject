@@ -49,6 +49,14 @@ p {
     margin: 40px 0;
 }
 
+.opacity-0 {
+    opacity: 0;
+}
+
+.feature {
+    animation: feature 1s both;
+}
+
 button.normal {
     font-size: 14px;
     font-weight: 600;
@@ -391,10 +399,10 @@ footer {
 
     .follow {
         margin-top: 20px;
-
+text-align: start;
         i {
             color: #465b52;
-            padding-right: 4px;
+            padding-right: 10px;
             cursor: pointer;
         }
     }
@@ -421,11 +429,11 @@ footer {
 .copyright {
     width: 100%;
     text-align: center;
-  
+
     p {
-      color: #088178;
+        color: #088178;
     }
-  }
+}
 
 #scollbutton {
     position: fixed;
@@ -443,15 +451,28 @@ footer {
     }
 
 }
+
 @keyframes nav {
     from {
-      left: 0;
+        left: 0;
     }
-  
+
     to {
-      left: 20px;
+        left: 20px;
     }
-  }
+}
+
+@keyframes feature {
+    from {
+        opacity: 0;
+        transform: translateX(-2rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
 /* ============================================================================= Media ===================================================================================== */
 @media (max-width:799px) {

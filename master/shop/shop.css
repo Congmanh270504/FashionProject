@@ -388,10 +388,10 @@ footer {
 
     .follow {
         margin-top: 20px;
-
+        text-align: start;
         i {
             color: #465b52;
-            padding-right: 4px;
+            padding-right: 10px;
             cursor: pointer;
         }
     }

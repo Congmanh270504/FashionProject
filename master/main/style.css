@@ -50,6 +50,14 @@ p {
   margin: 40px 0;
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
+.feature {
+  animation: feature 1s both;
+}
+
 button.normal {
   font-size: 14px;
   font-weight: 600;
@@ -193,6 +201,7 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  animation: nav 0.5s ease;
 
   .fe-box {
     width: 180px;
@@ -589,10 +598,11 @@ footer {
 
   .follow {
     margin-top: 20px;
+    text-align: start;
 
     i {
       color: #465b52;
-      padding-right: 4px;
+      padding-right: 10px;
       cursor: pointer;
     }
   }
@@ -602,12 +612,16 @@ footer {
       border: 1px solid #088178;
       border-radius: 6px;
     }
+
   }
 
   .install {
-    cursor: pointer;
+    a:hover {
+      text-decoration: underline;
+    }
 
     img {
+      cursor: pointer;
       margin: 10px 0 15px 0;
     }
   }
@@ -653,6 +667,21 @@ footer {
     left: 20px;
   }
 }
+
+
+@keyframes feature {
+  from {
+    opacity: 0;
+    transform: translateX(-2rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
 
 /* ============================================================================= Media ===================================================================================== */
 @media (max-width:799px) {

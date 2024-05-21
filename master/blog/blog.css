@@ -50,6 +50,18 @@ p {
     margin: 40px 0;
 }
 
+.section-m1 {
+    margin: 40px 0;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.feature {
+    animation: feature 1s both;
+}
+
 button.normal {
     font-size: 14px;
     font-weight: 600;
@@ -149,12 +161,13 @@ body {
     p {
         color: white;
         font-weight: bold;
-        
+
     }
 
     p {
         font-size: x-large;
     }
+
     h2 {
         padding-bottom: 15px;
         font-weight: bold;
@@ -329,7 +342,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    
     .col {
         display: flex;
         flex-direction: column;
@@ -342,8 +355,10 @@ footer {
     }
 
     h4 {
-        font-size: 20px;
+        font-size: 14px;
         padding-bottom: 20px;
+        font-family: "Spartan", sans-serif;
+
     }
 
     p {
@@ -360,10 +375,9 @@ footer {
 
     .follow {
         margin-top: 20px;
-
         i {
             color: #465b52;
-            padding-right: 4px;
+            padding-right: 10px;
             cursor: pointer;
         }
     }
@@ -393,11 +407,12 @@ footer {
 .copyright {
     width: 100%;
     text-align: center;
-  
+
     p {
-      color: #088178;
+        color: #088178;
     }
-  }
+}
+
 #scollbutton {
     position: fixed;
     bottom: 30px;
@@ -425,20 +440,33 @@ footer {
     font-family: cursive;
     color: #088178;
 }
-#content{
+
+#content {
     margin: 0;
     padding: 10px;
     margin-top: 1em;
 }
+
 @keyframes nav {
     from {
-      left: 0;
+        left: 0;
     }
-  
+
     to {
-      left: 20px;
+        left: 20px;
+    }
+}
+@keyframes feature {
+    from {
+      opacity: 0;
+      transform: translateX(-2rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
     }
   }
+  
 /* ============================================================================= Media ===================================================================================== */
 @media (max-width:799px) {
     .section-p1 {
@@ -514,7 +542,7 @@ footer {
         height: 70vh;
         padding: 0 80px;
         background-position: top 30% right 30%;
-        
+
     }
 
     #news-letter .form {
