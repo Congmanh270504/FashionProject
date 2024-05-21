@@ -349,6 +349,12 @@ footer {
     }
 }
 
+.reduce{
+    color: gray;
+    margin-left: 2em;
+    font-size: 13px;
+}
+
 .copyright {
     width: 100%;
     text-align: center;

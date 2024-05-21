@@ -71,10 +71,10 @@
     </div>
     <div id="cart-add" class="section-p1">
         <div class="coupon">
-            <h3>Apply Coupon</h3>
+            <h3>Apply Voucher</h3>
             <div class="link-cupton">
-                <input type="text" placeholder="Enter your Coupon">
-                <button class="normal">Apply</button>
+                <input type="text" placeholder="Enter your Voucher" class="voucher">
+                <button class="normal voucher-btn">Apply</button>
             </div>
         </div>
         <div class="subtotal">
@@ -211,22 +211,49 @@
                 )
             });
             const subtotal = document.querySelectorAll("td.subtotal");
-            var cartSubtotal = document.querySelector(".cart-subtotal");
-            var sum = 0;
+            const cartSubtotal = document.querySelector(".cart-subtotal");
+            const voucher = document.querySelector(".voucher");
+            const voucherBtn = document.querySelector(".voucher-btn");
             const ship = document.querySelector(".ship");
             const total = document.querySelector(".total");
+            var sum = 0;
+
             subtotal.forEach((e) => {
                 let a = parseInt(e.textContent.replace(/[^0-9]/g, ""));
                 sum += a;
             });
             cartSubtotal.innerHTML = '$' + sum;
-            const getRandomnum = randomNum(20);
-            ship.innerHTML = '$' + getRandomnum;
-            total.innerHTML = '$' + (sum + getRandomnum);
+
+            const getRandomnum = randomNum(10);
+            let totalCost = sum + getRandomnum;
+            total.innerHTML = '$' + totalCost;
+
+            voucherBtn.addEventListener("click", () => {
+                let reduceFactor = 1;
+                switch (voucher.value) {
+                    case "Quý ngu":
+                        reduceFactor = 0.9
+                        break;
+                    case "bb":
+                        reduceFactor = 0.8;
+                        break;
+                    default:
+                        break;
+                }
+                totalCost = Math.round((sum + getRandomnum) * reduceFactor);
+                total.innerHTML = '$' + totalCost + (reduceFactor !== 1 ? ` <span class="reduce">Giảm ${Math.round((1-reduceFactor)*100)}%</span>`:"");
+            });
+            if (getRandomnum == 0) {
+                ship.innerHTML = 'Free';
+            }
+            else {
+                ship.innerHTML = '$' + getRandomnum;
+            }
             function randomNum(num) {
                 return Math.floor(Math.random() * num);
             }
         }
+
     </script>
     <script src="../main/script.js"></script>
     <script src="https://kit.fontawesome.com/966a9482a5.js" crossorigin="anonymous"></script>

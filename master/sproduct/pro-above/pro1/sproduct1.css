@@ -370,9 +370,13 @@ body {
         justify-content: space-between;
         padding-top: 20px;
         flex-wrap: wrap;
+
+        .mySwiper{
+            padding: 0 1rem
+        }
     }
 
-    swiper-container {
+    /* swiper-container {
         width: 100%;
 
     }
@@ -389,18 +393,20 @@ body {
     swiper-slide img {
         width: 100%;
         object-fit: cover;
-    }
+    } */
 
     .pro {
         position: relative;
-        width: 23%;
-        min-width: 250px;
+        /* width: 23%; */
+        /* min-width: 250px; */
+        max-width: 250px;
         padding: 10px 12px;
         border: 1px solid #cce7d0;
         border-radius: 25px;
         cursor: pointer;
+        height: 100%;
         box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
-        margin: 15px 0;
+        /* margin: 15px 0; */
         transition: 0.2s ease;
 
         img {
@@ -708,10 +714,6 @@ select::-ms-expand {
 
     #product1 .pro-contetner {
         justify-content: center;
-
-        .pro {
-            margin-left: 6em;
-        }
     }
 
 
