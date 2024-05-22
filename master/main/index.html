@@ -14,8 +14,12 @@
 <body>
   <div class="header">
     <a href="#"><img src="/favicon/favicon-32x32.png" alt="" class="logo" /></a>
-    <div>
+    <div class="main-navbar" data-animation="feature">
       <ul id="navbar">
+        <li class="search">
+          <input type="text">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </li>
         <li><a class="active" href="index.html">Home</a></li>
         <li>
           <a href="../shop/shop.html">Shop</a>
@@ -518,7 +522,8 @@
     </div>
     <div class="col install">
       <h4>Install App</h4>
-      <p>From <a href="https://play.google.com/store/games?hl=vi&gl=US&pli=1">App Store</a> or <a href="https://www.apple.com/vn/app-store/">Google Play</a></p>
+      <p>From <a href="https://play.google.com/store/games?hl=vi&gl=US&pli=1">App Store</a> or <a
+          href="https://www.apple.com/vn/app-store/">Google Play</a></p>
       <div class="row">
         <a href="https://play.google.com/store/games?hl=vi&gl=US&pli=1">
           <img src="../img/pay/app.jpg" alt="">
@@ -541,7 +546,8 @@
     </button>
   </div>
 </body>
-<script src="script.js"></script>
+<script src="./script.js"></script>
+<script src="./main-navbar.js"></script>
 <script src="https://kit.fontawesome.com/966a9482a5.js" crossorigin="anonymous"></script>
 <script>
   const scrollbutton = document.getElementById("scollbutton");

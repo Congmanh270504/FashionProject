@@ -87,6 +87,10 @@ body {
   width: 100%;
 }
 
+.hidden {
+  display: none;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -105,6 +109,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  top: 30px;
+  right: 100px;
+  animation: bar 0.5s reverse;
 
   li {
     position: relative;
@@ -118,12 +126,45 @@ body {
       color: #1a1a1a;
       transform: 0.3s;
     }
+
+  }
+
+  .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    background-color: white;
+    padding: 2px 10px;
+    border-radius: 10px;
+
+    input {
+      padding: 0 1.125em;
+      font-size: 15px;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      outline: none;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      margin-right: 10px;
+      font-family: "Archivo", Times, serif;
+
+    }
+
+    i {
+      cursor: pointer;
+    }
+
+    i:hover {
+      color: grey;
+    }
   }
 
   a:hover,
   a.active {
     color: #088178;
   }
+
 
   a.active::after,
   a:hover::after {
@@ -137,6 +178,27 @@ body {
     transition: 0.5s;
     animation: nav 0.5s ease;
   }
+}
+
+#bar:hover {
+  color: #088178;
+
+}
+
+
+.mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+
+  a {
+    display: none;
+  }
+}
+
+#close {
+  display: none;
 }
 
 .hero {
@@ -187,14 +249,7 @@ body {
 
 }
 
-.mobile {
-  display: none;
-  align-items: center;
-}
 
-#close {
-  display: none;
-}
 
 #feature {
   display: flex;
@@ -658,6 +713,8 @@ footer {
 
 }
 
+
+
 @keyframes nav {
   from {
     left: 0;
@@ -681,7 +738,15 @@ footer {
   }
 }
 
+@keyframes bar {
+  from {
+    transform: translateX(0);
+  }
 
+  to {
+    transform: translateX(2em);
+  }
+}
 
 /* ============================================================================= Media ===================================================================================== */
 @media (max-width:799px) {
@@ -739,6 +804,23 @@ footer {
     }
   }
 
+  #navbar {
+    .search {
+      margin-bottom: 1em;
+      margin-left: 1em;
+      padding: 2px 5px;
+      width: fit-content;
+    }
+  }
+
+  #navbar {
+    & .search {
+      input {
+        width: 100%;
+      }
+    }
+  }
+
   #navbar.active {
     right: 0px;
   }
@@ -746,6 +828,15 @@ footer {
   .mobile {
     display: flex;
     align-items: center;
+
+    a {
+      display: block;
+
+      svg {
+        width: 30px !important;
+        height: 25px !important;
+      }
+    }
 
     i {
       color: black;
@@ -808,6 +899,8 @@ footer {
     }
   }
 }
+
+/* ============================================================================= Media ===================================================================================== */
 
 @media (min-height:150px) {
   #banner {

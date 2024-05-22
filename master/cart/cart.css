@@ -53,7 +53,9 @@ p {
 .section-m1 {
     margin: 40px 0;
 }
-
+.hidden {
+    display: none;
+  }
 button.normal {
     font-size: 14px;
     font-weight: 600;
@@ -101,7 +103,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    animation: bar 0.5s reverse;
     li {
         position: relative;
         list-style: none;
@@ -135,7 +140,36 @@ body {
 
     }
 }
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    background-color: white;
+    padding: 2px 10px;
+    border-radius: 10px;
 
+    input {
+      padding: 0 1.125em;
+      font-size: 15px;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      outline: none;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      margin-right: 10px;
+      font-family: "Archivo", Times, serif;
+
+    }
+
+    i {
+      cursor: pointer;
+    }
+
+    i:hover {
+      color: grey;
+    }
+  }
 .hero {
     background: url(/img/img_Edward/banner/cart.jpg) no-repeat;
     width: 100%;
@@ -169,14 +203,26 @@ body {
     }
 }
 
-.mobile {
-    display: none;
+#bar:hover {
+    color: #088178;
+  
+  }
+  
+  
+  .mobile {
+    display: flex;
     align-items: center;
-}
-
-#close {
+    justify-content: space-between;
+    cursor: pointer;
+  
+    a {
+      display: none;
+    }
+  }
+  
+  #close {
     display: none;
-}
+  }
 
 #cart {
     table {
@@ -387,6 +433,15 @@ footer {
       left: 20px;
     }
   }
+  @keyframes bar {
+    from {
+      transform: translateX(0);
+    }
+  
+    to {
+      transform: translateX(2em);
+    }
+  }
 /* ============================================================================= Media ===================================================================================== */
 @media (max-width: 799px) {
     .section-p1 {
@@ -445,17 +500,44 @@ footer {
     #navbar.active {
         right: 0px;
     }
+    #navbar {
+        .search {
+          margin-bottom: 1em;
+          margin-left: 1em;
+          padding: 2px 5px;
+          width: fit-content;
+        }
+      }
+    
+      #navbar {
+        & .search {
+          input {
+            width: 100%;
+          }
+        }
+      }
+    
 
-    .mobile {
+      .mobile {
         display: flex;
         align-items: center;
-
-        i {
-            color: black;
-            font-size: 24px;
-            padding-left: 20px;
+    
+        a {
+          display: block;
+    
+          svg {
+            width: 30px !important;
+            height: 25px !important;
+          }
         }
-    }
+    
+        i {
+          color: black;
+          font-size: 24px;
+          padding-left: 20px;
+        }
+      }
+    
 
     .hero {
         height: 60vh;
@@ -486,9 +568,7 @@ footer {
     }
 }
 
-.hidden {
-    display: none !important;
-}
+
 
 @media (max-width: 676px) {
     #cart table thead td {

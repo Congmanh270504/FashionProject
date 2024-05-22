@@ -15,8 +15,12 @@
 
     <div class="header">
         <a href="../main/index.html"><img src="/favicon/favicon-32x32.png" alt="" class="logo" /></a>
-        <div>
+        <div class="main-navbar" data-animation="feature">
             <ul id="navbar">
+                <li class="search">
+                    <input type="text">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </li>
                 <li><a href="../main/index.html">Home</a></li>
                 <li>
                     <a href="../shop/shop.html">Shop</a>
@@ -214,8 +218,59 @@
             <i class="fa-solid fa-arrow-up" title="Go to top"></i>
         </button>
     </div>
-    <script src="../main/script.js"></script>
-    <script src="https://kit.fontawesome.com/966a9482a5.js" crossorigin="anonymous"></script>
 </body>
+<script src="../main/script.js"></script>
+<script>
+    window.onscroll = () => {
+        scroll();
+    };
+    function scroll() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            scrollbutton.style.display = "block";
+        }
+        else {
+            scrollbutton.style.display = "none";
+        }
+    }
+    function scollToTop() {
+
+        window.scrollTo(0, 0);
+
+    }
+</script>
+<script>
+    const inViewPort = (entries, observer) => {
+        entries.forEach((entry) => {
+            const animation = entry.target.dataset.animation.split(" ");
+            if (entry.isIntersecting) {
+                entry.target.classList.remove("opacity-0");
+                entry.target.classList.add(...animation);
+            } else {
+                entry.target.classList.add("opacity-0");
+                entry.target.classList.remove(...animation);
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(inViewPort);
+    const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5,
+    };
+
+    setTimeout(() => {
+        const elements = document.querySelectorAll(".scroll-animation");
+        elements.forEach((element) => {
+            observer.observe(element, {
+                root: element.dataset.root || null,
+                rootMargin: "0px",
+                threshold: element.dataset.threshold || 0.5,
+            });
+        });
+    }, 1000);
+</script>
+<script src="https://kit.fontawesome.com/966a9482a5.js" crossorigin="anonymous"></script>
+<script src="../main/main-navbar.js"> </script>
 
 </html>
