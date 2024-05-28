@@ -14,36 +14,75 @@
 <body>
 
     <div class="header">
-        <a href="../../../../main/index.html"><img src="/favicon/favicon-32x32.png" alt="" class="logo" /></a>
-        <div>
-            <ul id="navbar">
-                <li><a href="../../../../main/index.html">Home</a></li>
-                <li>
-                    <!-- <a href="../../../../shop.html">Shop</a> -->
-                    <a href="../../../../shop/shop.html" class="active">Shop</a>
-                </li>
-                <li>
-                    <a href="../../../../blog/blog.html">Blog</a>
-                </li>
-                <li>
-                    <a href="../../../../aboutus/about.html">About us</a>
-                </li>
-                <li>
-                    <a href="../../../../contact/contact.html">Contact</a>
-                </li>
-                <li id="lg-bag">
-                    <a href="../../../../cart/cart.html"><i class="fa-brands fa-shopify"></i></a>
-                </li>
-                <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
-            </ul>
+        <a href="#"><img src="/favicon/favicon-32x32.png" alt="" class="logo" /></a>
+        <div class="main-navbar" data-animation="feature">
+          <ul id="navbar">
+            <li class="search">
+              <input type="text">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </li>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li>
+              <a href="../../../../shop/shop.html">Shop</a>
+            </li>
+            <li>
+              <a href="../../../../blog/blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="../../../../aboutus/about.html">About us</a>
+            </li>
+            <li>
+              <a href="../../../../contact/contact.html">Contact</a>
+            </li>
+            <li id="lg-bag">
+              <a href="../../../../cart/cart.html">
+                <svg style="width: 16px;height: 16px;" version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt"
+                  height="512.000000pt" viewBox="0 0 512.000000 512.000000">
+                  <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                    <path d="M2380 4835 c-175 -36 -312 -108 -444 -234 -185 -177 -271 -381 -283
+                -668 l-6 -143 -298 0 c-180 0 -319 -4 -351 -11 -152 -32 -264 -144 -297 -297
+                -15 -70 -16 -2824 -1 -2902 23 -122 100 -224 209 -278 l56 -27 1595 0 1595 0
+                57 28 c109 54 185 154 208 277 15 77 14 2832 -1 2902 -32 152 -144 264 -297
+                297 -32 7 -168 11 -351 11 l-298 0 -6 143 c-12 287 -98 491 -283 668 -136 129
+                -287 206 -468 238 -80 15 -256 12 -336 -4z m319 -320 c199 -47 371 -215 427
+                -415 8 -30 18 -112 21 -182 l6 -128 -593 0 -593 0 6 128 c3 70 13 152 21 182
+                56 200 226 367 424 414 76 19 203 19 281 1z m-1047 -1202 c3 -145 5 -161 27
+                -196 61 -99 193 -101 265 -3 19 24 22 46 26 189 l5 162 585 0 585 0 5 -162 c4
+                -143 7 -165 26 -189 72 -98 204 -96 265 3 22 35 24 51 27 196 l4 157 299 0
+                c286 0 300 -1 319 -20 20 -20 20 -33 20 -1418 0 -1249 -2 -1400 -16 -1420
+                l-15 -22 -1519 0 -1519 0 -15 22 c-14 20 -16 171 -16 1420 0 1385 0 1398 20
+                1418 19 19 33 20 319 20 l299 0 4 -157z" />
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
+          </ul>
         </div>
         <div class="mobile">
-            <!-- 3 que  -->
-            <a href="#"><i class="fa-brands fa-shopify"></i></a>
-            <!-- X -->
-            <i class="fa-solid fa-bars" id="bar"></i>
+          <a href="../../../../cart/cart.html">
+            <svg style="width: 16px;height: 16px;" version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt"
+              height="512.000000pt" viewBox="0 0 512.000000 512.000000">
+              <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                <path d="M2380 4835 c-175 -36 -312 -108 -444 -234 -185 -177 -271 -381 -283
+                -668 l-6 -143 -298 0 c-180 0 -319 -4 -351 -11 -152 -32 -264 -144 -297 -297
+                -15 -70 -16 -2824 -1 -2902 23 -122 100 -224 209 -278 l56 -27 1595 0 1595 0
+                57 28 c109 54 185 154 208 277 15 77 14 2832 -1 2902 -32 152 -144 264 -297
+                297 -32 7 -168 11 -351 11 l-298 0 -6 143 c-12 287 -98 491 -283 668 -136 129
+                -287 206 -468 238 -80 15 -256 12 -336 -4z m319 -320 c199 -47 371 -215 427
+                -415 8 -30 18 -112 21 -182 l6 -128 -593 0 -593 0 6 128 c3 70 13 152 21 182
+                56 200 226 367 424 414 76 19 203 19 281 1z m-1047 -1202 c3 -145 5 -161 27
+                -196 61 -99 193 -101 265 -3 19 24 22 46 26 189 l5 162 585 0 585 0 5 -162 c4
+                -143 7 -165 26 -189 72 -98 204 -96 265 3 22 35 24 51 27 196 l4 157 299 0
+                c286 0 300 -1 319 -20 20 -20 20 -33 20 -1418 0 -1249 -2 -1400 -16 -1420
+                l-15 -22 -1519 0 -1519 0 -15 22 c-14 20 -16 171 -16 1420 0 1385 0 1398 20
+                1418 19 19 33 20 319 20 l299 0 4 -157z" />
+              </g>
+            </svg>
+          </a>
+          <i class="fa-solid fa-bars" id="bar"></i>
         </div>
-    </div>
+      </div>
 
     <div id="prodetails" class="section-p1">
         <div class="single-pro-img">
@@ -482,96 +521,12 @@
 
         }
     </script>
-    <script>
-        const heart = document.querySelectorAll(".fa-regular.fa-heart");
-        const redheart = document.querySelectorAll(".fa-solid.fa-heart");
-        for (let i = 0; i < heart.length; i++) {
-            const hide = heart[i];
-            const appear = redheart[i];
-            hide.addEventListener("click", () => {
-                hide.classList.add("hidden");
-                appear.classList.remove("hidden");
-            }
-            );
-            appear.addEventListener("click", () => {
-                hide.classList.remove("hidden");
-                appear.classList.add("hidden");
-            }
-            );
-        }
-    </script>
-    <script>
-        const slideButtons = document.querySelectorAll("#product1 .slide-button");
-        const proConten = document.querySelector(".pro-contetner");
-        const sliderScrollbar = document.querySelector(".slider-scrollbar");
-        const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
-        const maxScrollLeft = proConten.scrollWidth - proConten.clientWidth;
-        const initSlider = () => {
 
-            // Handle scrollbar thumb drag
-            scrollbarThumb.addEventListener("mousedown", (e) => {
-                const startX = e.clientX;
-                const thumbPosition = scrollbarThumb.offsetLeft;
-                const maxThumbPosition = sliderScrollbar.getBoundingClientRect().width - scrollbarThumb.offsetWidth;
-
-                // Update thumb position on mouse move
-                const handleMouseMove = (e) => {
-                    const deltaX = e.clientX - startX;
-                    const newThumbPosition = thumbPosition + deltaX;
-
-                    // Ensure the scrollbar thumb stays within bounds
-                    const boundedPosition = Math.max(0, Math.min(maxThumbPosition, newThumbPosition));
-                    const scrollPosition = (boundedPosition / maxThumbPosition) * maxScrollLeft;
-
-                    scrollbarThumb.style.left = `${boundedPosition}px`;
-                    proConten.scrollLeft = scrollPosition;
-                }
-
-                // Remove event listeners on mouse up
-                const handleMouseUp = () => {
-                    document.removeEventListener("mousemove", handleMouseMove);
-                    document.removeEventListener("mouseup", handleMouseUp);
-                }
-
-                // Add event listeners for drag interaction
-                document.addEventListener("mousemove", handleMouseMove);
-                document.addEventListener("mouseup", handleMouseUp);
-            });
-
-            // Slide images according to the slide button clicks
-            slideButtons.forEach(button => {
-                button.addEventListener("click", () => {
-                    const direction = button.id === "prev-slide" ? -1 : 1;
-                    const scrollAmount = proConten.clientWidth * direction;
-                    proConten.scrollBy({ left: scrollAmount, behavior: "smooth" });
-                });
-            });
-
-            // Show or hide slide buttons based on scroll position
-            const handleSlideButtons = () => {
-                slideButtons[0].style.display = proConten.scrollLeft <= 0 ? "none" : "flex";
-                slideButtons[1].style.display = proConten.scrollLeft >= maxScrollLeft ? "none" : "flex";
-            }
-
-            // Update scrollbar thumb position based on image scroll
-            const updateScrollThumbPosition = () => {
-                const scrollPosition = proConten.scrollLeft;
-                const thumbPosition = (scrollPosition / maxScrollLeft) * (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth);
-                scrollbarThumb.style.left = `${thumbPosition}px`;
-            }
-
-            // Call these two functions when image list scrolls
-            proConten.addEventListener("scroll", () => {
-                updateScrollThumbPosition();
-                handleSlideButtons();
-            });
-        }
-
-        window.addEventListener("resize", initSlider);
-        window.addEventListener("load", initSlider);
-    </script>
 
     <script src="../../../../main/script.js"></script>
+    <script src="../../../../main/heart.js"></script>
+    <script src="../../../../main/slide.js"></script>
+    <script src="../../../../main/main-navbar.js"></script>
     <script src="../../../../main/addcart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.0.3/dist/index.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> <!--slide-->

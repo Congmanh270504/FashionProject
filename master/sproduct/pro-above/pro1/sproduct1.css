@@ -193,6 +193,7 @@ body {
             margin-right: 1em;
             padding: 5px;
         }
+
         input {
             width: 50px;
             height: 47px;
@@ -260,14 +261,18 @@ body {
         display: flex;
         justify-content: space-between;
 
+
+
         img {
             width: 1.5rem;
             height: 1.5rem;
         }
 
+
         .details {
             margin: 0px 20px;
             border-bottom: 1px solid rgba(0, 0, 0, .09);
+            width: 100%;
 
             p {
                 margin: 0;
@@ -287,6 +292,8 @@ body {
                 }
             }
         }
+
+
 
         i {
             margin-top: 5px;
@@ -340,6 +347,7 @@ body {
     .user-name:hover {
         text-decoration: underline;
     }
+
     .fa-solid.fa-heart {
         color: #E72929;
     }
@@ -362,37 +370,24 @@ body {
         justify-content: space-between;
         padding-top: 20px;
         flex-wrap: wrap;
-    }
 
-    swiper-container {
-        width: 100%;
-
-    }
-
-    swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    swiper-slide img {
-        width: 100%;
-        object-fit: cover;
+        .mySwiper{
+            padding: 0 1rem
+        }
     }
 
     .pro {
         position: relative;
-        width: 23%;
-        min-width: 250px;
+        /* width: 23%; */
+        /* min-width: 250px; */
+        max-width: 250px;
         padding: 10px 12px;
         border: 1px solid #cce7d0;
         border-radius: 25px;
         cursor: pointer;
+        height: 100%;
         box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
-        margin: 15px 0;
+        /* margin: 15px 0; */
         transition: 0.2s ease;
 
         img {
@@ -454,7 +449,7 @@ body {
             margin-left: 1em;
             font-size: 13px;
         }
-        
+
     }
 
     .pro:hover {
@@ -700,10 +695,6 @@ select::-ms-expand {
 
     #product1 .pro-contetner {
         justify-content: center;
-
-        .pro {
-            margin-left: 6em;
-        }
     }
 
 

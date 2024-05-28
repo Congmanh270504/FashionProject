@@ -15,8 +15,12 @@
 
     <div class="header">
         <a href="/master/main/index.html"><img src="/favicon/favicon-32x32.png" alt="" class="logo" /></a>
-        <div>
+        <div class="main-navbar " data-animation="feature">
             <ul id="navbar">
+                <li class="search">
+                    <input type="text">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </li>
                 <li><a href="/master/main/index.html">Home</a></li>
                 <li>
                     <a href="/master/shop/shop.html">Shop</a>
@@ -31,14 +35,52 @@
                     <a href="/master/contact/contact.html">Contact</a>
                 </li>
                 <li id="lg-bag">
-                    <a href="/master/cart/cart.html"><i class="fa-brands fa-shopify"></i></a>
+                    <a href="../cart/cart.html">
+                        <svg style="width: 16px;height: 16px;" version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt"
+                          height="512.000000pt" viewBox="0 0 512.000000 512.000000">
+                          <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                            <path d="M2380 4835 c-175 -36 -312 -108 -444 -234 -185 -177 -271 -381 -283
+                            -668 l-6 -143 -298 0 c-180 0 -319 -4 -351 -11 -152 -32 -264 -144 -297 -297
+                            -15 -70 -16 -2824 -1 -2902 23 -122 100 -224 209 -278 l56 -27 1595 0 1595 0
+                            57 28 c109 54 185 154 208 277 15 77 14 2832 -1 2902 -32 152 -144 264 -297
+                            297 -32 7 -168 11 -351 11 l-298 0 -6 143 c-12 287 -98 491 -283 668 -136 129
+                            -287 206 -468 238 -80 15 -256 12 -336 -4z m319 -320 c199 -47 371 -215 427
+                            -415 8 -30 18 -112 21 -182 l6 -128 -593 0 -593 0 6 128 c3 70 13 152 21 182
+                            56 200 226 367 424 414 76 19 203 19 281 1z m-1047 -1202 c3 -145 5 -161 27
+                            -196 61 -99 193 -101 265 -3 19 24 22 46 26 189 l5 162 585 0 585 0 5 -162 c4
+                            -143 7 -165 26 -189 72 -98 204 -96 265 3 22 35 24 51 27 196 l4 157 299 0
+                            c286 0 300 -1 319 -20 20 -20 20 -33 20 -1418 0 -1249 -2 -1400 -16 -1420
+                            l-15 -22 -1519 0 -1519 0 -15 22 c-14 20 -16 171 -16 1420 0 1385 0 1398 20
+                            1418 19 19 33 20 319 20 l299 0 4 -157z" />
+                          </g>
+                        </svg>
+                      </a>
                 </li>
                 <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
             </ul>
         </div>
         <div class="mobile">
             <!-- 3 que  -->
-            <a href="#"><i class="fa-brands fa-shopify"></i></a>
+            <a href="../cart/cart.html">
+                <svg style="width: 16px;height: 16px;" version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt"
+                  height="512.000000pt" viewBox="0 0 512.000000 512.000000">
+                  <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                    <path d="M2380 4835 c-175 -36 -312 -108 -444 -234 -185 -177 -271 -381 -283
+                    -668 l-6 -143 -298 0 c-180 0 -319 -4 -351 -11 -152 -32 -264 -144 -297 -297
+                    -15 -70 -16 -2824 -1 -2902 23 -122 100 -224 209 -278 l56 -27 1595 0 1595 0
+                    57 28 c109 54 185 154 208 277 15 77 14 2832 -1 2902 -32 152 -144 264 -297
+                    297 -32 7 -168 11 -351 11 l-298 0 -6 143 c-12 287 -98 491 -283 668 -136 129
+                    -287 206 -468 238 -80 15 -256 12 -336 -4z m319 -320 c199 -47 371 -215 427
+                    -415 8 -30 18 -112 21 -182 l6 -128 -593 0 -593 0 6 128 c3 70 13 152 21 182
+                    56 200 226 367 424 414 76 19 203 19 281 1z m-1047 -1202 c3 -145 5 -161 27
+                    -196 61 -99 193 -101 265 -3 19 24 22 46 26 189 l5 162 585 0 585 0 5 -162 c4
+                    -143 7 -165 26 -189 72 -98 204 -96 265 3 22 35 24 51 27 196 l4 157 299 0
+                    c286 0 300 -1 319 -20 20 -20 20 -33 20 -1418 0 -1249 -2 -1400 -16 -1420
+                    l-15 -22 -1519 0 -1519 0 -15 22 c-14 20 -16 171 -16 1420 0 1385 0 1398 20
+                    1418 19 19 33 20 319 20 l299 0 4 -157z" />
+                  </g>
+                </svg>
+              </a>
             <!-- X -->
             <i class="fa-solid fa-bars" id="bar"></i>
         </div>
@@ -58,7 +100,7 @@
                 <img src="/master/blog/img/Y2K.jpg" alt="" >
             </div>
             <div class="blog-dedtails">
-                <h4>Xu Hướng Thời Trang Y2K</h4>
+                <h4 class="fe-box scroll-animation opacity-0" data-animation="feature">Xu Hướng Thời Trang Y2K</h4>
                 <p>Phong Cách Y2K bắt nguồn từ nhiều biểu tượng văn hóa đại chúng và thường xuất hiện trong thời thơ ấu
                     của thế hệ Gen X, Gen Y. Bản chất chu kỳ của xu hướng thời trang Y2K là một quá trình phục hưng cái
                     cũ
@@ -74,7 +116,7 @@
                 <img src="/master/blog/img/feminine1.jpg" alt="" >
             </div>
             <div class="blog-dedtails">
-                <h4>Ai Bảo Nữ Tính Thì Không Thể Cá Tính</h4>
+                <h4 class="fe-box scroll-animation opacity-0" data-animation="feature">Ai Bảo Nữ Tính Thì Không Thể Cá Tính</h4>
                 <p>Tuy mang đến một vẻ ngoài năng động, tràn đầy sức sống nhưng những cô gái của chúng ta vẫn gửi gắm
                     trong từng outfit vẻ yểu điệu vốn có của phái đẹp qua chiếc khuyên tai, bộ nail và màu tóc với những
                     gam
@@ -90,7 +132,7 @@
                 <img src="/master/blog/img/cardigan.jpg" alt="" >
             </div>
             <div class="blog-dedtails">
-                <h4>Cardigan</h4>
+                <h4 class="fe-box scroll-animation opacity-0" data-animation="feature">Cardigan</h4>
                 <p>Cardigan không chỉ là một chiếc áo khoác đơn thuần mà còn là một item dễ dàng chiều lòng mọi phong
                     cách mà bạn đang hướng đến. Nhờ vào đặc tính linh hoạt, năng động, nổi bật mà cardigan dễ dàng chiếm
                     được nhiều tình cảm của GenZ.</p>
@@ -104,7 +146,7 @@
                 <img src="/master/blog/img/cach-bao-quan-quan-ao.jpg" alt="" >
             </div>
             <div class="blog-dedtails">
-                <h4>Bảo Quản Quần Áo</h4>
+                <h4 class="fe-box scroll-animation opacity-0" data-animation="feature">Bảo Quản Quần Áo</h4>
                 <p>Để luôn đảm bảo rằng những bộ quần áo yêu thích của bạn luôn giữ được form dáng, màu sắc cũng như các
                     chi tiết thiết kế thì hãy nhanh chóng ‘bỏ túi’ những tips dưới đây.</p>
                 <a
@@ -166,17 +208,19 @@
         <div class="col">
             <h4>My Account</h4>
             <a href="#">Sign In</a>
-            <a href="#">View Cart</a>
-            <a href="#">My Wishlist</a>
-            <a href="#">Track My Order</a>
-            <a href="#">Help</a>
+            <a href="../cart/cart.html">View Cart</a>
+            <a href="../aboutus/about.html">Help</a>
         </div>
         <div class="col install">
             <h4>Install App</h4>
-            <a href="#">From App Store or Google Play</a>
+            <p>From App Store or Google Play</p>
             <div class="row">
-                <img src="/master/img/pay/app.jpg" alt="">
-                <img src="/master/img/pay/play.jpg" alt="">
+                <a href="https://play.google.com/store/games?hl=vi&gl=US&pli=1">
+                    <img src="../img/pay/app.jpg" alt="">
+                  </a>
+                  <a href="https://www.apple.com/vn/app-store/">
+                    <img src="../img/pay/play.jpg" alt="">
+                  </a>
             </div>
             <p>Secured Payment Gateways</p>
             <img src="/master/img/pay/pay.png" alt="">
@@ -192,9 +236,13 @@
             <i class="fa-solid fa-arrow-up" title="Go to top"></i>
         </button>
     </div>
+      
+</body>
     <script src="/master/main/script.js"></script>
     <script src="https://kit.fontawesome.com/966a9482a5.js" crossorigin="anonymous"></script>
     <script>
+    const scrollbutton = document.getElementById("scollbutton");
+
         window.onscroll = () => {
             scroll();
         };
@@ -211,8 +259,39 @@
             window.scrollTo(0, 0);
 
         }
-
     </script>
-</body>
+    <script>
+        const inViewPort = (entries, observer) => {
+          entries.forEach((entry) => {
+            const animation = entry.target.dataset.animation.split(" ");
+            if (entry.isIntersecting) {
+              entry.target.classList.remove("opacity-0");
+              entry.target.classList.add(...animation);
+            } else {
+              entry.target.classList.add("opacity-0");
+              entry.target.classList.remove(...animation);
+            }
+          });
+        };
+      
+        const observer = new IntersectionObserver(inViewPort);
+        const observerOptions = {
+          root: null,
+          rootMargin: "0px",
+          threshold: 0.5,
+        };
+      
+        setTimeout(() => {
+          const elements = document.querySelectorAll(".scroll-animation");
+          elements.forEach((element) => {
+            observer.observe(element, {
+              root: element.dataset.root || null,
+              rootMargin: "0px",
+              threshold: element.dataset.threshold || 0.5,
+            });
+          });
+        }, 1000);
+      </script>
+      <script src="../main/main-navbar.js"> </script>
 
 </html>

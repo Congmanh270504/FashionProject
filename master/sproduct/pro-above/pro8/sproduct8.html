@@ -31,7 +31,7 @@
                     <a href="../../../contact/contact.html">Contact</a>
                 </li>
                 <li id="lg-bag">
-                    <a href="#"><i class="fa-brands fa-shopify"></i></a>
+                    <a href="../../../cart/cart.html"><i class="fa-brands fa-shopify"></i></a>
                 </li>
                 <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
             </ul>
@@ -66,8 +66,7 @@
                         class="small-img" id="fourth">
                 </div>
                 <div class="samm-img-col">
-                    <img src="/img/img_Edward/T-shirt/T-shirt_4/feedback/2.jpg" alt="" width="100%"
-                        class="small-img">
+                    <img src="/img/img_Edward/T-shirt/T-shirt_4/feedback/2.jpg" alt="" width="100%" class="small-img">
                 </div>
             </div>
         </div>
@@ -97,13 +96,13 @@
                     </li>
                     <b>
                         SẢN PHẨM ĐƯỢC GIA CÔNG HOÀN TOÀN TẠI VIỆT NAM.
-                      </b>
+                    </b>
                 </ul>
             </span>
         </div>
         <div class="comment-box">
             <div class="user">
-                <img src="/master/img/people/1.png" alt="" >
+                <img src="/master/img/people/1.png" alt="">
                 <div class="details">
                     <p><b class="user-name">customer</b> - Chất liệu như mô tả, vải tốt và giao hàng nhanh. </p>
                     <ul>
@@ -115,7 +114,7 @@
                 <i class="fa-solid fa-heart hidden"></i>
             </div>
             <div class="user">
-                <img src="/master/img/people/1.png" alt="" >
+                <img src="/master/img/people/1.png" alt="">
                 <div class="details">
                     <p><b class="user-name">customer</b> - Shop tư vấn tận tình, shipper thân thiện. </p>
                     <ul>
@@ -141,7 +140,7 @@
                 <i class="fa-solid fa-heart hidden"></i>
             </div>
             <div class="user">
-                <img src="/master/img/people/1.png" alt="" >
+                <img src="/master/img/people/1.png" alt="">
                 <div class="details">
                     <p><b class="user-name">customer</b> - Mình thấy vải hơi dày chỉ thích hợp mặc vào mùa đông.</p>
                     <ul>
@@ -329,49 +328,25 @@
     </div>
     <!-- 1:37:19 -->
     <script>
-        var mainimg = document.getElementById('main-img');
-        var samllimg = document.getElementsByClassName('small-img');
+        var mainimg = document.querySelector('.main-img');
+        var smallimg = document.querySelectorAll('.small-img');
 
-        samllimg[0].onclick = function () {
-            mainimg.src = samllimg[0].src;
-        }
-        samllimg[1].onclick = function () {
-            mainimg.src = samllimg[1].src;
-        }
-        samllimg[2].onclick = function () {
-            mainimg.src = samllimg[2].src;
-        }
-        samllimg[3].onclick = function () {
-            mainimg.src = samllimg[3].src;
-
-        }
-
-
-
-    </script>
-      <script>
-        const heart = document.querySelectorAll(".fa-regular.fa-heart");
-        const redheart = document.querySelectorAll(".fa-solid.fa-heart");
-        for (let i = 0; i < heart.length; i++) {
-            const hide = heart[i];
-            const appear = redheart[i];
-            hide.addEventListener("click", () => {
-                hide.classList.add("hidden");
-                appear.classList.remove("hidden");
-            }
-            );
-            appear.addEventListener("click", () => {
-                hide.classList.remove("hidden");
-                appear.classList.add("hidden");
-            }
-            );
-
-        }
+        smallimg.forEach((item) => {
+            item.addEventListener("click", () => {
+                const img = mainimg.querySelector("img:not(.hidden)");
+                img.src = item.src;
+            });
+        });
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.0.3/dist/index.min.js"></script>
     <script src="../../../main/script.js"></script>
+    <script src="../../../main/heart.js"></script>
+    <script src="../../../main/slide.js"></script>
+    <script src="../../../main/addcart.js"></script>
+    
     <script src="https://kit.fontawesome.com/966a9482a5.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
