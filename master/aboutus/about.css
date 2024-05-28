@@ -61,6 +61,10 @@ p {
     display: none;
 }
 
+.fa-brands.fa-facebook {
+    color: blue;
+}
+
 button.normal {
     font-size: 14px;
     font-weight: 600;
@@ -276,6 +280,35 @@ body {
         marquee {
             position: absolute;
             bottom: 0;
+            padding: 6px 5px;
+            letter-spacing: 7px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .follow {
+            display: flex;
+            position: absolute;
+            bottom: 50px;
+            left: 70px;
+            align-items: center;
+            width: 100%;
+
+            h4 {
+                color: #990011;
+            }
+
+            .icon {
+                i {
+                    margin-inline: 13px;
+                    font-size: 25px;
+                    cursor: pointer;
+                }
+
+                i:hover {
+                    color: #088178;
+                }
+            }
         }
 
     }
@@ -284,18 +317,6 @@ body {
 
 #about-app {
     text-align: center;
-
-    .video {
-        width: 70%;
-        height: 100%;
-        margin: 30px auto 0 auto;
-
-        video {
-            width: 100%;
-            height: 100%;
-            border-radius: 20px;
-        }
-    }
 }
 
 #feature {
@@ -413,7 +434,8 @@ body {
         width: 10em;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
-        padding: 14px 28px 12px;
+        height: 3.125em;
+        padding: 0 1.125em;
     }
 }
 
@@ -641,92 +663,125 @@ footer {
         background-position: top 30% right 30%;
     }
 
-    #news-letter .form {
-        width: 70%;
-
-        .normal {
-            padding: 5.8px 30px;
-        }
-    }
-}
-
-@media (max-width:477px) {
-    .section-p1 {
-        padding: 20px;
-    }
-
-    .header {
-
-        padding: 10px 30px;
-
-    }
-
-    .hero {
-        padding: 0 20px;
-        background-position: 55%;
-
-        h2 {
-            font-size: 32px;
-
-        }
-
-        h1 {
-            font-size: 38px;
-        }
-    }
-
     #about-head {
-        flex-direction: column;
+        & div {
+            h2 {
+                font-size: 40px;
+            }
 
-        img {
+            p {
+                top: 0px;
+                margin-bottom: 4em;
+            }
+
+            .follow {
+                bottom: 35px;
+                left: 0;
+                display: flex;
+
+                h4 {
+                    font-size: 17px;
+                    width: 100%;
+                }
+
+                .icon {
+                    width: 100%;
+                    display: contents;
+
+                    i {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        #news-letter .form {
+            width: 70%;
+
+            .normal {
+                padding: 5.8px 30px;
+            }
+        }
+    }
+
+    @media (max-width:477px) {
+        .section-p1 {
+            padding: 20px;
+        }
+
+        .header {
+
+            padding: 10px 30px;
+
+        }
+
+        .hero {
+            padding: 0 20px;
+            background-position: 55%;
+
+            h2 {
+                font-size: 32px;
+
+            }
+
+            h1 {
+                font-size: 38px;
+            }
+        }
+
+        #about-head {
+            flex-direction: column;
+
+            img {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                font-size: 40px;
+            }
+
+            div {
+                padding-left: 0px;
+            }
+
+
+        }
+
+        #about-app .video {
             width: 100%;
-            margin-bottom: 20px;
+
         }
 
-        h2 {
-            font-size: 40px;
+        #feature {
+            padding: 5px;
         }
 
-        div {
-            padding-left: 0px;
+        #news-letter {
+            padding: 40px 20px;
         }
 
+        #news-letter .form {
+            width: 100%;
 
-    }
-
-    #about-app .video {
-        width: 100%;
-
-    }
-
-    #feature {
-        padding: 5px;
-    }
-
-    #news-letter {
-        padding: 40px 20px;
-    }
-
-    #news-letter .form {
-        width: 100%;
-
-        .normal {
-            width: 47%;
-            padding: 13.9px 30px;
+            .normal {
+                width: 47%;
+                padding: 13.9px 30px;
+            }
         }
-    }
 
-    footer .row {
-        display: flex;
-        /* justify-content: space-between; */
-    }
+        footer .row {
+            display: flex;
+            /* justify-content: space-between; */
+        }
 
-    footer .install img {
-        margin: 10px 4px 15px 0;
-        align-self: center;
-    }
+        footer .install img {
+            margin: 10px 4px 15px 0;
+            align-self: center;
+        }
 
-    .copyright {
-        padding-top: 0;
+        .copyright {
+            padding-top: 0;
+        }
     }
 }

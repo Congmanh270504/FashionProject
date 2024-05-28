@@ -485,6 +485,22 @@ footer {
 
 }
 
+#scollbutton2 {
+    position: fixed;
+    bottom: 30px;
+    left: 10px;
+    color: white;
+
+    .normal {
+        border: 1px solid #615EFC;
+        background-color: #615EFC;
+        color: wheat;
+        border-radius: 40%;
+        padding: 10px 12px;
+        font-size: 20px;
+    }
+
+}
 @keyframes nav {
     from {
         left: 0;
