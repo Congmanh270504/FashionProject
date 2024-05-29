@@ -203,13 +203,14 @@ body {
         }
 
         button {
-           
+
             background: linear-gradient(to left, #088178 50%, white 50%) right;
             color: white;
             background-size: 200%;
             transition: .5s ease-out;
         }
-        button:hover{
+
+        button:hover {
             background-position: left;
             color: #088178;
             background-color: white;
@@ -225,11 +226,45 @@ body {
                     font-family: "Archivo", Times, serif;
                     font-size: 20px;
                     margin-top: 0.5em;
-                    b{
+
+                    b {
                         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                         font-size: medium;
                     }
                 }
+            }
+        }
+
+        .color {
+            display: flex;
+            font-size: 25px;
+            padding: 10px 0;
+
+            h4 {
+                font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+                font-size: large;
+                padding: 0 10px 0 0;
+            }
+
+            i {
+                position: relative;
+                margin: 0 10px;
+                padding-left: 3px;
+                cursor: pointer;
+            }
+
+            .fa-solid.fa-square.cwhite {
+                color: #E2DFD0;
+            }
+
+
+            .fa-solid.fa-square.cblue {
+                color: #00215E;
+            }
+
+
+            .fa-solid.fa-square.cbrown {
+                color: #A67B5B;
             }
         }
 
@@ -312,7 +347,8 @@ body {
             right: 12px;
             font-size: 20px;
         }
-        .fa-solid.fa-cart-shopping.cart:hover{
+
+        .fa-solid.fa-cart-shopping.cart:hover {
             color: #DD5746;
         }
     }
@@ -755,94 +791,94 @@ select::-ms-expand {
     }
   } */
 
-  .comment-box {
+.comment-box {
     border: 1px solid;
     border-radius: 10px;
     position: relative;
     margin-left: 150px;
 
     .user {
-      margin-bottom: 10px;
-      padding: 10px;
-      display: flex;
-      justify-content: space-between;
+        margin-bottom: 10px;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
 
-      img {
-        width: 1.5rem;
-        height: 1.5rem;
-      }
-
-      .details {
-        margin: 0px 20px;
-        border-bottom: 1px solid rgba(0, 0, 0, .09);
-
-        p {
-          margin: 0;
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        img {
+            width: 1.5rem;
+            height: 1.5rem;
         }
 
-        ul {
-          display: flex;
-          list-style: none;
+        .details {
+            margin: 0px 20px;
+            border-bottom: 1px solid rgba(0, 0, 0, .09);
 
-          li {
-            line-height: 1.6;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: gray;
-            margin-right: 10px;
-            font-size: small;
-          }
+            p {
+                margin: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            ul {
+                display: flex;
+                list-style: none;
+
+                li {
+                    line-height: 1.6;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    color: gray;
+                    margin-right: 10px;
+                    font-size: small;
+                }
+            }
         }
-      }
 
-      i {
-        margin-top: 5px;
-        cursor: pointer;
-      }
+        i {
+            margin-top: 5px;
+            cursor: pointer;
+        }
     }
 
     .comment {
-      position: absolute;
-      display: flex;
-      align-items: center;
-      left: 0;
-      bottom: 10px;
-      border-top: 1px solid #000;
-      width: 100%;
-      padding: 10px 5px 5px 10px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        left: 0;
+        bottom: 10px;
+        border-top: 1px solid #000;
+        width: 100%;
+        padding: 10px 5px 5px 10px;
 
-      i {
-        font-size: 20px;
-        margin-right: 10px;
-        cursor: pointer;
-        margin-bottom: 6px;
-      }
+        i {
+            font-size: 20px;
+            margin-right: 10px;
+            cursor: pointer;
+            margin-bottom: 6px;
+        }
 
-      textarea {
-        margin-top: 0;
-        padding-top: 10px;
-        border: none;
-        outline: none;
-        font-size: 16px;
-        width: 80%;
-        resize: none;
-        height: 40px;
+        textarea {
+            margin-top: 0;
+            padding-top: 10px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            width: 80%;
+            resize: none;
+            height: 40px;
 
-      }
+        }
 
-      .post {
-        font-family: "Spartan", sans-serif;
-        font-style: normal;
-        color: gray;
-        padding-top: 5px;
-      }
+        .post {
+            font-family: "Spartan", sans-serif;
+            font-style: normal;
+            color: gray;
+            padding-top: 5px;
+        }
 
-      .post:hover {
-        color: rgba(0, 149, 246, 1);
-      }
+        .post:hover {
+            color: rgba(0, 149, 246, 1);
+        }
     }
 
     .fa-solid.fa-heart {
-      color: #E72929;
+        color: #E72929;
     }
-  }
+}

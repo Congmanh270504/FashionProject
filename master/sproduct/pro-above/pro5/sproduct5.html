@@ -47,42 +47,104 @@
 
     <div id="prodetails" class="section-p1">
         <div class="single-pro-img">
-            <div class="main-img">
-                <img src="/img/img_Edward/T-shirt/T-shirt_1/img_product1/focus2.png" width="100%" id="main-img" alt="">
+            <div class="image" id="main-img">
+                <img class="white" src="/img/img_Edward/T-shirt/T-shirt_1/img_product1/focus2.png">
+                <img class="grey hidden" src="/img/img_Edward/T-shirt/T-shirt_1/color2/1.jpg">
+                <img class="blue hidden" src="/img/img_Edward/T-shirt/T-shirt_1/color3/1.jpg">
             </div>
 
-            <div class="small-img-grp">
-                <div class="samm-img-col">
-                    <img src="/img/img_Edward/T-shirt/T-shirt_1/img_product1/focus2.png" alt="" width="100%"
-                        class="small-img">
+            <div class="img-grp">
+
+                <div class="small-img-grp">
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/T-shirt/T-shirt_1/img_product1/focus2.png" alt="" width="100%"
+                            class="small-img">
+                    </div>
+
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/T-shirt/T-shirt_1/img_product1/focus1.jpg" alt="" width="100%"
+                            class="small-img">
+                    </div>
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/T-shirt/T-shirt_1/img_product1/focus4.png" alt="" width="100%"
+                            class="small-img">
+                    </div>
+
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/T-shirt/T-shirt_1/img_product1/focus5.jpg" alt="" width="100%"
+                            class="small-img" id="fourth">
+                    </div>
                 </div>
 
-                <div class="samm-img-col">
-                    <img src="/img/img_Edward/T-shirt/T-shirt_1/img_product1/focus1.jpg" alt="" width="100%"
-                        class="small-img">
-                </div>
-                <div class="samm-img-col">
-                    <img src="/img/img_Edward/T-shirt/T-shirt_1/img_product1/focus4.png" alt="" width="100%"
-                        class="small-img">
+                <!-- NEW -->
+                <div class="small-img-grp hidden">
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/T-shirt/T-shirt_1/color2/1.jpg" alt="" width="100%"
+                            class="small-img">
+                    </div>
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/T-shirt/T-shirt_1/color2/2.jpg" alt="" width="100%"
+                            class="small-img">
+                    </div>
+
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/T-shirt/T-shirt_1/color2/3.jpg" alt="" width="100%"
+                            class="small-img">
+                    </div>
+
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/T-shirt/T-shirt_1/color2/4.jpg" alt="" width="100%"
+                            class="small-img">
+                    </div>
                 </div>
 
-                <div class="samm-img-col">
-                    <img src="/img/img_Edward/T-shirt/T-shirt_1/img_product1/focus5.jpg" alt="" width="100%"
-                        class="small-img" id="fourth">
+                <!-- NEW -->
+                <div class="small-img-grp hidden">
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/T-shirt/T-shirt_1/color3/1.jpg" alt="" width="100%"
+                            class="small-img">
+                    </div>
+
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/T-shirt/T-shirt_1/color3/2.jpg" alt="" width="100%"
+                            class="small-img">
+                    </div>
+
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/T-shirt/T-shirt_1/color3/4.jpg" alt="" width="100%"
+                            class="small-img">
+                    </div>
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/T-shirt/T-shirt_1/color3/3.jpg" alt="" width="100%"
+                            class="small-img">
+                    </div>
                 </div>
+
+
             </div>
         </div>
-        <div class="singgle-pro-details">
+        <div class="single-pro-details">
             <h6>Home/Shirt</h6>
-            <h4>TEE V3.0 - Polka Red</h4>
+            <h4>TEE V3.0 - POLKA Red</h4>
             <h2>$50</h2>
-            <select name="" id="">
-                <option label="" hidden selected>Select Size</option>
-                <option value="">Size S</option>
-                <option value="">Size M</option>
-                <option value="">Size L</option>
-                <option value="">Size XL</option>
-            </select>
+
+            <div class="choose">
+                <select name="" id="first">
+                    <option hidden selected>Select Size</option>
+                    <option value="">Size S</option>
+                    <option value="">Size M</option>
+                    <option value="">Size L</option>
+                    <option value="">Size XL</option>
+                </select>
+                <select name="color" id="color">
+                    <option hidden select value="">Color</option>
+                    <option value="white">White</option>
+                    <option value="grey">Grey</option>
+                    <option value="blue">Blue</option>
+                </select>
+            </div>
+
+
             <input type="number" value="1" min="1">
             <button class="normal">Add To Cart</button>
             <h4>Mô tả sản phẩm:</h4>
@@ -422,14 +484,38 @@
     </div>
     </div>
     <script>
+        var mainimg = document.getElementById('main-img');
+        var samllimg = document.querySelectorAll('.samm-img-col img.small-img');
 
-        var mainimg = document.querySelector('.main-img');
-        var smallimg = document.querySelectorAll('.small-img');
-
-        smallimg.forEach((item) => {
+        samllimg.forEach((item, key) => {
             item.addEventListener("click", () => {
                 const img = mainimg.querySelector("img:not(.hidden)");
                 img.src = item.src;
+            });
+        });
+
+    </script>
+    <script>
+        const select = document.querySelector(".choose select#color");
+        select.addEventListener("change", () => {
+            const mainImg = document.querySelectorAll(".single-pro-img .image#main-img img");
+            const imgGrp = document.querySelectorAll(".img-grp .small-img-grp");
+            const selectedIndex = select.selectedIndex - 1;
+            mainImg.forEach((item, key) => {
+                if (key != selectedIndex) {
+                    item.classList.add("hidden");
+                }
+                else {
+                    item.classList.remove("hidden");
+                }
+            });
+            imgGrp.forEach((item, key) => {
+                if (key != selectedIndex) {
+                    item.classList.add("hidden");
+                }
+                else {
+                    item.classList.remove("hidden");
+                }
             });
         });
     </script>
