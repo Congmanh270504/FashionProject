@@ -96,6 +96,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    animation: bar 0.5s reverse;
 
     li {
         position: relative;
@@ -110,7 +114,36 @@ body {
             transform: 0.3s;
         }
     }
-
+    .search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid transparent;
+        background-color: white;
+        padding: 2px 10px;
+        border-radius: 10px;
+    
+        input {
+          padding: 0 1.125em;
+          font-size: 15px;
+          border: 1px solid transparent;
+          border-radius: 4px;
+          outline: none;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+          margin-right: 10px;
+          font-family: "Archivo", Times, serif;
+    
+        }
+    
+        i {
+          cursor: pointer;
+        }
+    
+        i:hover {
+          color: grey;
+        }
+      }
     a:hover,
     a.active {
         color: #088178;
@@ -129,9 +162,22 @@ body {
     }
 }
 
+
+#bar:hover {
+    color: #088178;
+
+}
+
+
 .mobile {
-    display: none;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+    a {
+        display: none;
+    }
 }
 
 #close {
@@ -243,7 +289,7 @@ body {
 
     .size {
         img {
-            width: 45%;
+            width: 38%;
             cursor: pointer;
         }
     }
@@ -371,15 +417,13 @@ body {
         padding-top: 20px;
         flex-wrap: wrap;
 
-        .mySwiper{
+        .mySwiper {
             padding: 0 1rem
         }
     }
 
     .pro {
         position: relative;
-        /* width: 23%; */
-        /* min-width: 250px; */
         max-width: 250px;
         padding: 10px 12px;
         border: 1px solid #cce7d0;
@@ -387,7 +431,6 @@ body {
         cursor: pointer;
         height: 100%;
         box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
-        /* margin: 15px 0; */
         transition: 0.2s ease;
 
         img {
@@ -605,6 +648,19 @@ select::-ms-expand {
     display: none;
 }
 
+.hidden {
+    display: none !important;
+}
+
+@keyframes bar {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(2em);
+    }
+}
 
 
 

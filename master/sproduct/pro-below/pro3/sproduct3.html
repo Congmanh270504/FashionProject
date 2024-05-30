@@ -14,35 +14,78 @@
 <body>
 
     <div class="header">
-        <a href="../../../main/index.html"><img src="/favicon/favicon-32x32.png" alt="" class="logo" /></a>
-        <div>
+        <a href="#"><img src="/favicon/favicon-32x32.png" alt="" class="logo" /></a>
+        <div class="main-navbar" data-animation="feature">
             <ul id="navbar">
-                <li><a href="../../../main/index.html">Home</a></li>
+                <li class="search">
+                    <input type="text">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </li>
+                <li><a class="active" href="index.html">Home</a></li>
                 <li>
-                    <a href="../../../shop/shop.html" class="active">Shop</a>
+                    <a href="../shop/shop.html">Shop</a>
                 </li>
                 <li>
-                    <a href="../../../blog/blog.html">Blog</a>
+                    <a href="../blog/blog.html">Blog</a>
                 </li>
                 <li>
-                    <a href="../../../aboutus/about.html">About us</a>
+                    <a href="../aboutus/about.html">About us</a>
                 </li>
                 <li>
-                    <a href="../../../contact/contact.html">Contact</a>
+                    <a href="../contact/contact.html">Contact</a>
                 </li>
                 <li id="lg-bag">
-                    <a href="#"><i class="fa-brands fa-shopify"></i></a>
+                    <a href="../cart/cart.html">
+                        <svg style="width: 16px;height: 16px;" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                            width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000">
+                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000"
+                                stroke="none">
+                                <path d="M2380 4835 c-175 -36 -312 -108 -444 -234 -185 -177 -271 -381 -283
+                -668 l-6 -143 -298 0 c-180 0 -319 -4 -351 -11 -152 -32 -264 -144 -297 -297
+                -15 -70 -16 -2824 -1 -2902 23 -122 100 -224 209 -278 l56 -27 1595 0 1595 0
+                57 28 c109 54 185 154 208 277 15 77 14 2832 -1 2902 -32 152 -144 264 -297
+                297 -32 7 -168 11 -351 11 l-298 0 -6 143 c-12 287 -98 491 -283 668 -136 129
+                -287 206 -468 238 -80 15 -256 12 -336 -4z m319 -320 c199 -47 371 -215 427
+                -415 8 -30 18 -112 21 -182 l6 -128 -593 0 -593 0 6 128 c3 70 13 152 21 182
+                56 200 226 367 424 414 76 19 203 19 281 1z m-1047 -1202 c3 -145 5 -161 27
+                -196 61 -99 193 -101 265 -3 19 24 22 46 26 189 l5 162 585 0 585 0 5 -162 c4
+                -143 7 -165 26 -189 72 -98 204 -96 265 3 22 35 24 51 27 196 l4 157 299 0
+                c286 0 300 -1 319 -20 20 -20 20 -33 20 -1418 0 -1249 -2 -1400 -16 -1420
+                l-15 -22 -1519 0 -1519 0 -15 22 c-14 20 -16 171 -16 1420 0 1385 0 1398 20
+                1418 19 19 33 20 319 20 l299 0 4 -157z" />
+                            </g>
+                        </svg>
+                    </a>
                 </li>
                 <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
             </ul>
         </div>
         <div class="mobile">
-            <!-- 3 que  -->
-            <a href="#"><i class="fa-brands fa-shopify"></i></a>
-            <!-- X -->
+            <a href="../cart/cart.html">
+                <svg style="width: 16px;height: 16px;" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                    width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000">
+                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000"
+                        stroke="none">
+                        <path d="M2380 4835 c-175 -36 -312 -108 -444 -234 -185 -177 -271 -381 -283
+                -668 l-6 -143 -298 0 c-180 0 -319 -4 -351 -11 -152 -32 -264 -144 -297 -297
+                -15 -70 -16 -2824 -1 -2902 23 -122 100 -224 209 -278 l56 -27 1595 0 1595 0
+                57 28 c109 54 185 154 208 277 15 77 14 2832 -1 2902 -32 152 -144 264 -297
+                297 -32 7 -168 11 -351 11 l-298 0 -6 143 c-12 287 -98 491 -283 668 -136 129
+                -287 206 -468 238 -80 15 -256 12 -336 -4z m319 -320 c199 -47 371 -215 427
+                -415 8 -30 18 -112 21 -182 l6 -128 -593 0 -593 0 6 128 c3 70 13 152 21 182
+                56 200 226 367 424 414 76 19 203 19 281 1z m-1047 -1202 c3 -145 5 -161 27
+                -196 61 -99 193 -101 265 -3 19 24 22 46 26 189 l5 162 585 0 585 0 5 -162 c4
+                -143 7 -165 26 -189 72 -98 204 -96 265 3 22 35 24 51 27 196 l4 157 299 0
+                c286 0 300 -1 319 -20 20 -20 20 -33 20 -1418 0 -1249 -2 -1400 -16 -1420
+                l-15 -22 -1519 0 -1519 0 -15 22 c-14 20 -16 171 -16 1420 0 1385 0 1398 20
+                1418 19 19 33 20 319 20 l299 0 4 -157z" />
+                    </g>
+                </svg>
+            </a>
             <i class="fa-solid fa-bars" id="bar"></i>
         </div>
     </div>
+
 
     <div id="prodetails" class="section-p1">
         <div class="single-pro-img">
@@ -336,62 +379,21 @@
     </div>
     <!-- 1:37:19 -->
     <script>
-        var mainimg = document.getElementById('main-img');
-        var samllimg = document.getElementsByClassName('small-img');
+        var mainimg = document.querySelector('.main-img');
+        var smallimg = document.querySelectorAll('.small-img');
 
-        samllimg[0].onclick = function () {
-            mainimg.src = samllimg[0].src;
-        }
-        samllimg[1].onclick = function () {
-            mainimg.src = samllimg[1].src;
-        }
-        samllimg[2].onclick = function () {
-            mainimg.src = samllimg[2].src;
-        }
-        samllimg[3].onclick = function () {
-            mainimg.src = samllimg[3].src;
-
-        }
-
-        // function myFunction(x) {
-        //     if (x.matches) { // If media query matches
-        //         samllimg[2].onclick = function () {
-        //             mainimg.src = samllimg[2].src;
-        //             mainimg.style.height = "32vh";
-        //         }
-        //     }
-        // }
-        // var x = window.matchMedia("(max-width:799px)")
-        // // Call listener function at run time
-        // myFunction(x);
-
-        // // Attach listener function on state changes
-        // x.addEventListener("change", function () {
-        //     myFunction(x);
-        // });
-
-        // function myFunction(y) {
-        //     if (y.matches) { // If media query matches
-        //         samllimg[2].onclick = function () {
-        //             mainimg.src = samllimg[2].src;
-        //             mainimg.style.height = "32vh";
-        //         }
-        //     }
-        // }
-        // var y = window.matchMedia("(max-width:477px)")
-        // // Call listener function at run time
-        // myFunction(y);
-
-        // // Attach listener function on state changes
-        // y.addEventListener("change", function () {
-        //     myFunction(y);
-        // });
-
-
-
-
+        smallimg.forEach((item) => {
+            item.addEventListener("click", () => {
+                const img = mainimg.querySelector("img:not(.hidden)");
+                img.src = item.src;
+            });
+        });
     </script>
     <script src="../../../main/script.js"></script>
+    <script src="../../../main/heart.js"></script>
+    <script src="../../../main/slide.js"></script>
+    <script src="../../../main/addcart.js"></script>
+    <script src="../../../main/main-navbar.js"></script>
     <script src="https://kit.fontawesome.com/966a9482a5.js" crossorigin="anonymous"></script>
 </body>
 

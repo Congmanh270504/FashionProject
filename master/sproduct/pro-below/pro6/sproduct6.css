@@ -86,6 +86,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    animation: bar 0.5s reverse;
 
     li {
         position: relative;
@@ -98,6 +102,37 @@ body {
             font-weight: 600;
             color: #1a1a1a;
             transform: 0.3s;
+        }
+    }
+
+    .search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid transparent;
+        background-color: white;
+        padding: 2px 10px;
+        border-radius: 10px;
+
+        input {
+            padding: 0 1.125em;
+            font-size: 15px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            outline: none;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            margin-right: 10px;
+            font-family: "Archivo", Times, serif;
+
+        }
+
+        i {
+            cursor: pointer;
+        }
+
+        i:hover {
+            color: grey;
         }
     }
 
@@ -120,8 +155,14 @@ body {
 }
 
 .mobile {
-    display: none;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+    a {
+        display: none;
+    }
 }
 
 #close {
@@ -208,7 +249,8 @@ body {
             background-size: 200%;
             transition: .5s ease-out;
         }
-        button:hover{
+
+        button:hover {
             background-position: left;
             color: #088178;
             background-color: white;
@@ -221,7 +263,15 @@ body {
 
             ul {
                 li {
+                    font-family: "Archivo", Times, serif;
+                    font-size: 20px;
                     margin-top: 0.5em;
+                    width: 90%;
+
+                    b {
+                        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                        font-size: medium;
+                    }
                 }
             }
         }
@@ -230,7 +280,7 @@ body {
             margin-top: 1em;
 
             img {
-                width: 100%;
+                width: 16em;
             }
         }
     }
@@ -305,7 +355,8 @@ body {
             right: 12px;
             font-size: 20px;
         }
-        .fa-solid.fa-cart-shopping.cart:hover{
+
+        .fa-solid.fa-cart-shopping.cart:hover {
             color: #DD5746;
         }
     }
@@ -465,8 +516,18 @@ select::-ms-expand {
 
 .hidden {
     display: none !important;
-  }
-  
+}
+
+@keyframes bar {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(2em);
+    }
+}
+
 /* ============================================================================= Media ===================================================================================== */
 @media (max-width:799px) {
     .section-p1 {
@@ -725,88 +786,88 @@ select::-ms-expand {
     margin-left: 150px;
 
     .user {
-      margin-bottom: 10px;
-      padding: 10px;
-      display: flex;
-      justify-content: space-between;
+        margin-bottom: 10px;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
 
-      img {
-        width: 1.5rem;
-        height: 1.5rem;
-      }
-
-      .details {
-        margin: 0px 20px;
-        border-bottom: 1px solid rgba(0, 0, 0, .09);
-
-        p {
-          margin: 0;
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        img {
+            width: 1.5rem;
+            height: 1.5rem;
         }
 
-        ul {
-          display: flex;
-          list-style: none;
+        .details {
+            margin: 0px 20px;
+            border-bottom: 1px solid rgba(0, 0, 0, .09);
 
-          li {
-            line-height: 1.6;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: gray;
-            margin-right: 10px;
-            font-size: small;
-          }
+            p {
+                margin: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            ul {
+                display: flex;
+                list-style: none;
+
+                li {
+                    line-height: 1.6;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    color: gray;
+                    margin-right: 10px;
+                    font-size: small;
+                }
+            }
         }
-      }
 
-      i {
-        margin-top: 5px;
-        cursor: pointer;
-      }
+        i {
+            margin-top: 5px;
+            cursor: pointer;
+        }
     }
 
     .comment {
-      position: absolute;
-      display: flex;
-      align-items: center;
-      left: 0;
-      bottom: 10px;
-      border-top: 1px solid #000;
-      width: 100%;
-      padding: 10px 5px 5px 10px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        left: 0;
+        bottom: 10px;
+        border-top: 1px solid #000;
+        width: 100%;
+        padding: 10px 5px 5px 10px;
 
-      i {
-        font-size: 20px;
-        margin-right: 10px;
-        cursor: pointer;
-        margin-bottom: 6px;
-      }
+        i {
+            font-size: 20px;
+            margin-right: 10px;
+            cursor: pointer;
+            margin-bottom: 6px;
+        }
 
-      textarea {
-        margin-top: 0;
-        padding-top: 10px;
-        border: none;
-        outline: none;
-        font-size: 16px;
-        width: 80%;
-        resize: none;
-        height: 40px;
+        textarea {
+            margin-top: 0;
+            padding-top: 10px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            width: 80%;
+            resize: none;
+            height: 40px;
 
-      }
+        }
 
-      .post {
-        font-family: "Spartan", sans-serif;
-        font-style: normal;
-        color: gray;
-        padding-top: 5px;
-      }
+        .post {
+            font-family: "Spartan", sans-serif;
+            font-style: normal;
+            color: gray;
+            padding-top: 5px;
+        }
 
-      .post:hover {
-        color: rgba(0, 149, 246, 1);
-      }
+        .post:hover {
+            color: rgba(0, 149, 246, 1);
+        }
     }
 
     .fa-solid.fa-heart {
-      color: #E72929;
+        color: #E72929;
     }
 
-  }
+}

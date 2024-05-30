@@ -101,7 +101,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  position: absolute;
+  top: 30px;
+  right: 100px;
+  animation: bar 0.5s reverse;
   li {
     position: relative;
     list-style: none;
@@ -115,7 +118,36 @@ body {
       transform: 0.3s;
     }
   }
+  .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    background-color: white;
+    padding: 2px 10px;
+    border-radius: 10px;
 
+    input {
+      padding: 0 1.125em;
+      font-size: 15px;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      outline: none;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      margin-right: 10px;
+      font-family: "Archivo", Times, serif;
+
+    }
+
+    i {
+      cursor: pointer;
+    }
+
+    i:hover {
+      color: grey;
+    }
+  }
   a:hover,
   a.active {
     color: #088178;
@@ -135,14 +167,19 @@ body {
 }
 
 .mobile {
-  display: none;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+
+  a {
+    display: none;
+  }
 }
 
 #close {
   display: none;
 }
-
 #prodetails {
   display: flex;
   margin-top: 20px;
@@ -236,7 +273,7 @@ body {
           font-family: "Archivo", Times, serif;
           font-size: 20px;
           margin-top: 0.5em;
-          width: 60%;
+          width: 90%;
 
           b {
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -284,7 +321,7 @@ body {
       margin-right: 1em;
 
       img {
-        width: 25.5em;
+        width: 21em;
       }
     }
   }
@@ -693,7 +730,15 @@ select::-ms-expand {
 .hidden {
   display: none !important;
 }
+@keyframes bar {
+  from {
+    transform: translateX(0);
+  }
 
+  to {
+    transform: translateX(2em);
+  }
+}
 /* ============================================================================= Media ===================================================================================== */
 @media (max-width: 799px) {
   .section-p1 {
