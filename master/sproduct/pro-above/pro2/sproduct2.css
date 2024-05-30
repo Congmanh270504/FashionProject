@@ -254,6 +254,7 @@ body {
     border-radius: 10px;
     position: relative;
     margin-bottom: 2em;
+    margin-left: 100px;
 
     .user {
         margin-bottom: 10px;

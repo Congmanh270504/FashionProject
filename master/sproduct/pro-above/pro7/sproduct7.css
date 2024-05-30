@@ -250,6 +250,7 @@ body {
         border: 1px solid;
         border-radius: 10px;
         position: relative;
+        margin-left: 100px;
 
         .user {
             margin-bottom: 10px;
@@ -333,6 +334,7 @@ body {
                 color: rgba(0, 149, 246, 1);
             }
         }
+
         .fa-solid.fa-heart {
             color: #E72929;
         }
