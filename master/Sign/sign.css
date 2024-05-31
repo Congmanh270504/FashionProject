@@ -1,5 +1,9 @@
+.hidden {
+    display: none !important;
+}
+
 .hero {
-    height: 80vh;
+    height: 700px;
 }
 
 form {
@@ -15,6 +19,7 @@ form {
     border: 2px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
     padding: 50px 35px;
+    margin: 5em 2px;
 
     * {
         font-family: 'Poppins', sans-serif;
@@ -52,22 +57,41 @@ form {
     }
 
     ::placeholder {
-        color: black;
+        color: #222831;
     }
 
-    button {
-        margin-top: 50px;
+    .password {
+        display: flex;
+        cursor: pointer;
+        position: relative;
+
+        i {
+            position: absolute;
+            right: 10px;
+            top: 25px;
+        }
+    }
+
+    button.normal {
+        background: linear-gradient(to left, #088178 50%, white 50%) right;
+        color: white;
+        margin-top: 40px;
         margin-left: 50px;
         width: 70%;
-        background-color: #ffffff;
-        color: #080710;
-        padding: 15px 0;
-        font-size: 18px;
-        font-weight: 600;
-        border-radius: 5px;
+        background-size: 200%;
+        transition: .5s ease-out;
+        padding: 14px 80px 16px 65px;
         cursor: pointer;
+        font-weight: 700;
+        font-size: 15px;
         font-family: 'Poppins', sans-serif;
-        text-align: center;
+
+    }
+
+    button:hover {
+        background-position: left;
+        color: #088178;
+        background-color: white;
     }
 
     .footer {
@@ -76,6 +100,34 @@ form {
         justify-content: space-between;
         font-size: 15px;
         margin-top: 1em;
+
+        a {
+            text-decoration: none;
+            position: relative;
+            margin-left: 2px;
+            color: black;
+        }
+
+        a:hover,
+        a.active {
+            color: #088178;
+        }
+
+
+        a.active::after,
+        a:hover::after {
+            content: "";
+            width: 100%;
+            height: 2px;
+            background: #088178;
+            position: absolute;
+            bottom: -4px;
+            left: 0px;
+            transition: 0.5s;
+            animation: footer 0.5s ease;
+        }
+
+
     }
 
 }
@@ -106,4 +158,57 @@ form {
 
 .social i {
     margin-right: 4px;
+}
+
+@keyframes footer {
+    from {
+        left: -10px;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@media (max-width:799px) {
+    form {
+        top: 40%;
+        margin: 0 2px;
+    }
+
+    .hero {
+        justify-content: end;
+        align-items: center;
+    }
+}
+
+@media (min-height:150px) {
+
+    form {
+        width: 100%;
+        margin: 5em 0;
+
+        input {
+            width: 90%;
+            margin-left: 2em;
+        }
+
+        label {
+            margin-left: 2em;
+
+        }
+
+        .footer {
+            flex-direction: column;
+            text-align: center;
+            .signUp{
+                margin-top: 0.5em;
+            }
+            button.normal{
+                padding: 13px 80px 13px 65px;
+            }
+        }
+
+    }
+
 }

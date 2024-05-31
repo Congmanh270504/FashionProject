@@ -14,14 +14,14 @@
 
 <body>
   <div class="header">
-    <a href="#"><img src="/favicon/favicon-32x32.png" alt="" class="logo" /></a>
+    <a href="../main/index.html"><img src="/favicon/favicon-32x32.png" alt="" class="logo" /></a>
     <div class="main-navbar" data-animation="feature">
       <ul id="navbar">
         <li class="search">
           <input type="text">
           <i class="fa-solid fa-magnifying-glass"></i>
         </li>
-        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="../main/index.html">Home</a></li>
         <li>
           <a href="../shop/shop.html">Shop</a>
         </li>
@@ -88,10 +88,8 @@
     <h4>Trade-in-offer</h4>
     <h2>Super value deals</h2>
     <h1>On all products</h1>
-    <p>Save more with coupons & up to 70% off!</p>
-    <a href="../shop/shop.html">
-      <button class="normal">Shop now</button>
-    </a>
+    <p>Sign in to see more about us</p>
+
   </div>
 
 
@@ -101,30 +99,46 @@
     <label for="username">Username</label>
     <input type="text" placeholder="Email or Username" id="username">
 
-    <label for="password">Password</label>
-    <input type="password" placeholder="Password" id="password">
+    <label for="password">Create Password</label>
+    <div class="password">
+      <input type="password" placeholder="Password" id="password">
+      <div class="eyes">
+        <i class="fa-regular fa-eye"></i>
+        <i class="fa-regular fa-eye-slash hidden"></i>
+      </div>
+    </div>
 
-    <button>Sign In</button>
+
+    <label for="password">Confirm Password</label>
+    <div class="password">
+      <input type="password" placeholder="Password" id="password">
+      <div class="eyes">
+        <i class="fa-regular fa-eye"></i>
+        <i class="fa-regular fa-eye-slash hidden"></i>
+      </div>
+    </div>
+
+    <button class="normal">Sign Up</button>
     <div class="social">
-      <div class="go"><i class="fab fa-google"></i>  Google</div>
-      <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+      <div class="go"><i class="fab fa-google"></i> Google</div>
+      <div class="fb"><i class="fab fa-facebook"></i> Facebook</div>
     </div>
 
-<div class="footer">
-    <div class="fpassword">
+    <div class="footer">
+      <div class="fpassword">
         Forgor Password? <a href="#">Click here</a>
+      </div>
+      <div class="signUp">
+        New User <a href="./signUp.html">Sign Up</a>
+      </div>
     </div>
-    <div class="signUp">
-        New User <a href="#">Sign Up</a>
-    </div>
-</div>
 
-</form>
-
-  
+  </form>
 
 
-  
+
+
+
 
 
   <footer class="section-p1">
@@ -239,5 +253,6 @@
     });
   }, 1000);
 </script>
-
+<script src="../main/script.js"></script>
+<script src="./sign.js"></script>
 </html>
