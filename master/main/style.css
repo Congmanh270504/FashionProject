@@ -195,6 +195,10 @@ body {
   a {
     display: none;
   }
+
+  i {
+    margin-top: 6px;
+  }
 }
 
 #close {
@@ -832,16 +836,13 @@ footer {
     a {
       display: block;
 
-      svg {
-        width: 30px !important;
-        height: 25px !important;
-      }
     }
 
     i {
       color: black;
       font-size: 24px;
       padding-left: 20px;
+      margin-bottom: 7px;
     }
   }
 

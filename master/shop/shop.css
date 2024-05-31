@@ -192,6 +192,10 @@ body {
     a {
         display: none;
     }
+
+    i {
+        margin-top: 6px;
+    }
 }
 
 #close {
@@ -590,10 +594,13 @@ footer {
                 height: 25px !important;
             }
         }
+
         i {
             color: black;
             font-size: 24px;
             padding-left: 20px;
+            margin-bottom: 7px;
+
         }
     }
 
@@ -604,19 +611,19 @@ footer {
 
     #navbar {
         .search {
-          margin-bottom: 1em;
-          padding: 2px 5px;
-          width: fit-content;
+            margin-bottom: 1em;
+            padding: 2px 5px;
+            width: fit-content;
         }
-      }
-    
-      #navbar {
+    }
+
+    #navbar {
         & .search {
-          input {
-            width: 100%;
-          }
+            input {
+                width: 100%;
+            }
         }
-      }
+    }
 
     .hero {
         height: 70vh;

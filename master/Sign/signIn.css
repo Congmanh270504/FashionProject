@@ -3,7 +3,11 @@
 }
 
 .hero {
-    height: 700px;
+    background: url(hero.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+
 }
 
 form {
@@ -152,12 +156,24 @@ form {
     background-color: rgba(255, 255, 255, 0.47);
 }
 
-.social .fb {
-    margin-left: 25px;
+.social h {
+    color: #080710;
+    align-self: center;
+
 }
 
-.social i {
-    margin-right: 4px;
+.social {
+
+    .go,
+    .fb {
+        cursor: pointer;
+
+    }
+}
+
+.social a {
+    text-decoration: none;
+
 }
 
 @keyframes footer {
@@ -182,14 +198,14 @@ form {
     }
 }
 
-@media (min-height:150px) {
+@media (max-width:477px) {
 
     form {
-        width: 100%;
         margin: 5em 0;
+        width: 100%;
 
         input {
-            width: 90%;
+            width: 274px;
             margin-left: 2em;
         }
 
@@ -198,17 +214,21 @@ form {
 
         }
 
+
         .footer {
             flex-direction: column;
             text-align: center;
-            .signUp{
+
+            .signUp {
                 margin-top: 0.5em;
             }
-            button.normal{
+
+            button.normal {
                 padding: 13px 80px 13px 65px;
             }
         }
 
     }
+
 
 }
