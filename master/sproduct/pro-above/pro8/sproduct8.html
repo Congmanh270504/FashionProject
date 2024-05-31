@@ -15,11 +15,15 @@
 
     <div class="header">
         <a href="../../../main/index.html"><img src="/favicon/favicon-32x32.png" alt="" class="logo" /></a>
-        <div>
+        <div class="main-navbar" data-animation="feature">
             <ul id="navbar">
-                <li><a href="../../../main/index.html">Home</a></li>
+                <li class="search">
+                    <input type="text">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </li>
+                <li><a class="active" href="../../../main/index.html">Home</a></li>
                 <li>
-                    <a href="../../../shop/shop.html" class="active">Shop</a>
+                    <a href="../../../shop/shop.html">Shop</a>
                 </li>
                 <li>
                     <a href="../../../blog/blog.html">Blog</a>
@@ -31,18 +35,57 @@
                     <a href="../../../contact/contact.html">Contact</a>
                 </li>
                 <li id="lg-bag">
-                    <a href="../../../cart/cart.html"><i class="fa-brands fa-shopify"></i></a>
+                    <a href="../../../cart/cart.html">
+                        <svg style="width: 16px;height: 16px;" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                            width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000">
+                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000"
+                                stroke="none">
+                                <path d="M2380 4835 c-175 -36 -312 -108 -444 -234 -185 -177 -271 -381 -283
+                -668 l-6 -143 -298 0 c-180 0 -319 -4 -351 -11 -152 -32 -264 -144 -297 -297
+                -15 -70 -16 -2824 -1 -2902 23 -122 100 -224 209 -278 l56 -27 1595 0 1595 0
+                57 28 c109 54 185 154 208 277 15 77 14 2832 -1 2902 -32 152 -144 264 -297
+                297 -32 7 -168 11 -351 11 l-298 0 -6 143 c-12 287 -98 491 -283 668 -136 129
+                -287 206 -468 238 -80 15 -256 12 -336 -4z m319 -320 c199 -47 371 -215 427
+                -415 8 -30 18 -112 21 -182 l6 -128 -593 0 -593 0 6 128 c3 70 13 152 21 182
+                56 200 226 367 424 414 76 19 203 19 281 1z m-1047 -1202 c3 -145 5 -161 27
+                -196 61 -99 193 -101 265 -3 19 24 22 46 26 189 l5 162 585 0 585 0 5 -162 c4
+                -143 7 -165 26 -189 72 -98 204 -96 265 3 22 35 24 51 27 196 l4 157 299 0
+                c286 0 300 -1 319 -20 20 -20 20 -33 20 -1418 0 -1249 -2 -1400 -16 -1420
+                l-15 -22 -1519 0 -1519 0 -15 22 c-14 20 -16 171 -16 1420 0 1385 0 1398 20
+                1418 19 19 33 20 319 20 l299 0 4 -157z" />
+                            </g>
+                        </svg>
+                    </a>
                 </li>
                 <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
             </ul>
         </div>
         <div class="mobile">
-            <!-- 3 que  -->
-            <a href="#"><i class="fa-brands fa-shopify"></i></a>
-            <!-- X -->
+            <a href="../../../cart/cart.html">
+                <svg style="width: 16px;height: 16px;" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                    width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000">
+                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000"
+                        stroke="none">
+                        <path d="M2380 4835 c-175 -36 -312 -108 -444 -234 -185 -177 -271 -381 -283
+                -668 l-6 -143 -298 0 c-180 0 -319 -4 -351 -11 -152 -32 -264 -144 -297 -297
+                -15 -70 -16 -2824 -1 -2902 23 -122 100 -224 209 -278 l56 -27 1595 0 1595 0
+                57 28 c109 54 185 154 208 277 15 77 14 2832 -1 2902 -32 152 -144 264 -297
+                297 -32 7 -168 11 -351 11 l-298 0 -6 143 c-12 287 -98 491 -283 668 -136 129
+                -287 206 -468 238 -80 15 -256 12 -336 -4z m319 -320 c199 -47 371 -215 427
+                -415 8 -30 18 -112 21 -182 l6 -128 -593 0 -593 0 6 128 c3 70 13 152 21 182
+                56 200 226 367 424 414 76 19 203 19 281 1z m-1047 -1202 c3 -145 5 -161 27
+                -196 61 -99 193 -101 265 -3 19 24 22 46 26 189 l5 162 585 0 585 0 5 -162 c4
+                -143 7 -165 26 -189 72 -98 204 -96 265 3 22 35 24 51 27 196 l4 157 299 0
+                c286 0 300 -1 319 -20 20 -20 20 -33 20 -1418 0 -1249 -2 -1400 -16 -1420
+                l-15 -22 -1519 0 -1519 0 -15 22 c-14 20 -16 171 -16 1420 0 1385 0 1398 20
+                1418 19 19 33 20 319 20 l299 0 4 -157z" />
+                    </g>
+                </svg>
+            </a>
             <i class="fa-solid fa-bars" id="bar"></i>
         </div>
     </div>
+
 
     <div id="prodetails" class="section-p1">
         <div class="single-pro-img">
@@ -70,20 +113,24 @@
                 </div>
             </div>
         </div>
-        <div class="singgle-pro-details">
+        <div class="single-pro-details">
             <h6>Home/Shirt</h6>
             <h4>MAT-CUP MEOW TEErl</h4>
             <h2>$19.8</h2>
-            <select name="" id="">
-                <option label="" hidden selected>Select Size</option>
-                <option value="">Size S</option>
-                <option value="">Size M</option>
-                <option value="">Size L</option>
-                <option value="">Size XL</option>
-            </select>
+
+            <div class="choose">
+                <select name="" id="first">
+                    <option hidden selected>Select Size</option>
+                    <option value="">Size S</option>
+                    <option value="">Size M</option>
+                    <option value="">Size L</option>
+                    <option value="">Size XL</option>
+                </select>
+               
+            </div>
             <input type="number" value="1" min="1">
             <button class="normal">Add To Cart</button>
-            <h4>MÔ TẢ SẢN PHẨM:</h4>
+            <h4>Mô tả sản phẩm:</h4>
             <span>
                 <ul>
                     <li><b>Chất liệu:</b> Cotton 250gsm.
@@ -93,12 +140,15 @@
                     </li>
                     <li>
                         Chi tiết hình in lụa kết hợp in cao su nổi, bo cổ áo dệt dày dặn.
-                    </li>
-                    <b>
+                    </li>                    <b>
                         SẢN PHẨM ĐƯỢC GIA CÔNG HOÀN TOÀN TẠI VIỆT NAM.
                     </b>
                 </ul>
             </span>
+            <div class="size">
+                <img src="/img/img_Edward/T-shirt/T-shirt_1/feedback/size1.jpg" alt="">
+                <img src="/img/img_Edward/T-shirt/T-shirt_1/feedback/size.jpg" alt="">
+            </div>
         </div>
         <div class="comment-box">
             <div class="user">
@@ -175,16 +225,18 @@
 
     <div id="product1" class="section-p1">
         <h2>
-            Similar Product</h2>
+            Similar Products</h2>
         <p>Summer Collection New Morden Design</p>
+        <button id="prev-slide" class="slide-button">
+            <i class="fa-solid fa-angle-left "></i>
+        </button>
         <div class="pro-contetner">
-            <div class="pro">
+            <div class="pro" onclick="window.location.href='../../../../sproduct/pro-above/pro1/sproduct1.html'">
                 <img src="/img/img_Edward/Shirt/Shirt_1/img_product1/focus1.jpg" alt="" />
-                <img class="image-hover" src="/img/img_Edward/Shirt/Shirt_1/img_product1/focus2.jpg" />
-
+                <img class="image-hover" src="/img/img_Edward/Shirt/Shirt_1/img_product1/focus4(index).jpg" />
                 <div class="description">
                     <span>E.T</span>
-                    <h5>Cartoon Astrornaut T-Shirts</h5>
+                    <h5>LIDERISM CUBAN SHIRT</h5>
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -192,20 +244,19 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <h4>$24,5đ</h4>
+                    <h4>$42,5</h4>
                 </div>
                 <a href="#">
                     <i class="fa-solid fa-cart-shopping cart"></i>
                 </a>
             </div>
-
-            <div class="pro">
-                <img src="/img/img_Edward/Shirt/Shirt_3/img_product3/focus1.png" alt="" />
-                <img class="image-hover" src="/img/img_Edward/Shirt/Shirt_3/img_product3/focus3.png" />
+            <div class="pro" onclick="window.location.href='../../../../sproduct/pro-above/pro2/sproduct2.html'">
+                <img src="/img/img_Edward/Shirt/Shirt_2/img_product2/focus1.png" alt="" />
+                <img class="image-hover" src="/img/img_Edward/Shirt/Shirt_2/img_product2/focus3(index).png" />
 
                 <div class="description">
                     <span>E.T</span>
-                    <h5>Cartoon Astrornaut T-Shirts</h5>
+                    <h5>EDWARD CROPPED POLO SWEATSHIRT - Pearl</h5>
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -213,19 +264,39 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <h4>$78</h4>
+                    <h4>$50 </h4>
                 </div>
                 <a href="#">
                     <i class="fa-solid fa-cart-shopping cart"></i>
                 </a>
             </div>
-
-            <div class="pro">
+            <div class="pro" onclick="window.location.href='../../../../sproduct/pro-above/pro4/sproduct4.html'">
+                <img src="/img/img_Edward/Shirt/Shirt_4/img_product4/4.jpg" alt="" />
+                <img src="/img/img_Edward/Shirt/Shirt_4/img_product4/1.jpg" alt="" class="image-hover" />
+                <div class="description">
+                    <span>E.T</span>
+                    <h5>AETHER RUFFLE SHIRT - WHITE</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$32</h4>
+                </div>
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping cart"></i>
+                </a>
+            </div>
+            <div class="pro" onclick="window.location.href='../../../../sproduct/pro-above/pro5/sproduct5.html'">
                 <img src="/img/img_Edward/T-shirt/T-shirt_1/img_product1/focus2.png" alt="" />
-                <img src="/img/img_Edward/T-shirt/T-shirt_1/img_product1/focus3.png" alt="" class="image-hover" />
+                <img src="/img/img_Edward/T-shirt/T-shirt_1/img_product1/focus1(index).png" alt=""
+                    class="image-hover" />
+
                 <div class="description">
                     <span>E.T</span>
-                    <h5>Cartoon Astrornaut T-Shirts</h5>
+                    <h5>TEE V3.0 - Polka Red</h5>
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -233,19 +304,38 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <h4>$78</h4>
+                    <h4>$50</h4>
                 </div>
                 <a href="#">
                     <i class="fa-solid fa-cart-shopping cart"></i>
                 </a>
             </div>
-
-            <div class="pro">
+            <div class="pro" onclick="window.location.href='../../../../sproduct/pro-above/pro6/sproduct6.html'">
+                <img src="/img/img_Edward/T-shirt/T-shirt_2/img_product2/focus2.png" alt="" />
+                <img src="/img/img_Edward/T-shirt/T-shirt_2/img_product2/focus1(index).jpg" alt=""
+                    class="image-hover" />
+                <div class="description">
+                    <span>E.T</span>
+                    <h5>INSIDE OUT LONG - SLEEVE TEE</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$55</h4>
+                </div>
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping cart"></i>
+                </a>
+            </div>
+            <div class="pro" onclick="window.location.href='../../../../sproduct/pro-above/pro7/sproduct7.html'">
                 <img src="/img/img_Edward/T-shirt/T-shirt_3/img_product3/focus3.png" alt="" />
-                <img src="/img/img_Edward/T-shirt/T-shirt_3/img_product3/focus2.png" alt="" class="image-hover" />
+                <img src="/img/img_Edward/T-shirt/T-shirt_3/img_product3/focus2.jpg" alt="" class="image-hover" />
                 <div class="description">
                     <span>E.T</span>
-                    <h5>Cartoon Astrornaut T-Shirts</h5>
+                    <h5>THEEIGHTH JERSEY T-SHIRT</h5>
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -253,13 +343,40 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <h4>$78</h4>
+                    <h4>$50</h4>
                 </div>
                 <a href="#">
                     <i class="fa-solid fa-cart-shopping cart"></i>
                 </a>
             </div>
-
+            <div class="pro" onclick="window.location.href='../../../../sproduct/pro-above/pro8/sproduct8.html'">
+                <img src="/img/img_Edward/T-shirt/T-shirt_4/img_product4/1.jpg" alt="" />
+                <img src="/img/img_Edward/T-shirt/T-shirt_4/img_product4/2.jpg" alt="" class="image-hover" />
+                <div class="description">
+                    <span>E.T</span>
+                    <h5>MAT-CUP MEOW TEE</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$19,8 <h class="sell">$35</h>
+                    </h4>
+                </div>
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping cart"></i>
+                </a>
+            </div>
+        </div>
+        <button id="next-slide" class="slide-button">
+            <i class="fa-solid fa-angle-right "></i>
+        </button>
+        <div class="slider-scrollbar">
+            <div class="scrollbar-track">
+                <div class="scrollbar-thumb"></div>
+            </div>
         </div>
     </div>
 
@@ -327,26 +444,78 @@
     </div>
     </div>
     <!-- 1:37:19 -->
-    <script>
-        var mainimg = document.querySelector('.main-img');
-        var smallimg = document.querySelectorAll('.small-img');
-
-        smallimg.forEach((item) => {
-            item.addEventListener("click", () => {
-                const img = mainimg.querySelector("img:not(.hidden)");
-                img.src = item.src;
-            });
-        });
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.0.3/dist/index.min.js"></script>
-    <script src="../../../main/script.js"></script>
-    <script src="../../../main/heart.js"></script>
-    <script src="../../../main/slide.js"></script>
-    <script src="../../../main/addcart.js"></script>
     
-    <script src="https://kit.fontawesome.com/966a9482a5.js" crossorigin="anonymous"></script>
-
 </body>
+   
+<script>
+
+    var mainimg = document.getElementById('main-img');
+    var samllimg = document.querySelectorAll('.samm-img-col img.small-img');
+
+    samllimg.forEach((item, key) => {
+        item.addEventListener("click", () => {
+            const img = mainimg.querySelector("img:not(.hidden)");
+            img.src = item.src;
+        });
+    });
+</script>
+
+<script>
+    function show() {
+        const text = document.getElementById('show').innerHTML;
+        var reveal = document.getElementById('reveal');
+        var hide = document.getElementById('hide');
+        const product = document.querySelector(".img#main-img .product");
+        const model = document.querySelector(".img#main-img .model");
+
+        if (text == 'Show model') {
+            document.getElementById('show').innerHTML = "Show product";
+            reveal.classList.add("hidden");
+            hide.classList.remove("hidden");
+            product.classList.add("hidden");
+            model.classList.remove("hidden");
+        }
+        else {
+            document.getElementById('show').innerHTML = "Show model";
+            reveal.classList.remove("hidden");
+            hide.classList.add("hidden");
+            product.classList.remove("hidden");
+            model.classList.add("hidden");
+        }
+
+    }
+</script>
+<script>
+    const select = document.querySelector(".choose select#color");
+    select.addEventListener("change", () => {
+        const mainImg = document.querySelectorAll(".single-pro-img .image#main-img img");
+        const imgGrp = document.querySelectorAll(".img-grp .small-img-grp");
+        const selectedIndex = select.selectedIndex - 1;
+        mainImg.forEach((item, key) => {
+            if (key != selectedIndex) {
+                item.classList.add("hidden");
+            }
+            else {
+                item.classList.remove("hidden");
+            }
+        });
+        imgGrp.forEach((item, key) => {
+            if (key != selectedIndex) {
+                item.classList.add("hidden");
+            }
+            else {
+                item.classList.remove("hidden");
+            }
+        });
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.0.3/dist/index.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> <!--slide-->
+<script src="../../../main/script.js"></script>
+<script src="../../../main/swiper.js"></script>
+<script src="../../../main/heart.js"></script>
+<script src="../../../main/main-navbar.js"></script>
+<script src="../../../main/slide.js"></script>
+<script src="https://kit.fontawesome.com/966a9482a5.js" crossorigin="anonymous"></script>
 
 </html>
