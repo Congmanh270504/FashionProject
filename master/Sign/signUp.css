@@ -1,6 +1,10 @@
 form {
     height: 90vh;
+    input{
+        border: 1px solid black;
+    }
 }
 .signUp {
     margin: auto;
+    color: black;
 }

@@ -170,14 +170,16 @@ form {
 
     .go,
     .fb {
+        border: 1px solid black;
         cursor: pointer;
-
+        i,a{
+            color: black;
+        }
     }
 }
 
 .social a {
     text-decoration: none;
-
 }
 
 @keyframes footer {
