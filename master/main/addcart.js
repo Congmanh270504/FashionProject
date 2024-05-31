@@ -4,18 +4,17 @@ const productName = document.querySelector(".productName");
 const price = document.querySelector(".price");
 const optionSize = document.querySelector("select#optionSize");
 const quantity = document.querySelector("#quantity");
-const color=document.querySelectorAll(".color i");
+const color = document.querySelector("#color");
 
 
 cart.addEventListener('click', () => {
     var currentSession = JSON.parse(localStorage.getItem("cart")) || { cart: [] };
     currentSession.cart.push({
-        img:smallimg[0].src,
+        img: smallimg[0].src,
         productName: productName.textContent,
         options: {
             size: optionSize.value,
-            color: null
-           
+            color: color ? color.value : null
         },
         price: price.textContent.replace("$", ""),
         quantity: parseInt(quantity.value)

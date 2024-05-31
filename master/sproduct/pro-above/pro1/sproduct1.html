@@ -141,30 +141,28 @@
         </div>
         <div class="singgle-pro-details">
             <h6>Home/Shirt</h6>
-            <h4>LIDERISM CUBAN SHIRT - Blush</h4>
-            <h2>$42.5</h2>
+            <h4 class="productName">LIDERISM CUBAN SHIRT - Blush</h4>
+            <h2 class="price">$42.5</h2>
             
             <div class="choose">
-                <select name="" id="first">
-                    <option hidden selected>Select Size</option>
-                    <option value="">Size S</option>
-                    <option value="">Size M</option>
-                    <option value="">Size L</option>
-                    <option value="">Size XL</option>
+                <select name="" id="optionSize">
+                    <option value="Size S">Size S</option>
+                    <option value="Size M">Size M</option>
+                    <option value="Size L">Size L</option>
+                    <option value="Size XL">Size XL</option>
                 </select>
                 <select name="color" id="color">
-                    <option hidden select value="">Color</option>
-                    <option value="pink">
+                    <option value="Pink">
                         Pink
                     </option>
-                    <option value="white">
+                    <option value="White">
                         White
                     </option>
                 </select>
             </div>
             
-            <input type="number" value="1" min="1">
-            <button class="normal">Add To Cart</button>
+            <input type="number" value="1" min="1" id="quantity">
+            <button class="normal cart">Add To Cart</button>
             <h4 id="description">MÔ TẢ SẢN PHẨM:</h4>
             <span>
                 <ul>
@@ -514,7 +512,7 @@
         select.addEventListener("change", () => {
             const mainImg = document.querySelectorAll(".single-pro-img .image#main-img img");
             const imgGrp = document.querySelectorAll(".img-grp .small-img-grp");
-            const selectedIndex = select.selectedIndex - 1;
+            const selectedIndex = select.selectedIndex;
             mainImg.forEach((item, key) => {
                 if (key != selectedIndex) {
                     item.classList.add("hidden");
@@ -538,6 +536,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.0.3/dist/index.min.js"></script>
     <script src="../../../main/script.js"></script>
     <script src="../../../main/heart.js"></script>
+    <script src="../../../../master/main/addcart.js"></script>
+
     <script src="https://kit.fontawesome.com/966a9482a5.js" crossorigin="anonymous"></script>
     <script src="../../../main/swiper.js"></script>
 </body>

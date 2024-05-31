@@ -9,7 +9,11 @@
     height: 100vh;
 
 }
-
+.mobile {
+    i {
+      margin-top: 5px;
+    }
+  }
 form {
     height: 520px;
     width: 450px;

@@ -107,17 +107,18 @@
         </div>
         <div class="singgle-pro-details">
             <h6>Home/Shirt</h6>
-            <h4>EDWARD CROPPED POLO SWEATSHIRT - Pearl</h4>
-            <h2>$50</h2>
-            <select name="" id="">
-                <option label="">Select Size</option>
-                <option value="">Size S</option>
-                <option value="">Size M</option>
-                <option value="">Size L</option>
-                <option value="">Size XL</option>
-            </select>
-            <input type="number" value="1" min="1">
-            <button class="normal">Add To Cart</button>
+            <h4 class="productName">EDWARD CROPPED POLO SWEATSHIRT - Pearl</h4>
+            <h2 class="price">$50</h2>
+            <div class="choose">
+                <select name="" id="optionSize">
+                    <option value="Size S">Size S</option>
+                    <option value="Size M">Size M</option>
+                    <option value="Size L">Size L</option>
+                    <option value="Size XL">Size XL</option>
+                </select>
+            </div>
+            <input type="number" value="1" min="1" id="quantity">
+            <button class="normal cart" >Add To Cart</button>
             <h4 id="description">MÔ TẢ SẢN PHẨM:</h4>
             <span>
                 <ul>
@@ -446,10 +447,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.0.3/dist/index.min.js"></script>
 
     <script src="../../../main/script.js"></script>
-    <script src="../../../main/swiper.js"></script>
     <script src="../../../main/heart.js"></script>
     <script src="../../../main/main-navbar.js"></script>
     <script src="../../../main/slide.js"></script>
+    <script src="../../../main/addcart.js"></script>
     <script src="https://kit.fontawesome.com/966a9482a5.js" crossorigin="anonymous"></script>
 </body>
 
