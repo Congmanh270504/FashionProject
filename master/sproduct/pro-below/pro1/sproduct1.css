@@ -332,6 +332,7 @@ body {
     border: 1px solid;
     border-radius: 10px;
     position: relative;
+    margin-left: 50px;
 
     .user {
       margin-bottom: 10px;

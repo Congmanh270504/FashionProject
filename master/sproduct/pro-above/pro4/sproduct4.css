@@ -281,11 +281,20 @@ body {
         }
     }
 
+<<<<<<< HEAD
     .comment-box {
         border: 1px solid;
         border-radius: 10px;
         position: relative;
         margin-left: 150px;
+=======
+.comment-box {
+    border: 1px solid;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 2em;
+    margin-left: 100px;
+>>>>>>> 8997c92b6777a40d87dc3249fe4a52ceb6e5bedf
 
         .user {
             margin-bottom: 10px;

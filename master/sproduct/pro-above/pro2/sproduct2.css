@@ -295,6 +295,7 @@ body {
             cursor: pointer;
         }
     }
+<<<<<<< HEAD
     .comment-box {
         border: 1px solid;
         border-radius: 10px;
@@ -312,6 +313,35 @@ body {
             img {
                 width: 1.5rem;
                 height: 1.5rem;
+=======
+}
+
+.comment-box {
+    border: 1px solid;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 2em;
+    margin-left: 100px;
+
+    .user {
+        margin-bottom: 10px;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .details {
+            margin: 0px 20px;
+            border-bottom: 1px solid rgba(0, 0, 0, .09);
+            width: 100%;
+            p {
+                margin: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+>>>>>>> 8997c92b6777a40d87dc3249fe4a52ceb6e5bedf
             }
     
     

@@ -310,7 +310,11 @@ body {
         border: 1px solid;
         border-radius: 10px;
         position: relative;
+<<<<<<< HEAD
         width: 20%;
+=======
+        margin-left: 100px;
+>>>>>>> 8997c92b6777a40d87dc3249fe4a52ceb6e5bedf
 
         .user {
             margin-bottom: 10px;
