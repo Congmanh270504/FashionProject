@@ -86,7 +86,7 @@
   </div>
 
   <div class="hero">
-  
+
   </div>
 
 
@@ -98,7 +98,7 @@
 
     <label for="password">Create Password</label>
     <div class="password">
-      <input type="password" placeholder="Password" id="password">
+      <input type="password" placeholder="Password" class="show">
       <div class="eyes">
         <i class="fa-regular fa-eye"></i>
         <i class="fa-regular fa-eye-slash hidden"></i>
@@ -108,7 +108,7 @@
 
     <label for="password">Confirm Password</label>
     <div class="password">
-      <input type="password" placeholder="Password" id="password">
+      <input type="password" placeholder="Password" class="show">
       <div class="eyes">
         <i class="fa-regular fa-eye"></i>
         <i class="fa-regular fa-eye-slash hidden"></i>
@@ -117,11 +117,12 @@
 
     <button class="normal">Sign Up</button>
     <div class="social">
-      <div class="go"><i class="fab fa-google"></i> 
-        <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Ftakeout.google.com%2F%3Fhl%3Dvi&followup=https%3A%2F%2Ftakeout.google.com%2F%3Fhl%3Dvi&hl=vi&ifkv=AS5LTAS2Ybh_IRNe0l63dosA2S-lI37H7gWgM7n7tWXHPof-UBJ75DJ7Ol-3kgRhRpGm7dAnW942aA&osid=1&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S889657055%3A1717154927332666&ddm=0">Google</a>
+      <div class="go"><i class="fab fa-google"></i>
+        <a
+          href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Ftakeout.google.com%2F%3Fhl%3Dvi&followup=https%3A%2F%2Ftakeout.google.com%2F%3Fhl%3Dvi&hl=vi&ifkv=AS5LTAS2Ybh_IRNe0l63dosA2S-lI37H7gWgM7n7tWXHPof-UBJ75DJ7Ol-3kgRhRpGm7dAnW942aA&osid=1&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S889657055%3A1717154927332666&ddm=0">Google</a>
       </div>
       <h>or</h>
-      <div class="fb"><i class="fab fa-facebook"></i> 
+      <div class="fb"><i class="fab fa-facebook"></i>
         <a href="https://www.facebook.com/?locale=vi_VN">Facebook</a>
       </div>
     </div>
@@ -252,7 +253,16 @@
     });
   }, 1000);
 </script>
+<script>
+  window.onload = () => {
+    if (sessionStorage.getItem("newsLetter-email")) {
+      document.querySelector("#username").value = sessionStorage.getItem("newsLetter-email");
+      sessionStorage.removeItem("newsLetter-email");
+    }
+  }
+</script>
 <script src="../main/script.js"></script>
 <script src="./sign.js"></script>
 <script src="../main/main-navbar.js"></script>
+
 </html>
