@@ -295,25 +295,6 @@ body {
             cursor: pointer;
         }
     }
-<<<<<<< HEAD
-    .comment-box {
-        border: 1px solid;
-        border-radius: 10px;
-        position: relative;
-        width: 22%;
-    
-        .user {
-            margin-bottom: 10px;
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-    
-    
-    
-            img {
-                width: 1.5rem;
-                height: 1.5rem;
-=======
 }
 
 .comment-box {
@@ -338,27 +319,27 @@ body {
             margin: 0px 20px;
             border-bottom: 1px solid rgba(0, 0, 0, .09);
             width: 100%;
+
             p {
                 margin: 0;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
->>>>>>> 8997c92b6777a40d87dc3249fe4a52ceb6e5bedf
             }
-    
-    
+
+
             .details {
                 margin: 0px 20px;
                 border-bottom: 1px solid rgba(0, 0, 0, .09);
                 width: 100%;
-    
+
                 p {
                     margin: 0;
                     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 }
-    
+
                 ul {
                     display: flex;
                     list-style: none;
-    
+
                     li {
                         line-height: 1.6;
                         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -368,17 +349,17 @@ body {
                     }
                 }
             }
-    
-    
-    
+
+
+
             i {
                 margin-top: 5px;
                 cursor: pointer;
             }
-    
-    
+
+
         }
-    
+
         .comment {
             position: absolute;
             display: flex;
@@ -388,14 +369,14 @@ body {
             border-top: 1px solid #000;
             width: 100%;
             padding: 10px 5px 5px 10px;
-    
+
             i {
                 font-size: 20px;
                 margin-right: 10px;
                 cursor: pointer;
                 margin-bottom: 6px;
             }
-    
+
             textarea {
                 margin-top: 0;
                 padding-top: 10px;
@@ -405,29 +386,29 @@ body {
                 width: 80%;
                 resize: none;
                 height: 40px;
-    
+
             }
-    
+
             .post {
                 font-family: "Spartan", sans-serif;
                 font-style: normal;
                 color: gray;
                 padding-top: 5px;
             }
-    
+
             .post:hover {
                 color: rgba(0, 149, 246, 1);
             }
         }
-    
+
         .user-name:hover {
             text-decoration: underline;
         }
-    
+
         .fa-solid.fa-heart {
             color: #E72929;
         }
-    
+
     }
 }
 
