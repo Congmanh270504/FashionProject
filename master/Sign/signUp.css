@@ -1,5 +1,5 @@
 form {
-    height: 90vh;
+    height: fit-content;
     input{
         border: 1px solid black;
     }

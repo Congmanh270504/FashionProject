@@ -19,8 +19,9 @@
         <li class="search">
           <input type="text">
           <i class="fa-solid fa-magnifying-glass"></i>
+          
         </li>
-        <li><a class="active" href="index.html">Home</a></li>
+        <li><a class="active" href="./index.html">Home</a></li>
         <li>
           <a href="../shop/shop.html">Shop</a>
         </li>
@@ -35,8 +36,8 @@
         </li>
         <li id="lg-bag">
           <a href="../cart/cart.html">
-            <svg style="width: 16px;height: 16px;" version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt"
-              height="512.000000pt" viewBox="0 0 512.000000 512.000000">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt"
+              viewBox="0 0 512.000000 512.000000">
               <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
                 <path d="M2380 4835 c-175 -36 -312 -108 -444 -234 -185 -177 -271 -381 -283
             -668 l-6 -143 -298 0 c-180 0 -319 -4 -351 -11 -152 -32 -264 -144 -297 -297
@@ -291,7 +292,7 @@
   <div id="banner" class="section-m1">
     <h4>Repair Services</h4>
     <h2>Up to <span>70% Off</span> - ALL Shirts & Accessories</h2>
-    <button class="normal">Explore More</button>
+    <button class="normal" onclick="window.location.href='../shop/shop.html'">Explore More</button>
   </div>
 
   <!-- below -->
@@ -527,8 +528,8 @@
     </div>
     <div class="col install">
       <h4>Install App</h4>
-      <p>From <a href="https://play.google.com/store/games?hl=vi&gl=US&pli=1">App Store</a> or <a
-          href="https://www.apple.com/vn/app-store/">Google Play</a></p>
+      <p>From App Store or
+        Google Play</p>
       <div class="row">
         <a href="https://play.google.com/store/games?hl=vi&gl=US&pli=1">
           <img src="../img/pay/app.jpg" alt="">
@@ -574,7 +575,8 @@
   }
 
 </script>
-<script src="signUp.js"></script>
+<script src="../main/signUp.js"></script>
+<script src="../main/search.js"></script>
 <script>
   const inViewPort = (entries, observer) => {
     entries.forEach((entry) => {

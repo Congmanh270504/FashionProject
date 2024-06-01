@@ -9,11 +9,13 @@
     height: 100vh;
 
 }
+
 .mobile {
     i {
-      margin-top: 5px;
+        margin-top: 5px;
     }
-  }
+}
+
 form {
     height: 520px;
     width: 450px;
@@ -42,6 +44,7 @@ form {
         font-weight: 500;
         line-height: 42px;
         text-align: center;
+        color: #080710;
     }
 
     label {
@@ -49,6 +52,8 @@ form {
         margin-top: 30px;
         font-size: 16px;
         font-weight: 500;
+        color: black;
+        font-weight: bolder;
     }
 
     input {
@@ -62,6 +67,7 @@ form {
         font-size: 14px;
         font-weight: 300;
         color: #080710;
+        border: 1px solid;
     }
 
     ::placeholder {
@@ -106,7 +112,7 @@ form {
         width: 100%;
         display: flex;
         justify-content: space-between;
-        font-size: 15px;
+        font-size: 13px;
         margin-top: 1em;
 
         a {
@@ -114,6 +120,12 @@ form {
             position: relative;
             margin-left: 2px;
             color: black;
+        }
+
+        .fpassword,
+        .signUp {
+            color: brown;
+
         }
 
         a:hover,
@@ -138,6 +150,15 @@ form {
 
     }
 
+}
+
+#forgot {
+    display: contents;
+
+    div {
+        margin-top: 1em;
+        text-align: center;
+    }
 }
 
 .social {
@@ -172,7 +193,9 @@ form {
     .fb {
         border: 1px solid black;
         cursor: pointer;
-        i,a{
+
+        i,
+        a {
             color: black;
         }
     }

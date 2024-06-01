@@ -105,6 +105,7 @@ body {
   top: 30px;
   right: 100px;
   animation: bar 0.5s reverse;
+
   li {
     position: relative;
     list-style: none;
@@ -118,6 +119,7 @@ body {
       transform: 0.3s;
     }
   }
+
   .search {
     display: flex;
     justify-content: center;
@@ -148,6 +150,7 @@ body {
       color: grey;
     }
   }
+
   a:hover,
   a.active {
     color: #088178;
@@ -175,11 +178,15 @@ body {
   a {
     display: none;
   }
+  i {
+    margin-top: 6px;
+  }
 }
 
 #close {
   display: none;
 }
+
 #prodetails {
   display: flex;
   margin-top: 20px;
@@ -273,7 +280,7 @@ body {
           font-family: "Archivo", Times, serif;
           font-size: 20px;
           margin-top: 0.5em;
-          width: 90%;
+          width: 80%;
 
           b {
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -301,7 +308,7 @@ body {
         cursor: pointer;
       }
 
-      .fa-solid.fa-square.cwhite {
+      .fa-solid.fa-square.cWhite {
         color: #E2DFD0;
       }
 
@@ -321,7 +328,7 @@ body {
       margin-right: 1em;
 
       img {
-        width: 21em;
+        width: 28.5em;
       }
     }
   }
@@ -331,6 +338,7 @@ body {
     border-radius: 10px;
     position: relative;
     margin-left: 50px;
+    width: 20%;
 
     .user {
       margin-bottom: 10px;
@@ -731,6 +739,7 @@ select::-ms-expand {
 .hidden {
   display: none !important;
 }
+
 @keyframes bar {
   from {
     transform: translateX(0);
@@ -740,10 +749,17 @@ select::-ms-expand {
     transform: translateX(2em);
   }
 }
+
 /* ============================================================================= Media ===================================================================================== */
-@media (max-width: 799px) {
+@media (max-width:799px) {
   .section-p1 {
-    padding: 40px 40px;
+    padding: 40px 30px;
+  }
+
+  #navbar {
+    .search {
+      margin-bottom: 1em;
+    }
   }
 
   #navbar {
@@ -788,6 +804,7 @@ select::-ms-expand {
       left: 30px;
       color: black;
       font-size: 20px;
+
     }
 
     #lg-bag {
@@ -803,10 +820,21 @@ select::-ms-expand {
     display: flex;
     align-items: center;
 
+    a {
+      display: block;
+      align-self: end;
+
+      svg {
+
+        margin-bottom: 7px;
+      }
+    }
+
     i {
       color: black;
       font-size: 24px;
       padding-left: 20px;
+      margin-bottom: 7px;
     }
   }
 
@@ -814,6 +842,74 @@ select::-ms-expand {
     height: 70vh;
     padding: 0 80px;
     background-position: top 30% right 30%;
+  }
+
+  #prodetails {
+    .single-pro-img {
+      width: 100%;
+      align-self: center;
+    }
+  }
+
+  #prodetails {
+    & .singgle-pro-details {
+      width: 100%;
+    }
+  }
+
+  #prodetails {
+    & .singgle-pro-details {
+      & .choose {
+        .normal {
+          width: 100px;
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  #prodetails {
+    & .singgle-pro-details {
+      button {
+        padding: 15px 20px;
+      }
+    }
+  }
+
+  #prodetails {
+    & .singgle-pro-details {
+      margin-right: 1em;
+
+      & .size {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  #prodetails {
+    & .singgle-pro-details {
+      & span {
+        & ul {
+          li {
+
+            margin-top: 0;
+            width: 80%;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+
+  #prodetails {
+    .comment-box {
+      width: 100%;
+      margin-left: 0;
+      overflow: scroll;
+      height: 100vh;
+    }
   }
 
   #feature {
@@ -830,35 +926,9 @@ select::-ms-expand {
     }
   }
 
-  #main-img {
-    height: 32.5vh;
-  }
 
   #prodetails .singgle-pro-details input {
     padding-right: 10px;
-  }
-
-  #prodetails {
-    & .singgle-pro-details {
-      & .size {
-        img {
-          width: 100%;
-        }
-      }
-    }
-  }
-
-  #prodetails {
-    & .singgle-pro-details {
-      & span {
-        & ul {
-          li {
-            width: 100%;
-            list-style: none;
-          }
-        }
-      }
-    }
   }
 
   #banner {
@@ -866,8 +936,10 @@ select::-ms-expand {
   }
 
   #sm-banner .banner-box {
+
     min-width: 100%;
     height: 30vh;
+
   }
 
   .banner3 {
@@ -882,7 +954,15 @@ select::-ms-expand {
     width: 70%;
 
     .normal {
-      padding: 13px 10px 14px;
+      height: 3.125em;
+      padding: 0 1.125em;
+      width: 120px;
+    }
+  }
+
+  #product1 {
+    button {
+      top: 60%;
     }
   }
 }
