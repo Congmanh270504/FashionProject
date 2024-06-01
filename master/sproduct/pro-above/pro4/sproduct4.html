@@ -88,42 +88,70 @@
 
     <div id="prodetails" class="section-p1">
         <div class="single-pro-img">
-            <div class="main-img">
-                <img src="/img/img_Edward/Shirt/Shirt_4/img_product4/4.jpg" width="100%" id="main-img" alt="">
+            <div class="img" id="main-img">
+                <img class="product" src="/img/img_Edward/Shirt/Shirt_4/img_product4/4.jpg" width="100%" id="main-img" alt="">
+                <img class="model hidden" src="/img/img_Edward/Shirt/Shirt_4/feedback/1.jpg" width="100%" id="main-img" alt="">
+            
             </div>
-
-            <div class="small-img-grp">
-                <div class="samm-img-col">
-                    <img src="/img/img_Edward/Shirt/Shirt_4/img_product4/4.jpg" alt="" width="100%" class="small-img">
+            <div class="img-grp">
+                <div class="small-img-grp" id="reveal">
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/Shirt/Shirt_4/img_product4/4.jpg" alt="" width="100%"
+                            class="small-img">
+                    </div>
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/Shirt/Shirt_4/img_product4/1.jpg" alt="" width="100%"
+                            class="small-img">
+                    </div>
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/Shirt/Shirt_4/img_product4/3.jpg" alt="" width="100%"
+                            class="small-img">
+                    </div>
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/Shirt/Shirt_4/img_product4/2.jpg" alt="" width="100%" class="small-img"
+                            id="fourth">
+                    </div>
                 </div>
-
-
-                <div class="samm-img-col">
-                    <img src="/img/img_Edward/Shirt/Shirt_4/img_product4/1.jpg" alt="" width="100%" class="small-img">
-                </div>
-                <div class="samm-img-col">
-                    <img src="/img/img_Edward/Shirt/Shirt_4/img_product4/3.jpg" alt="" width="100%" class="small-img">
-                </div>
-                <div class="samm-img-col">
-                    <img src="/img/img_Edward/Shirt/Shirt_4/feedback/1.jpg" alt="" width="100%" class="small-img"
-                        id="fourth">
+                  <div class="small-img-grp hidden" id="hide">
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/Shirt/Shirt_4/feedback/1.jpg" alt="" width="100%"
+                            class="small-img">
+                    </div>
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/Shirt/Shirt_4/feedback/2.png" alt="" width="100%"
+                            class="small-img">
+                    </div>
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/Shirt/Shirt_4/feedback/3.png" alt="" width="100%"
+                            class="small-img">
+                    </div>
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/Shirt/Shirt_4/feedback/4.png" alt="" width="100%" class="small-img"
+                            id="fourth">
+                    </div>
                 </div>
             </div>
         </div>
         <div class="singgle-pro-details">
             <h6>Home/Shirt</h6>
-            <h4>AETHER RUFFLE SHIRT - White</h4>
-            <h2>$32</h2>
-            <select name="" id="">
-                <option label="" hidden selected>Select Size</option>
-                <option value="">Size S</option>
-                <option value="">Size M</option>
-                <option value="">Size L</option>
-                <option value="">Size XL</option>
-            </select>
-            <input type="number" value="1">
-            <button class="normal">Add To Cart</button>
-            <h4>Mô tả sản phẩm</h4>
+            <h4 class="productName">AETHER RUFFLE SHIRT - White</h4>
+            <h2 class="price">$32</h2>
+            <div class="choose">
+                <select name="" id="optionSize">
+                    <option value="Size S">Size S</option>
+                    <option value="Size M">Size M</option>
+                    <option value="Size L">Size L</option>
+                    <option value="Size XL">Size XL</option>
+                </select>
+                <button class="normal" id="show" onclick="show()">Show model</button>
+                <select name="color" id="color" class="hidden">
+                    <option value="White">
+                    </option>
+                </select>
+            </div>
+            <input type="number" value="1" id="quantity">
+            <button class="normal cart">Add To Cart</button>
+            <h4 id="description">Mô tả sản phẩm</h4>
             <span>
                 <ul>
                     <li><b>Chất liệu:</b> Linen mỏng, nhẹ.</li>
@@ -462,10 +490,11 @@
 <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.0.3/dist/index.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> <!--slide-->
 <script src="../../../main/script.js"></script>
-<script src="../../../main/swiper.js"></script>
 <script src="../../../main/heart.js"></script>
 <script src="../../../main/main-navbar.js"></script>
 <script src="../../../main/slide.js"></script>
+<script src="../../../main/addcart.js"></script>
+
 <script src="https://kit.fontawesome.com/966a9482a5.js" crossorigin="anonymous"></script>
 
 </html>

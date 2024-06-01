@@ -382,7 +382,12 @@ body {
     .normal {
         padding: 0 10px;
         margin-left: 1em;
+        height: 27px;
     }
+}
+.choose #optionSize {
+    margin-right: 1em;
+    padding: 5px;
 }
 
 .hidden {

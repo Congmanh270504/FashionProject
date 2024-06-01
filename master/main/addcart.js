@@ -16,7 +16,7 @@ cart.addEventListener('click', () => {
         productName: productName.textContent,
         options: {
             size: optionSize.value,
-            color: color ? color.value : colorBtn ? colorBtn.className.split(" ").filter((str) => check.test(str))[0].substring(1) : null
+            color: color ? color.value : colorBtn ? colorBtn.className.split(" ").filter((str) => check.test(str))[0].substring(1) : ""
         },
         price: price.textContent.replace("$", ""),
         quantity: parseInt(quantity.value)

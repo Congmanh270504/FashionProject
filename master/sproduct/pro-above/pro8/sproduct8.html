@@ -89,48 +89,72 @@
 
     <div id="prodetails" class="section-p1">
         <div class="single-pro-img">
-            <div class="main-img">
-                <img src="/img/img_Edward/T-shirt/T-shirt_4/img_product4/1.jpg" width="100%" id="main-img" alt="">
+            <div class="img" id="main-img">
+                <img class="product" src="/img/img_Edward/T-shirt/T-shirt_4/img_product4/1.jpg" width="100%"
+                    id="main-img" alt="">
+                <img class="model hidden" src="/img/img_Edward/T-shirt/T-shirt_4/feedback/1.jpg" width="100%"
+                    id="main-img" alt="">
             </div>
-
-            <div class="small-img-grp">
-                <div class="samm-img-col">
-                    <img src="/img/img_Edward/T-shirt/T-shirt_4/img_product4/1.jpg" alt="" width="100%"
-                        class="small-img">
+            <div class="img-grp">
+                <div class="small-img-grp" id="reveal">
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/T-shirt/T-shirt_4/img_product4/1.jpg" alt="" width="100%"
+                            class="small-img">
+                    </div>
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/T-shirt/T-shirt_4/img_product4/2.jpg" alt="" width="100%"
+                            class="small-img">
+                    </div>
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/T-shirt/T-shirt_4/img_product4/3.jpg" alt="" width="100%"
+                            class="small-img">
+                    </div>
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/T-shirt/T-shirt_4/img_product4/5.jpg" alt="" width="100%"
+                            class="small-img" id="fourth">
+                    </div>
                 </div>
-
-
-                <div class="samm-img-col">
-                    <img src="/img/img_Edward/T-shirt/T-shirt_4/img_product4/3.jpg" alt="" width="100%"
-                        class="small-img">
-                </div>
-                <div class="samm-img-col">
-                    <img src="/img/img_Edward/T-shirt/T-shirt_4/img_product4/5.jpg" alt="" width="100%"
-                        class="small-img" id="fourth">
-                </div>
-                <div class="samm-img-col">
-                    <img src="/img/img_Edward/T-shirt/T-shirt_4/feedback/2.jpg" alt="" width="100%" class="small-img">
+                <div class="small-img-grp hidden" id="hide">
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/T-shirt/T-shirt_4/img_product4/1.jpg" alt="" width="100%"
+                            class="small-img">
+                    </div>
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/T-shirt/T-shirt_4/img_product4/3.jpg" alt="" width="100%"
+                            class="small-img">
+                    </div>
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/T-shirt/T-shirt_4/img_product4/5.jpg" alt="" width="100%"
+                            class="small-img" id="fourth">
+                    </div>
+                    <div class="samm-img-col">
+                        <img src="/img/img_Edward/T-shirt/T-shirt_4/feedback/2.jpg" alt="" width="100%"
+                            class="small-img">
+                    </div>
                 </div>
             </div>
         </div>
         <div class="single-pro-details">
             <h6>Home/Shirt</h6>
-            <h4>MAT-CUP MEOW TEE</h4>
-            <h2>$19.8</h2>
+            <h4 class="productName">MAT-CUP MEOW TEE</h4>
+            <h2 class="price">$19.8</h2>
 
             <div class="choose">
-                <select name="" id="first">
-                    <option hidden selected>Select Size</option>
-                    <option value="">Size S</option>
-                    <option value="">Size M</option>
-                    <option value="">Size L</option>
-                    <option value="">Size XL</option>
+                <select name="" id="optionSize">
+                    <option value="Size S">Size S</option>
+                    <option value="Size M">Size M</option>
+                    <option value="Size L">Size L</option>
+                    <option value="Size XL">Size XL</option>
                 </select>
-               
+                <button class="normal" id="show" onclick="show()">Show model</button>
+                <select name="color" id="color" class="hidden">
+                    <option value="White-Pink">
+                    </option>
+                </select>
             </div>
-            <input type="number" value="1" min="1">
-            <button class="normal">Add To Cart</button>
-            <h4>Mô tả sản phẩm:</h4>
+            <input type="number" value="1" min="1" id="quantity">
+            <button class="normal cart">Add To Cart</button>
+            <h4 id="description">Mô tả sản phẩm:</h4>
             <span>
                 <ul>
                     <li><b>Chất liệu:</b> Cotton 250gsm.
@@ -140,7 +164,7 @@
                     </li>
                     <li>
                         Chi tiết hình in lụa kết hợp in cao su nổi, bo cổ áo dệt dày dặn.
-                    </li>                    <b>
+                    </li> <b>
                         SẢN PHẨM ĐƯỢC GIA CÔNG HOÀN TOÀN TẠI VIỆT NAM.
                     </b>
                 </ul>
@@ -444,9 +468,9 @@
     </div>
     </div>
     <!-- 1:37:19 -->
-    
+
 </body>
-   
+
 <script>
 
     var mainimg = document.getElementById('main-img');
@@ -516,6 +540,7 @@
 <script src="../../../main/heart.js"></script>
 <script src="../../../main/main-navbar.js"></script>
 <script src="../../../main/slide.js"></script>
+<script src="../../../main/addcart.js"></script>
 <script src="https://kit.fontawesome.com/966a9482a5.js" crossorigin="anonymous"></script>
 
 </html>

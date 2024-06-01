@@ -247,7 +247,7 @@ body {
             display: flex;
         }
 
-        .choose #first {
+        .choose #optionSize {
             margin-right: 1em;
             padding: 5px;
         }
@@ -299,7 +299,7 @@ body {
 
         .size {
             img {
-                width: 60%;
+                width: 50%;
                 cursor: pointer;
             }
         }

@@ -156,7 +156,6 @@
             <h4 class="productName">OWL - OXFORD SHIRT </h4>
             <h2 class="price">$20</h2>
             <select name="" id="optionSize">
-                <option value="" hidden selected>Select Size</option>
                 <option value="Size S">Size S</option>
                 <option value="Size M">Size M</option>
                 <option value="Size L">Size L</option>
@@ -164,7 +163,7 @@
             </select>
             <div class="color">
                 <h4>Màu</h4>
-                <i class="fa-solid fa-square cwhite bordercolor"></i>
+                <i class="fa-solid fa-square cWhite bordercolor"></i>
                 <i class="fa-solid fa-square cblue"></i>
                 <i class="fa-solid fa-square cbrown"></i>
             </div>
@@ -499,15 +498,15 @@
         });
     </script>
     <script>
-        const cwhite = document.querySelector(".cwhite");
+        const cWhite = document.querySelector(".cWhite");
         const cbrown = document.querySelector(".cbrown");
         const cblue = document.querySelector(".cblue");
 
         var white = document.querySelectorAll(".white");
         var brown = document.querySelectorAll(".brown");
         var blue = document.querySelectorAll(".blue");
-        cwhite.addEventListener("click", () => {
-            cwhite.classList.add("bordercolor");
+        cWhite.addEventListener("click", () => {
+            cWhite.classList.add("bordercolor");
             cbrown.classList.remove("bordercolor");
             cblue.classList.remove("bordercolor");
 
@@ -524,7 +523,7 @@
 
         });
         cbrown.addEventListener("click", () => {
-            cwhite.classList.remove("bordercolor");
+            cWhite.classList.remove("bordercolor");
             cbrown.classList.add("bordercolor");
             cblue.classList.remove("bordercolor");
 
@@ -540,7 +539,7 @@
 
         });
         cblue.addEventListener("click", () => {
-            cwhite.classList.remove("bordercolor");
+            cWhite.classList.remove("bordercolor");
             cbrown.classList.remove("bordercolor");
             cblue.classList.add("bordercolor");
 

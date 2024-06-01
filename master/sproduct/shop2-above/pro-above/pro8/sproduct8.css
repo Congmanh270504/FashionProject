@@ -58,6 +58,7 @@ b {
 .section-m1 {
     margin: 40px 0;
 }
+
 .sell {
     color: gray;
     font-style: italic;
@@ -67,6 +68,7 @@ b {
     font-weight: bold;
     align-content: center;
 }
+
 button.normal {
     font-size: 14px;
     font-weight: 600;
@@ -118,6 +120,7 @@ body {
     top: 30px;
     right: 100px;
     animation: bar 0.5s reverse;
+
     li {
         position: relative;
         list-style: none;
@@ -131,6 +134,7 @@ body {
             transform: 0.3s;
         }
     }
+
     .search {
         display: flex;
         justify-content: center;
@@ -139,28 +143,29 @@ body {
         background-color: white;
         padding: 2px 10px;
         border-radius: 10px;
-    
+
         input {
-          padding: 0 1.125em;
-          font-size: 15px;
-          border: 1px solid transparent;
-          border-radius: 4px;
-          outline: none;
-          border-top-right-radius: 0;
-          border-bottom-right-radius: 0;
-          margin-right: 10px;
-          font-family: "Archivo", Times, serif;
-    
+            padding: 0 1.125em;
+            font-size: 15px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            outline: none;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            margin-right: 10px;
+            font-family: "Archivo", Times, serif;
+
         }
-    
+
         i {
-          cursor: pointer;
+            cursor: pointer;
         }
-    
+
         i:hover {
-          color: grey;
+            color: grey;
         }
-      }
+    }
+
     a:hover,
     a.active {
         color: #088178;
@@ -184,15 +189,15 @@ body {
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-  
+
     a {
-      display: none;
+        display: none;
     }
-  }
-  
-  #close {
+}
+
+#close {
     display: none;
-  }
+}
 
 #prodetails {
     display: flex;
@@ -218,6 +223,7 @@ body {
         width: 50%;
         padding-top: 30px;
         margin-right: 1.5em;
+
         h4 {
             padding: 30px 0 10px 0;
             font-weight: bold;
@@ -279,12 +285,15 @@ body {
                 }
             }
         }
+
         #description {
             font-family: "Archivo", Times, serif;
         }
+
         #sell {
             display: flex;
         }
+
         .size {
             img {
                 width: 50%;
@@ -302,8 +311,8 @@ body {
         border: 1px solid;
         border-radius: 10px;
         position: relative;
-        min-height: 90vh;
         margin-left: 70px;
+        width: 30%;
 
         .user {
             margin-bottom: 10px;
@@ -555,7 +564,7 @@ body {
             right: 12px;
             font-size: 20px;
         }
-        
+
     }
 
     .pro:hover {
@@ -716,15 +725,16 @@ select {
 select::-ms-expand {
     display: none;
 }
+
 @keyframes bar {
     from {
-      transform: translateX(0);
+        transform: translateX(0);
     }
-  
+
     to {
-      transform: translateX(2em);
+        transform: translateX(2em);
     }
-  }
+}
 
 /* ============================================================================= Media ===================================================================================== */
 @media (max-width:799px) {

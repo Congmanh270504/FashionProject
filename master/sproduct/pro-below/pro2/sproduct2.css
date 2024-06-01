@@ -243,7 +243,20 @@ body {
       padding: 5px 10px;
       margin-bottom: 10px;
     }
-
+    .choose {
+      display: flex;
+      margin-bottom: 1em;
+  
+      .normal {
+          padding: 0 10px;
+          margin-left: 1em;
+          height: 27px;
+      }
+  }
+  .choose #optionSize {
+      margin-right: 1em;
+      padding: 5px;
+  }
     input {
       width: 50px;
       height: 47px;
@@ -329,7 +342,7 @@ body {
       margin-right: 1em;
 
       img {
-        width: 27.5em;
+        width: 22em;
       }
     }
   }

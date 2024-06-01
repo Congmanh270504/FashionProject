@@ -126,7 +126,7 @@
                         <img src="/img/img_Edward/T-shirt/T-shirt_1/color2/3.jpg" alt="" width="100%" class="small-img">
                     </div>
                     <div class="samm-img-col">
-                        <img src="/img/img_Edward/T-shirt/T-shirt_1/color2/2 (1).jpg" alt="" width="100%" class="small-img">
+                        <img src="/img/img_Edward/T-shirt/T-shirt_1/color2/2.jpg" alt="" width="100%" class="small-img">
                     </div>
 
 
@@ -158,27 +158,25 @@
         </div>
         <div class="single-pro-details">
             <h6>Home/Shirt</h6>
-            <h4>TEE V3.0 - POLKA Red</h4>
-            <h2>$50</h2>
+            <h4 class="productName">TEE V3.0 - POLKA Red</h4>
+            <h2 class="price">$50</h2>
 
             <div class="choose">
-                <select name="" id="first">
-                    <option hidden selected>Select Size</option>
-                    <option value="">Size S</option>
-                    <option value="">Size M</option>
-                    <option value="">Size L</option>
-                    <option value="">Size XL</option>
+                <select name="" id="optionSize">
+                    <option value="Size S">Size S</option>
+                    <option value="Size M">Size M</option>
+                    <option value="Size L">Size L</option>
+                    <option value="Size XL">Size XL</option>
                 </select>
                 <select name="color" id="color">
-                    <option hidden select value="">Color</option>
-                    <option value="white">White</option>
-                    <option value="grey">Grey</option>
-                    <option value="blue">Blue</option>
+                    <option value="White">White</option>
+                    <option value="Grey">Grey</option>
+                    <option value="Blue">Blue</option>
                 </select>
             </div>
-            <input type="number" value="1" min="1">
-            <button class="normal">Add To Cart</button>
-            <h4>Mô tả sản phẩm:</h4>
+            <input type="number" value="1" min="1" id="quantity">
+            <button class="normal cart">Add To Cart</button>
+            <h4 id="description">Mô tả sản phẩm:</h4>
             <span>
                 <ul>
                     <li><b>Chất liệu:</b> Len gân.</li>
@@ -533,7 +531,7 @@
     select.addEventListener("change", () => {
         const mainImg = document.querySelectorAll(".single-pro-img .image#main-img img");
         const imgGrp = document.querySelectorAll(".img-grp .small-img-grp");
-        const selectedIndex = select.selectedIndex - 1;
+        const selectedIndex = select.selectedIndex;
         mainImg.forEach((item, key) => {
             if (key != selectedIndex) {
                 item.classList.add("hidden");
@@ -559,6 +557,7 @@
 <script src="../../../main/heart.js"></script>
 <script src="../../../main/main-navbar.js"></script>
 <script src="../../../main/slide.js"></script>
+<script src="../../../main/addcart.js"></script>
 <script src="https://kit.fontawesome.com/966a9482a5.js" crossorigin="anonymous"></script>
 
 </html>
