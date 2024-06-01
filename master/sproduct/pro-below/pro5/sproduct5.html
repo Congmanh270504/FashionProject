@@ -14,28 +14,28 @@
 <body>
 
     <div class="header">
-        <a href="#"><img src="/favicon/favicon-32x32.png" alt="" class="logo" /></a>
+        <a href="../../../main/index.html"><img src="/favicon/favicon-32x32.png" alt="" class="logo" /></a>
         <div class="main-navbar" data-animation="feature">
           <ul id="navbar">
             <li class="search">
               <input type="text">
               <i class="fa-solid fa-magnifying-glass"></i>
             </li>
-            <li><a class="active" href="index.html">Home</a></li>
+            <li><a  href="../../../main/index.html">Home</a></li>
             <li>
-              <a href="../shop/shop.html">Shop</a>
+              <a class="active" href="../../../shop/shop.html">Shop</a>
             </li>
             <li>
-              <a href="../blog/blog.html">Blog</a>
+              <a href="../../../blog/blog.html">Blog</a>
             </li>
             <li>
-              <a href="../aboutus/about.html">About us</a>
+              <a href="../../../aboutus/about.html">About us</a>
             </li>
             <li>
-              <a href="../contact/contact.html">Contact</a>
+              <a href="../../../contact/contact.html">Contact</a>
             </li>
             <li id="lg-bag">
-              <a href="../cart/cart.html">
+              <a href="../../../cart/cart.html">
                 <svg style="width: 16px;height: 16px;" version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt"
                   height="512.000000pt" viewBox="0 0 512.000000 512.000000">
                   <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
@@ -56,11 +56,16 @@
                 </svg>
               </a>
             </li>
+            <li>
+                <a href="../../../Sign/signIn.html">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+            </li>
             <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
           </ul>
         </div>
         <div class="mobile">
-          <a href="../cart/cart.html">
+          <a href="../../../cart/cart.html">
             <svg style="width: 16px;height: 16px;" version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt"
               height="512.000000pt" viewBox="0 0 512.000000 512.000000">
               <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
@@ -456,29 +461,30 @@
         </div>
         <div class="col">
             <h4>About</h4>
-            <a href="#">About us</a>
-            <a href="#">Delivery Information</a>
+            <a href="../../../aboutus/about.html">About us</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Terms & Conditions</a>
-            <a href="#">Contact Us</a>
+            <a href="../../../aboutus/about.html">Contact Us</a>
         </div>
         <div class="col">
             <h4>My Account</h4>
-            <a href="#">Sign In</a>
-            <a href="#">View Cart</a>
-            <a href="#">My Wishlist</a>
-            <a href="#">Track My Order</a>
-            <a href="#">Help</a>
+            <a href="../../../Sign/signIn.html">Sign In</a>
+            <a href="../../../cart/cart.html">View Cart</a>
+            <a href="../../../contact/contact.html">Help</a>
         </div>
         <div class="col install">
             <h4>Install App</h4>
-            <a href="#">From App Store or Google Play</a>
+            <a >From App Store or Google Play</a>
             <div class="row">
-                <img src="/img/pay/app.jpg" alt="">
-                <img src="/img/pay/play.jpg" alt="">
-            </div>
+                <a href="https://play.google.com/store/games?hl=vi&gl=US&pli=1">
+                  <img src="../../../img/pay/app.jpg" alt="">
+                </a>
+                <a href="https://www.apple.com/vn/app-store/">
+                  <img src="../../../img/pay/play.jpg" alt="">
+                </a>
+              </div>
             <p>Secured Payment Gateways</p>
-            <img src="/img/pay/pay.png" alt="">
+            <img src="../../../img/pay/pay.png" alt="">
         </div>
     </footer>
     <div class="section-p1 copyright">
@@ -562,6 +568,7 @@
     <script src="../../../main/slide.js"></script>
     <script src="../../../main/addcart.js"></script>
     <script src="../../../main/main-navbar.js"></script>
+    <script src="../../../main/signUp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> <!--slide-->
 
 </body>

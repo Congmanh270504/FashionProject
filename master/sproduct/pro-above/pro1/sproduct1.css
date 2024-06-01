@@ -295,7 +295,7 @@ body {
 
     .size {
         img {
-            width: 38%;
+            width: 16.5em;
             cursor: pointer;
         }
     }
@@ -679,6 +679,12 @@ select::-ms-expand {
     }
 
     #navbar {
+        .search {
+            margin-bottom: 1em;
+        }
+    }
+
+    #navbar {
         display: flex;
         flex-direction: column;
         align-items: start;
@@ -766,12 +772,14 @@ select::-ms-expand {
             width: 100%;
         }
     }
+
     #prodetails {
         .single-pro-img {
             width: 100%;
             align-self: center;
         }
     }
+
     .comment-box {
         width: 100%;
         margin-left: 0;
@@ -855,6 +863,12 @@ select::-ms-expand {
         padding: 20px;
     }
 
+    #navbar {
+        .search {
+            margin-bottom: 1em;
+        }
+    }
+
     .header {
 
         padding: 10px 30px;
@@ -895,6 +909,7 @@ select::-ms-expand {
         & .size {
             img {
                 width: 100%;
+                margin-bottom: 1em;
             }
         }
     }

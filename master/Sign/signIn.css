@@ -112,7 +112,7 @@ form {
         width: 100%;
         display: flex;
         justify-content: space-between;
-        font-size: 15px;
+        font-size: 13px;
         margin-top: 1em;
 
         a {
@@ -147,12 +147,18 @@ form {
             animation: footer 0.5s ease;
         }
 
-        
-        #forgot {
-            display: contents !important;
-        }
+
     }
-    
+
+}
+
+#forgot {
+    display: contents;
+
+    div {
+        margin-top: 1em;
+        text-align: center;
+    }
 }
 
 .social {

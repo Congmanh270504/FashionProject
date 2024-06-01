@@ -7,12 +7,14 @@ const color = document.querySelector("#color");
 
 
 cart.addEventListener('click', () => {
-    var smallimg = document.querySelectorAll('.small-img-grp:not(.hidden) .samm-img-col img.small-img');
+    var smallimg = document.querySelector('.small-img-grp:not(.hidden):not(.small-img-grp-model) .samm-img-col img.small-img');
+    const grpModel = document.querySelector(".small-img-grp-model:not(.hidden)");
     let colorBtn = document.querySelector(".color i.bordercolor");
     const check = /c([a-zA-Z]*)/g;
     var currentSession = JSON.parse(localStorage.getItem("cart")) || { cart: [] };
     currentSession.cart.push({
-        img: smallimg[0].src,
+        // img: smallimg[0].src,
+        img: grpModel !== null && smallimg === null ? document.querySelector('.small-img-grp.hidden .samm-img-col img.small-img').src : smallimg.src,
         productName: productName.textContent,
         options: {
             size: optionSize.value,

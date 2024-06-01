@@ -179,6 +179,9 @@ body {
     a {
         display: none;
     }
+    i {
+        margin-top: 6px;
+    }
 }
 
 #close {
@@ -291,7 +294,6 @@ body {
 
         span {
             line-height: 1.6;
-
             ul {
                 li {
                     font-family: "Archivo", Times, serif;
@@ -740,7 +742,11 @@ select::-ms-expand {
     .section-p1 {
         padding: 40px 30px;
     }
-
+    #navbar {
+        .search {
+          margin-bottom: 1em;
+        }
+      }
     #navbar {
         display: flex;
         flex-direction: column;
@@ -798,13 +804,24 @@ select::-ms-expand {
     .mobile {
         display: flex;
         align-items: center;
-
-        i {
-            color: black;
-            font-size: 24px;
-            padding-left: 20px;
+    
+        a {
+          display: block;
+          align-self: end;
+    
+          svg {
+    
+            margin-bottom: 7px;
+          }
         }
-    }
+    
+        i {
+          color: black;
+          font-size: 24px;
+          padding-left: 20px;
+          margin-bottom: 7px;
+        }
+      }
 
     .hero {
         height: 70vh;
@@ -857,6 +874,7 @@ select::-ms-expand {
             height: 100vh;
         }
     }
+  
     #feature {
         justify-content: center;
 
@@ -906,6 +924,11 @@ select::-ms-expand {
             width: 120px;
         }
     }
+    #product1 {
+        button {
+            top: 60%;
+        }
+    }
 }
 
 @media (max-width:500px) {
@@ -924,14 +947,18 @@ select::-ms-expand {
     #prodetails .singgle-pro-details input {
         margin-bottom: 0.5em;
     }
-
+  
 }
 
 @media (max-width:477px) {
     .section-p1 {
         padding: 20px;
     }
-
+    #navbar {
+        .search {
+          margin-bottom: 1em;
+        }
+      }
     .header {
 
         padding: 10px 30px;
@@ -1027,5 +1054,10 @@ select::-ms-expand {
     #prodetails .singgle-pro-details {
         width: 100%;
         padding-top: 20px;
+    }
+    #product1 {
+        button {
+            top: 60%;
+        }
     }
 }
