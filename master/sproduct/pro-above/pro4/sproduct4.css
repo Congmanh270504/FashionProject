@@ -97,7 +97,7 @@ body {
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 30px;
+    top: 25px;
     right: 100px;
     animation: bar 0.5s reverse;
 
@@ -112,7 +112,13 @@ body {
             font-weight: 600;
             color: #1a1a1a;
             transform: 0.3s;
+
+            svg {
+                width: 16px;
+                height: 16px;
+            }
         }
+
     }
 
     .search {
@@ -123,6 +129,61 @@ body {
         background-color: white;
         padding: 2px 10px;
         border-radius: 10px;
+        position: relative;
+
+        .searchResults {
+            position: absolute;
+            width: 100%;
+            background-color: white;
+            top: 2rem;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 8px 16px 0px rgba(51, 51, 51, 0.1607843137);
+            border-width: 1px;
+            max-height: 350px;
+            padding: 8px;
+            z-index: 1;
+
+            .itemImg {
+                width: 100px;
+                max-height: 100px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+            }
+
+            .itemContent {
+                margin-left: 1.5rem;
+                padding: 0.5rem 0;
+                width: 100%;
+
+                p {
+                    margin: 0;
+                    vertical-align: middle;
+                }
+
+                .money {
+                    margin-top: 5px;
+                }
+            }
+
+            .searchItem {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+
+            }
+
+            .searchItem:not(:last-child) {
+                margin-bottom: 10px;
+                border-bottom: 1px solid gray;
+            }
+        }
 
         input {
             padding: 0 1.125em;
@@ -134,7 +195,8 @@ body {
             border-bottom-right-radius: 0;
             margin-right: 10px;
             font-family: "Archivo", Times, serif;
-
+            width: 500px;
+            max-width: 450px;
         }
 
         i {
@@ -151,6 +213,7 @@ body {
         color: #088178;
     }
 
+
     a.active::after,
     a:hover::after {
         content: "";
@@ -161,6 +224,7 @@ body {
         bottom: -4px;
         left: 20px;
         transition: 0.5s;
+        animation: nav 0.5s ease;
     }
 }
 
@@ -182,7 +246,7 @@ body {
     }
 
     i {
-        margin-top: 6px;
+        margin-bottom: 4px;
     }
 }
 
@@ -288,13 +352,17 @@ body {
             b {
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                 font-size: 20px;
+
             }
 
             ul {
+                width: 80%;
+
                 li {
                     font-family: "Archivo", Times, serif;
                     font-size: 20px;
                     margin-top: 0.5em;
+
                 }
             }
         }
@@ -302,8 +370,12 @@ body {
 
     .size {
         img {
-            width: 38%;
+            width: 15em;
             cursor: pointer;
+            border: 1px solid gray;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+
         }
     }
 
@@ -311,7 +383,9 @@ body {
         border: 1px solid;
         border-radius: 10px;
         position: relative;
-        width: 22%;
+        margin-left: 20px;
+        width: 30%;
+        max-width: 40%;
 
         .user {
             margin-bottom: 10px;
@@ -738,11 +812,14 @@ select::-ms-expand {
     .section-p1 {
         padding: 40px 30px;
     }
+
     #navbar {
         .search {
-           margin-bottom: 1em ;
+            margin-bottom: 1em;
+            width: 100%;
         }
     }
+
     #navbar {
         display: flex;
         flex-direction: column;
@@ -824,26 +901,49 @@ select::-ms-expand {
         padding: 0 80px;
         background-position: top 30% right 30%;
     }
+
+    #prodetails {
+        & .single-pro-details {
+            input {
+                width: 50px;
+                height: 47px;
+                padding-left: 0;
+                font-size: 16px;
+                font-size: 16px;
+                margin-right: 10px;
+                text-align: center;
+            }
+        }
+    }
+
+    #prodetails {
+        & .single-pro-details {
+            width: 100%;
+        }
+    }
+
     #prodetails {
         & .singgle-pro-details {
             margin-right: 1em;
             width: 100%;
         }
     }
+
     #prodetails {
         .single-pro-img {
             width: 100%;
             align-self: center;
         }
     }
+
     #prodetails {
         .comment-box {
             width: 100%;
             margin-left: 0;
             overflow: scroll;
-            height: 100vh;
         }
     }
+
     #prodetails {
         & .singgle-pro-details {
             & .choose {
@@ -853,6 +953,7 @@ select::-ms-expand {
             }
         }
     }
+
     #prodetails {
         & .size {
             img {
@@ -861,55 +962,28 @@ select::-ms-expand {
             }
         }
     }
+
     #prodetails {
         & .singgle-pro-details {
-            button {
-                padding: 15px;
+            & .choose {
+                .normal {
+                    padding: 0 2px;
+                }
             }
         }
     }
-    #feature {
-        justify-content: center;
 
-        .fe-box {
-            margin: 15px 15px;
+    #prodetails {
+        & .singgle-pro-details {
+            button {
+                padding: 15px 25px;
+            }
         }
     }
 
-
-
-    #prodetails .singgle-pro-details input {
-        padding-right: 10px;
-    }
-
-    #banner {
-        height: 20vh;
-    }
-
-    #sm-banner .banner-box {
-
-        min-width: 100%;
-        height: 30vh;
-
-    }
-
-    #product1 swiper-slide {
-        margin-right: 7em !important;
-    }
-
-    .banner3 {
-        padding: 0 40px;
-
-        .banner-box {
-            width: 28%;
-        }
-    }
-
-    #news-letter .form {
-        width: 70%;
-
-        .normal {
-            padding: 13px 10px;
+    #news-letter {
+        .form {
+            width: 100%;
         }
     }
 }
@@ -919,15 +993,15 @@ select::-ms-expand {
     .section-p1 {
         padding: 20px;
     }
+
     #navbar {
         .search {
             margin-bottom: 1em;
         }
     }
+
     .header {
-
         padding: 10px 30px;
-
     }
 
     .hero {
@@ -956,18 +1030,12 @@ select::-ms-expand {
     #product1 .pro {
         width: 100%;
     }
-    #product1 {
-        button {
-            top: 60%;
-          
-        }
-    }
-
 
     #prodetails {
         & .size {
             img {
                 width: 100%;
+                margin-bottom: 1em;
             }
         }
     }
@@ -976,13 +1044,12 @@ select::-ms-expand {
         width: 100%;
     }
 
-
     #prodetails {
         .comment-box {
-           
-            width: 100%;
+            margin-left: 0px;
+            max-width: 100%;
+            margin-top: 2em;
             height: 100vh;
-
         }
     }
 

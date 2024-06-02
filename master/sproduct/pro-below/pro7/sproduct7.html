@@ -36,7 +36,7 @@
                     <a href="../../../contact/contact.html">Contact</a>
                 </li>
                 <li id="lg-bag">
-                    <a href="../cart/cart.html">
+                    <a href="../../../cart/cart.html">
                         <svg style="width: 16px;height: 16px;" version="1.0" xmlns="http://www.w3.org/2000/svg"
                             width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000">
                             <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000"
@@ -62,7 +62,7 @@
             </ul>
         </div>
         <div class="mobile">
-            <a href="../cart/cart.html">
+            <a href="../../../cart/cart.html">
                 <svg style="width: 16px;height: 16px;" version="1.0" xmlns="http://www.w3.org/2000/svg"
                     width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000">
                     <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000"
@@ -154,7 +154,7 @@
             </div>
 
 
-            <div class="small-img-grp pro hidden">
+            <div class="small-img-grp pro small-img-grp-model hidden ">
                 <div class="samm-img-col ">
                     <img src="../../../../img/img_Edward/Brand_Owl/product7/product7_feedback/2.jpg" alt="" width="100%"
                         class="small-img">
@@ -176,11 +176,10 @@
 
         <div class="singgle-pro-details">
             <h6>Home/Shirt</h6>
-            <h4>OWL - RUGBY SWEATSHIRT</h4>
-            <h2>$24.99</h2>
+            <h4 class="productName">OWL - RUGBY SWEATSHIRT</h4>
+            <h2 class="price">$24.99</h2>
             <div class="choose">
                 <select name="" id="optionSize">
-                    <option label="" hidden="" selected="" value="">Select Size</option>
                     <option value="Size S">Size S</option>
                     <option value="Size M">Size M</option>
                     <option value="Size L">Size L</option>
@@ -191,13 +190,13 @@
 
             <div class="color">
                 <h4>Màu</h4>
-                <i class="fa-solid fa-square cwhite bordercolor"></i>
-                <i class="fa-solid fa-square cblue"></i>
-                <i class="fa-solid fa-square cbrown"></i>
+                <i class="fa-solid fa-square cbrown bordercolor"></i>
+                <i class="fa-solid fa-square cmilk"></i>
+                <i class="fa-solid fa-square cgreen"></i>
             </div>
 
-            <input type="number" value="1" min="1">
-            <button class="normal">Add To Cart</button>
+            <input type="number" value="1" min="1" id="quantity">
+            <button class="normal cart">Add To Cart</button>
 
             <span>
                 <ul>
@@ -489,27 +488,28 @@
         </div>
         <div class="col">
             <h4>About</h4>
-            <a href="#">About us</a>
-            <a href="#">Delivery Information</a>
+            <a href="../../../aboutus/about.html">About us</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Terms & Conditions</a>
-            <a href="#">Contact Us</a>
+            <a href="../../../aboutus/about.html">Contact Us</a>
         </div>
         <div class="col">
             <h4>My Account</h4>
-            <a href="#">Sign In</a>
-            <a href="#">View Cart</a>
-            <a href="#">My Wishlist</a>
-            <a href="#">Track My Order</a>
-            <a href="#">Help</a>
+            <a href="../../../Sign/signIn.html">Sign In</a>
+            <a href="../../../cart/cart.html">View Cart</a>
+            <a href="../../../contact/contact.html">Help</a>
         </div>
         <div class="col install">
             <h4>Install App</h4>
             <a href="#">From App Store or Google Play</a>
             <div class="row">
-                <img src="../../../img/pay/app.jpg" alt="">
-                <img src="../../../img/pay/play.jpg" alt="">
-            </div>
+                <a href="https://play.google.com/store/games?hl=vi&gl=US&pli=1">
+                  <img src="../../../img/pay/app.jpg" alt="">
+                </a>
+                <a href="https://www.apple.com/vn/app-store/">
+                  <img src="../../../img/pay/play.jpg" alt="">
+                </a>
+              </div>
             <p>Secured Payment Gateways</p>
             <img src="../../../img/pay/pay.png" alt="">
         </div>
@@ -531,9 +531,9 @@
         });
     </script>
     <script>
-        const cwhite = document.querySelector(".cwhite");
         const cbrown = document.querySelector(".cbrown");
-        const cblue = document.querySelector(".cblue");
+        const cmilk = document.querySelector(".cmilk");
+        const cgreen = document.querySelector(".cgreen");
 
 
         var white = document.querySelectorAll(".white");
@@ -542,33 +542,16 @@
 
         const model = document.querySelector(".model");
         const pro = document.querySelector(".pro");
-        cwhite.addEventListener("click", () => {
-            cwhite.classList.add("bordercolor");
-            cbrown.classList.remove("bordercolor");
-            cblue.classList.remove("bordercolor");
-
-            white.forEach((item) => {
-                item.classList.remove("hidden");
-            });
-            brown.forEach((item) => {
-                item.classList.add("hidden");
-            });
-            blue.forEach((item) => {
-                item.classList.add("hidden");
-            });
-            model.classList.add("hidden");
-            pro.classList.add("hidden");
-        });
         cbrown.addEventListener("click", () => {
-            cwhite.classList.remove("bordercolor");
             cbrown.classList.add("bordercolor");
-            cblue.classList.remove("bordercolor");
+            cmilk.classList.remove("bordercolor");
+            cgreen.classList.remove("bordercolor");
 
             white.forEach((item) => {
-                item.classList.add("hidden");
+                item.classList.remove("hidden");
             });
             brown.forEach((item) => {
-                item.classList.remove("hidden");
+                item.classList.add("hidden");
             });
             blue.forEach((item) => {
                 item.classList.add("hidden");
@@ -576,10 +559,10 @@
             model.classList.add("hidden");
             pro.classList.add("hidden");
         });
-        cblue.addEventListener("click", () => {
-            cwhite.classList.remove("bordercolor");
+        cmilk.addEventListener("click", () => {
             cbrown.classList.remove("bordercolor");
-            cblue.classList.add("bordercolor");
+            cmilk.classList.add("bordercolor");
+            cgreen.classList.remove("bordercolor");
 
             white.forEach((item) => {
                 item.classList.add("hidden");
@@ -589,6 +572,23 @@
             });
             blue.forEach((item) => {
                 item.classList.remove("hidden");
+            });
+            model.classList.add("hidden");
+            pro.classList.add("hidden");
+        });
+        cgreen.addEventListener("click", () => {
+            cbrown.classList.remove("bordercolor");
+            cmilk.classList.remove("bordercolor");
+            cgreen.classList.add("bordercolor");
+
+            white.forEach((item) => {
+                item.classList.add("hidden");
+            });
+            brown.forEach((item) => {
+                item.classList.remove("hidden");
+            });
+            blue.forEach((item) => {
+                item.classList.add("hidden");
             });
             model.classList.add("hidden");
             pro.classList.add("hidden");
@@ -615,7 +615,7 @@
                 document.getElementById('show').innerHTML = "Show model";
                 model.classList.add("hidden");
                 pro.classList.add("hidden");
-                if (cwhite.classList.contains("bordercolor")) {
+                if (cbrown.classList.contains("bordercolor")) {
                     white.forEach((item) => {
                         item.classList.remove("hidden");
                     });
@@ -626,7 +626,7 @@
                         item.classList.add("hidden");
                     });
                 }
-                else if (cbrown.classList.contains("bordercolor")) {
+                else if (cmilk.classList.contains("bordercolor")) {
                     white.forEach((item) => {
                         item.classList.add("hidden");
                     });
@@ -656,6 +656,8 @@
     <script src="../../../main/slide.js"></script>
     <script src="../../../main/addcart.js"></script>
     <script src="../../../main/main-navbar.js"></script>
+    <script src="../../../main/signUp.js"></script>
+    <script src="../../../main/search.js"></script>
     
     <script src="https://kit.fontawesome.com/966a9482a5.js" crossorigin="anonymous"></script>
 </body>

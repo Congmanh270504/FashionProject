@@ -12,12 +12,6 @@ const searchData = [
     }
     ,
     {
-        name: "EDWARD CROPPED POLO SWEATSHIRT - Pearl",
-        img: "/img/img_Edward/Shirt/Shirt_2/img_product2/focus1.png",
-        url: "/master/sproduct/pro-above/pro2/sproduct2.html"
-    }
-    ,
-    {
         name: "NATHAN BLAZER",
         img: "/img/img_Edward/Shirt/Shirt_3/img_product3/focus1.png",
         url: "/master/sproduct/pro-above/pro3/sproduct3.html"
