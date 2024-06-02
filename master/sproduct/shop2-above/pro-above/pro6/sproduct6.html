@@ -14,16 +14,16 @@
 <body>
 
     <div class="header">
-        <a href="#"><img src="/favicon/favicon-32x32.png" alt="" class="logo" /></a>
+        <a href="../../../../main/index.html"><img src="/favicon/favicon-32x32.png" alt="" class="logo" /></a>
         <div class="main-navbar" data-animation="feature">
             <ul id="navbar">
                 <li class="search">
                     <input type="text">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </li>
-                <li><a class="active" href="index.html">Home</a></li>
+                <li><a  href="../../../../main/index.html">Home</a></li>
                 <li>
-                    <a href="../../../../shop/shop.html">Shop</a>
+                    <a class="active" href="../../../../shop/shop.html">Shop</a>
                 </li>
                 <li>
                     <a href="../../../../blog/blog.html">Blog</a>
@@ -55,6 +55,11 @@
                 1418 19 19 33 20 319 20 l299 0 4 -157z" />
                             </g>
                         </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../../../Sign/signIn.html">
+                        <i class="fa-regular fa-user"></i>
                     </a>
                 </li>
                 <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
@@ -141,6 +146,10 @@
                     <option value="Size M">Size M</option>
                     <option value="Size L">Size L</option>
                     <option value="Size XL">Size XL</option>
+                </select>
+                <select name="color" id="color" class="hidden">
+                    <option value="Gray">
+                    </option>
                 </select>
                 <button class="normal" id="show" onclick="show()">Show model</button>
             </div>
@@ -462,6 +471,7 @@
     <script src="../../../../main/addcart.js"></script>
     <script src="../../../../main/signUp.js"></script>
     <script src="../../../../main/search.js"></script>
+    <script src="../../../../main/signUp.js"></script>
     
     <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.0.3/dist/index.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> <!--slide-->

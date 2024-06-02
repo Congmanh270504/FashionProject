@@ -321,6 +321,11 @@ body {
     a {
         display: none;
     }
+
+    i {
+        margin-bottom: 4px;
+
+    }
 }
 
 #close {
@@ -790,85 +795,85 @@ footer {
             }
         }
     }
+}
 
-    @media (max-width:477px) {
-        .section-p1 {
-            padding: 20px;
-        }
+@media (max-width:477px) {
+    .section-p1 {
+        padding: 20px;
+    }
 
-        .header {
+    .header {
 
-            padding: 10px 30px;
+        padding: 10px 30px;
 
-        }
+    }
 
-        .hero {
-            padding: 0 20px;
-            background-position: 55%;
+    .hero {
+        padding: 0 20px;
+        background-position: 55%;
 
-            h2 {
-                font-size: 32px;
-
-            }
-
-            h1 {
-                font-size: 38px;
-            }
-        }
-
-        #about-head {
-            flex-direction: column;
-
-            img {
-                width: 100%;
-                margin-bottom: 20px;
-            }
-
-            h2 {
-                font-size: 40px;
-            }
-
-            div {
-                padding-left: 0px;
-            }
-
+        h2 {
+            font-size: 32px;
 
         }
 
-        #about-app .video {
+        h1 {
+            font-size: 38px;
+        }
+    }
+
+    #about-head {
+        flex-direction: column;
+
+        img {
             width: 100%;
-
+            margin-bottom: 20px;
         }
 
-        #feature {
-            padding: 5px;
+        h2 {
+            font-size: 40px;
         }
 
-        #news-letter {
-            padding: 40px 20px;
+        div {
+            padding-left: 0px;
         }
 
-        #news-letter .form {
-            width: 100%;
 
-            .normal {
-                width: 47%;
-                padding: 13.9px 30px;
-            }
-        }
+    }
 
-        footer .row {
-            display: flex;
-            /* justify-content: space-between; */
-        }
+    #about-app .video {
+        width: 100%;
 
-        footer .install img {
-            margin: 10px 4px 15px 0;
-            align-self: center;
-        }
+    }
 
-        .copyright {
-            padding-top: 0;
+    #feature {
+        padding: 5px;
+    }
+
+    #news-letter {
+        padding: 40px 20px;
+    }
+
+    #news-letter .form {
+        width: 100%;
+
+        .normal {
+            width: 47%;
+            padding: 13.9px 30px;
         }
+    }
+
+    footer .row {
+        display: flex;
+        /* justify-content: space-between; */
+    }
+
+    footer .install img {
+        margin: 10px 4px 15px 0;
+        align-self: center;
+    }
+
+    .copyright {
+        padding-top: 0;
     }
 }
