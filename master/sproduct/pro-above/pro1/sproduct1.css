@@ -79,6 +79,7 @@ button.white {
     margin: 3em 30%;
 }
 
+
 body {
     width: 100%;
 }
@@ -364,7 +365,6 @@ body {
 
     .size {
         margin-left: 2em;
-        position: relative;
 
         img {
             width: 15em;
@@ -380,7 +380,7 @@ body {
             right: 20px;
             cursor: pointer;
             color: white;
-            font-size:25px;
+            font-size: 25px;
         }
     }
 

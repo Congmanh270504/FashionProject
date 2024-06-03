@@ -58,7 +58,13 @@ b {
 .section-m1 {
     margin: 40px 0;
 }
-
+.sell {
+    color: gray;
+    font-style: italic;
+    text-decoration: line-through;
+    margin-left: 0.5em;
+    font-size: 20px;
+}
 button.normal {
     font-size: 14px;
     font-weight: 600;
@@ -310,7 +316,14 @@ body {
             font-size: 26px;
 
         }
-
+        .cost
+        {
+            display: flex;
+            .sell{
+                align-content: center;
+                margin-left: 1em;
+            }
+        }
         #description {
             font-family: "Archivo", Times, serif;
         }

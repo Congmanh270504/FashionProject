@@ -13,7 +13,6 @@ cart.addEventListener('click', () => {
     const check = /c([a-zA-Z]*)/g;
     var currentSession = JSON.parse(localStorage.getItem("cart")) || { cart: [] };
     currentSession.cart.push({
-        // img: smallimg[0].src,
         img: grpModel !== null && smallimg === null ? document.querySelector('.small-img-grp.hidden .samm-img-col img.small-img').src : smallimg.src,
         productName: productName.textContent,
         options: {

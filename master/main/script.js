@@ -32,22 +32,3 @@ icon[3].addEventListener("click", () => {
     window.location.href = 'https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwig6a6Kwb6GAxUzDXsHHe9vB9gYABAAGgJ0bQ&ase=2&gclid=Cj0KCQjwsPCyBhD4ARIsAPaaRf3_oyuCTjT5Kk0gCNINg22-dAALheRKGs86Wg2AZ52fnq5SWLe8-78aAq6SEALw_wcB&ohost=www.google.com&cid=CAESVuD2PnmiTkc7wC08zuUOrqmjcjojVX2DuLEgr746z6OEY9XmvptehHBKMLLLp4he2XqrwPzcLUuirWZTOR1BhUnk3v9i_nTsWM-o_LaoRYm8pAnKdpge&sig=AOD64_1Iht4VRa0A_y1v7zpDYG5oRLOeAg&q&nis=4&adurl&ved=2ahUKEwjg-aiKwb6GAxVRmq8BHcxHDEAQ0Qx6BAgGEAE';
 })
 
-const fullScreen = document.querySelector(".size");
-const img = document.querySelector(".size img");
-const x = document.querySelector(".size i");
-
-fullScreen.addEventListener("click", () => {
-    if (document.fullscreenElement) {
-        x.classList.remove("hidden");
-
-    }
-    else {
-        fullScreen.requestFullscreen();
-        img.classList.add("fullsrceen");
-
-    }
-});
-x.addEventListener("click", () => {
-    document.exitFullscreen();
-    img.classList.remove("fullsrceen");
-})

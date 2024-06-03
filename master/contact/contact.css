@@ -172,6 +172,8 @@ body {
 
                 .money {
                     margin-top: 5px;
+                    color: #088178;
+                    
                 }
             }
 
@@ -314,7 +316,7 @@ body {
             text-align: center;
             padding-top: 1rem;
             color: #555;
-
+            letter-spacing: 3px;
         }
         
         h4 {
