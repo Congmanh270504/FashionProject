@@ -391,14 +391,13 @@ body {
             }
 
             .icon {
-                i {
-                    margin-inline: 13px;
-                    font-size: 25px;
-                    cursor: pointer;
-                }
 
-                i:hover {
-                    color: #088178;
+                svg {
+                    width: 33px;
+                    height: 33px;
+                    align-items: center;
+                    margin-inline: 13px;
+                    cursor: pointer;
                 }
             }
         }
@@ -567,10 +566,11 @@ footer {
     .follow {
         margin-top: 20px;
         text-align: start;
-
-        i {
-            color: #465b52;
-            padding-right: 10px;
+        svg {
+            width: 33px;
+            height: 33px;
+            align-items: center;
+            margin-inline: 13px;
             cursor: pointer;
         }
     }

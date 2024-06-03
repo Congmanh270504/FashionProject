@@ -511,182 +511,175 @@ body {
 }
 
 #product1 {
+    text-align: center;
     overflow-x: hidden;
     text-align: center;
     position: relative;
-
+  
     .pro-contetner {
-        display: grid;
-        grid-template-columns: repeat(9, 1fr);
-        justify-content: space-between;
-        gap: 5em;
-        overflow-x: auto;
-        scrollbar-width: none;
-        padding-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(9, 1fr);
+      justify-content: space-between;
+      gap: 5em;
+      overflow-x: auto;
+      scrollbar-width: none;
+      padding-top: 20px;
     }
-
+  
     button {
-        cursor: pointer;
-        align-items: center;
-        font-size: 2.5em;
-        color: #041e42;
-        position: absolute;
-        top: 50%;
-        z-index: 5;
-        border-radius: 30px;
-        transform: translateY(-50%);
-
-
+      cursor: pointer;
+      align-items: center;
+      font-size: 2.5em;
+      color: #041e42;
+      position: absolute;
+      top: 50%;
+      z-index: 5;
+      border-radius: 30px;
+      transform: translateY(-50%);
+  
+  
     }
-
+  
     #prev-slide {
-        left: 1em;
+      left: 1em;
     }
-
+  
     #next-slide {
-        right: 1em;
+      right: 1em;
     }
-
+  
     .slider-scrollbar {
-        height: 24px;
-        width: 100%;
-        display: flex;
-        align-items: center;
+      height: 24px;
+      width: 100%;
+      display: flex;
+      align-items: center;
     }
-
+  
     .slider-scrollbar .scrollbar-track {
-        background: #ccc;
-        width: 100%;
-        height: 2px;
-        display: flex;
-        align-items: center;
-        border-radius: 4px;
-        position: relative;
+      background: #ccc;
+      width: 100%;
+      height: 2px;
+      display: flex;
+      align-items: center;
+      border-radius: 4px;
+      position: relative;
     }
-
+  
     .slider-scrollbar:hover .scrollbar-track {
-        height: 4px;
+      height: 4px;
     }
-
+  
     .slider-scrollbar .scrollbar-thumb {
-        position: absolute;
-        background: #000;
-        top: 0;
-        bottom: 0;
-        width: 50%;
-        height: 100%;
-        cursor: grab;
-        border-radius: inherit;
+      position: absolute;
+      background: #000;
+      top: 0;
+      bottom: 0;
+      width: 50%;
+      height: 100%;
+      cursor: grab;
+      border-radius: inherit;
     }
-
+  
     .slider-scrollbar .scrollbar-thumb:active {
-        cursor: grabbing;
-        height: 8px;
-        top: -2px;
+      cursor: grabbing;
+      height: 8px;
+      top: -2px;
     }
-
+  
     .slider-scrollbar .scrollbar-thumb::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: -10px;
-        bottom: -10px;
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -10px;
+      bottom: -10px;
     }
-
-
-
-
+  
     .pro {
-        position: relative;
-        width: 23%;
-        min-width: 300px;
-        padding: 10px 12px;
+      position: relative;
+      width: 23%;
+      min-width: 250px;
+      padding: 10px 12px;
+      border: 1px solid #cce7d0;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+      margin: 15px 0;
+      transition: 0.2s ease;
+  
+      img {
+        width: 100%;
+        border-radius: 20px;
+      }
+  
+      .description {
+        text-align: start;
+        padding: 10px 0;
+  
+        span {
+          color: #606063;
+          font-size: 12px;
+        }
+  
+        h5 {
+          padding-top: 7px;
+          color: #1a1a1a;
+          font-size: 14px;
+        }
+  
+        i {
+          font-size: 12px;
+          color: gold;
+        }
+  
+        h4 {
+          padding-top: 4px;
+          font-size: 15px;
+          font-weight: 700;
+          color: #088178;
+        }
+      }
+  
+      .fa-solid.fa-cart-shopping.cart {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50px;
+        background-color: #e8f6ea;
+        color: #088178;
         border: 1px solid #cce7d0;
-        border-radius: 25px;
-        cursor: pointer;
-        box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
-        margin: 15px 0;
-        margin-left: 4em;
-        transition: 0.2s ease;
-
-        img {
-            width: 100%;
-            border-radius: 20px;
-        }
-
-        .description {
-            text-align: start;
-            padding: 10px 0;
-
-            span {
-                color: #606063;
-                font-size: 12px;
-            }
-
-            h5 {
-                padding-top: 7px;
-                color: #1a1a1a;
-                font-size: 14px;
-            }
-
-            i {
-                font-size: 12px;
-                color: gold;
-            }
-
-            h4 {
-                padding-top: 4px;
-                font-size: 15px;
-                font-weight: 700;
-                color: #088178;
-            }
-
-        }
-
-        .fa-solid.fa-cart-shopping.cart {
-            width: 40px;
-            height: 40px;
-            line-height: 40px;
-            border-radius: 50px;
-            background-color: #e8f6ea;
-            color: #088178;
-            border: 1px solid #cce7d0;
-            position: absolute;
-            bottom: 20px;
-            right: 12px;
-            font-size: 20px;
-        }
-    }
-
-    .pro:hover {
-        box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
-    }
-
-    .image-hover {
         position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        padding: 10px 12px;
-        object-fit: contain;
-        opacity: 0;
-        transition: opacity .2s;
+        bottom: 20px;
+        right: 12px;
+        font-size: 20px;
+      }
+  
+      .fa-solid.fa-cart-shopping.cart:hover {
+        color: #E72929;
+      }
     }
-
+  
+    .pro:hover {
+      box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    }
+  
+  
+    .image-hover {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      padding: 10px 12px;
+      object-fit: contain;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+  
     .pro:hover .image-hover {
-        opacity: 1;
+      opacity: 1;
     }
-
-    .sell {
-        color: gray;
-        font-style: italic;
-        text-decoration: line-through;
-        margin-left: 1em;
-        font-size: 13px;
-    }
-}
+  }
 
 #news-letter {
     display: flex;

@@ -295,20 +295,33 @@ body {
 
     .details {
         width: 40%;
-
+        
         span {
             font-size: 12px;
         }
-
+        
         h2 {
             font-size: 26px;
             line-height: 1.6;
             padding: 20px 0;
+            color: #555;
+            
         }
-
+        
         h3 {
             font-size: 16px;
             padding-bottom: 15px;
+            text-align: center;
+            padding-top: 1rem;
+            color: #555;
+
+        }
+        
+        h4 {
+            color: #555;
+            i {
+                color: #C40C0C;
+            }
         }
 
         li {
@@ -319,6 +332,7 @@ body {
             i {
                 font-size: 14px;
                 padding-right: 22px;
+                color: #C40C0C;
             }
 
             p {
