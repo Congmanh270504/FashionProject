@@ -1,3 +1,4 @@
 {
-    "editor.guides.highlightActiveIndentation": "always"
+    "editor.guides.highlightActiveIndentation": "always",
+    "liveServer.settings.port": 5501
 }

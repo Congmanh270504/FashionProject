@@ -1,0 +1,280 @@
+#payment-header {
+    color: gray;
+    font-size: larger;
+    margin: 1em 0em 0em;
+}
+
+.color {
+    color: #A91D3A;
+}
+
+.content {
+
+    line-height: 1.6em;
+    width: fit-content;
+    margin: auto;
+    margin-top: 2em;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+
+    p {
+        font-size: x-large;
+        text-align: center;
+        color: #E78895;
+    }
+}
+
+.head {
+    display: flex;
+    justify-content: space-around;
+
+    input[type='radio'] {
+        accent-color: #A91D3A;
+    }
+
+    .home {}
+
+    .truck {
+        margin-right: 1em;
+    }
+
+    .truck,
+    .home {
+        text-align: center;
+        border: 1px solid #C7C8CC;
+        padding: 10px 12px;
+        background-color: transparent;
+        font-weight: bold;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .truck:hover,
+    .home:hover {
+        accent-color: #A91D3A;
+        border: 1px solid #A91D3A;
+        font-weight: bold;
+        color: #A91D3A;
+        transition-duration: 0.4s;
+    }
+}
+
+.item-1,
+.item-2,
+.item-3,
+.item-4 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    width: 100%;
+
+    form {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    legend {
+        color: gray;
+    }
+
+    fieldset {
+        width: 100%;
+    }
+
+    select {
+        outline: none;
+        border: none;
+        font-size: medium;
+        background-color: transparent;
+    }
+
+    input {
+        border: none;
+        outline: none;
+        width: 95%;
+        height: 3vh;
+    }
+
+    .must {
+        color: #A91D3A;
+        font-size: small;
+    }
+
+    .first {
+        margin-right: 1em;
+
+    }
+
+}
+
+.item-4 {
+    fieldset {
+        width: 100%;
+    }
+}
+
+.check {
+    #checkbox {
+        width: 2em;
+        height: 1.4em;
+        accent-color: #A91D3A;
+    }
+
+    h {
+        font-size: large;
+        margin-inline: 5px;
+    }
+}
+
+.comment {
+    fieldset {
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    legend {
+        color: gray;
+    }
+
+    textarea {
+        border: none;
+        outline: none;
+        width: 95%;
+        height: 10vh;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+.payment {
+    display: flex;
+
+    .devery,
+    .atm,
+    .credit-card {
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 1em 2em 0.5em;
+        accent-color: #A91D3A;
+
+        label {
+            color: gray;
+        }
+    }
+
+    i {
+        color: #A91D3A;
+    }
+
+    .devery:hover,
+    .atm:hover,
+    .credit-card:hover {
+        border: 1px solid #A91D3A;
+        border-radius: 10px;
+
+        i {
+            color: #A91D3A;
+        }
+    }
+
+    .devery:checked,
+    .atm:checked,
+    .credit-card:checked {
+        border: 1px solid #A91D3A;
+        border-radius: 4px;
+
+        i {
+            color: #A91D3A;
+        }
+    }
+}
+
+.accept-1,
+.accept-2,
+.accept-3 {
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin: 0.5em;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    margin-left: 0px;
+    margin-bottom: 1em;
+
+    input[type='checkbox'] {
+        accent-color: #A91D3A;
+        width: 2em;
+        height: 1.4em;
+        border: 2px solid #A91D3A;
+        border-radius: 10px;
+
+    }
+
+}
+
+.accept-1:hover,
+.accept-2:hover,
+.accept-3:hover {
+    border: 2px solid red;
+    border-radius: 10px;
+    transition-duration: 1s;
+}
+
+.pay {
+    text-align: center;
+    margin: 1em 0;
+
+}
+
+button {
+    background: linear-gradient(to left, #088178 50%, white 50%) right;
+    color: white !important;
+    background-size: 200%;
+    transition: .5s ease-out;
+    padding: 14px 80px 14px 65px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+button:hover {
+    background-position: left;
+    color: #088178 !important;
+    border: 1px solid;
+    background-color: white;
+}
+
+#scollbutton{
+    .normal{
+        border: none;
+    }
+}
+
+footer {
+    margin-top: 3em;
+    border-top: 2px solid #088178;
+
+}
+
+@media (max-width:477px) {
+    .content {
+        width: 100%;
+    }
+
+    .payment {
+        flex-direction: column;
+        .devery, .atm, .credit-card {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+        }
+    }
+
+}

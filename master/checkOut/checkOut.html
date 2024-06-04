@@ -9,7 +9,7 @@
     <title>F A S H I O N </title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link rel="stylesheet" href="../aboutus/about.css" />
-    <link rel="stylesheet" href="./cart.css" />
+    <link rel="stylesheet" href="./checkOut.css">
 </head>
 
 <body>
@@ -17,7 +17,6 @@
     <div class="header">
         <a href="../main/index.html"><img src="../../favicon/favicon-32x32.png" alt="" class="logo" /></a>
         <div class="main-navbar" data-animation="feature">
-
             <ul id="navbar">
                 <li class="search">
                     <input type="text">
@@ -31,11 +30,11 @@
                     <a href="../blog/blog.html">Blog</a>
                 </li>
                 <li>
-                    <a href="../aboutus/about.html">About
+                    <a href="../aboutus/about.html" class="active">About
                         us</a>
                 </li>
                 <li>
-                    <a href="../contact/contact.html ">Contact</a>
+                    <a href="../contact/contact.html">Contact</a>
                 </li>
                 <li id="lg-bag">
                     <a href="../cart/cart.html">
@@ -96,65 +95,151 @@
         </div>
     </div>
 
-    <div class="hero">
-        <h2>#Your Cart</h2>
-        <p>Cart</p>
-    </div>
-
-    <div id="cart" class="section-p1">
-        <table width="100%">
-            <thead>
-                <tr>
-                    <td>Remove</td>
-                    <td>Img</td>
-                    <td>Product</td>
-                    <td>Size</td>
-                    <td>Color</td>
-                    <td>Price</td>
-                    <td>Quantity</td>
-                    <td>Subtotal</td>
-                </tr>
-            </thead>
-            <tbody class="main-cart">
-
-            </tbody>
-        </table>
-    </div>
-    <div id="cart-add" class="section-p1">
-        <div class="coupon">
-            <h3>Apply Voucher</h3>
-            <div class="link-cupton">
-                <input type="text" placeholder="Enter your Voucher" class="voucher">
-                <button class="normal voucher-btn">Apply</button>
+    <div class="content">
+        <p>Chọn địa chỉ nhận hàng </p>
+        <div class="head">
+            <div class="truck color">
+                <i class="fa-solid fa-truck-fast"></i>
+                <label for="truck"> NHẬN HÀNG TẠI NHÀ</label>
+                <input type="radio" name="recipients" id="" checked>
+            </div>
+            <div class="home">
+                <i class="fa-solid fa-house"></i>
+                <label for="truck"> NHẬN HÀNG TẠI TRUNG TÂM</label>
+                <input type="radio" name="recipients" id="">
             </div>
         </div>
-        <div class="subtotal">
-            <h3>Cart Total</h3>
-            <table>
-                <tr>
-                    <td>
-                        Cart Subtotal
-                    </td>
-                    <td class="cart-subtotal">
 
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Shipping
-                    </td>
-                    <td class="ship"></td>
-                </tr>
-                <tr>
-                    <td><strong>Total</strong></td>
-                    <td><strong class="total"></strong></td>
-                </tr>
-            </table>
-            <button class="normal">
-                Proceed to checkout
-            </button>
+        <div class="item-1">
+            <form action="">
+                <fieldset class="first">
+                    <legend>Họ và tên <h class="must">(*)</h>
+                    </legend>
+                    <input type="text" name="" class="input">
+                </fieldset>
+                <fieldset>
+                    <legend>Số điện thoại <h class="must">(*)</h>
+                    </legend>
+                    <input type="text" name="" class="input">
+                </fieldset>
+            </form>
         </div>
+
+
+        <div class="item-2">
+            <form action="">
+                <fieldset class="first">
+                    <legend>E-mail <h class="must">(*)</h>
+                    </legend>
+                    <input type="text" name="" class="input">
+                </fieldset>
+                <fieldset>
+                    <legend>Tỉnh/Thành Phố <h class="must">(*)</h>
+                    </legend>
+
+                    <select>
+                        <option selected>Chọn tỉnh/Thành phố của bạn</option>
+                        <option>TP.HCM</option>
+                        <option>Hà Nội</option>
+                        <option>Hà Nam</option>
+                        <option>Hải Phòng</option>
+                        <option>Đà Nẵng</option>
+                        <option>Bà Rịa-Vũng Tàu</option>
+                    </select>
+                </fieldset>
+            </form>
+        </div>
+
+
+
+        <div class="item-3">
+            <form action="">
+                <fieldset class="first">
+                    <legend>Quận/Huyện <h class="must">(*)</h>
+                    </legend>
+                    <select>
+                        <option selected>Chọn Quận/Huyện</option>
+                        <option>Quận 1/TP.HCM</option>
+                        <option>Quận 2/TP.HCM</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Phường/Xã<h class="must">(*)</h>
+                    </legend>
+                    <select>
+                        <option selected>Chọn Phường/Xã</option>
+                        <option>Quận 1/TP.HCM</option>
+                        <option>Quận 2/TP.HCM</option>
+                    </select>
+                </fieldset>
+            </form>
+        </div>
+        <div class="item-4">
+            <fieldset>
+                <legend>Số nhà/Tên đường<h class="must">(*)</h>
+                </legend>
+                <input type="text" name="" id="input">
+            </fieldset>
+        </div>
+        <div class="check">
+            <p>
+                <input type="checkbox" id="checkbox">
+                <h>Sử dụng thông tin này để đăng ký tài khoản mua hàng! </h>
+            </p>
+        </div>
+        <div class="comment">
+            <fieldset>
+                <legend> Để lại lời nhắn cho <h style="color: #A91D3A;">Chúng tôi</h>
+                </legend>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </fieldset>
+        </div>
+        <h2 id="payment-header">Chọn hình thức thanh toán</h2>
+        <div class="payment">
+            <div class="devery">
+                <i class="fa-solid fa-money-bill"></i>
+                <label for="devery"> Thanh toán khi nhận hàng </label>
+                <input type="radio" name="payment" id="devery">
+            </div>
+            <div class="atm">
+                <i class="fa-solid fa-money-check-dollar"></i>
+                <label for="atm"> Thẻ ATM/Internet banking </label>
+                <input type="radio" name="payment" id="atm">
+            </div>
+            <div class="credit-card">
+                <i class="fa-solid fa-credit-card"></i>
+                <label for="credit-card"> Thẻ tín dụng </label>
+                <input type="radio" name="payment" id="credit-card">
+            </div>
+        </div>
+        <div class="pay">
+            <div class="vcb hidden">
+                <img src="./images.png" alt="">
+            </div>
+            <div class="creadit hidden">
+                <img src="../img/pay/pay.png" alt="">
+            </div>
+        </div>
+        <div class="accept-1">
+            <input type="checkbox" id="">
+            <label for="">Bạn muốn sử dụng dịch vụ lắp đặt</label>
+        </div>
+        <div class="accept-2">
+            <input type="checkbox" id="">
+            <label for="">Tôi đồng ý <a href="#" target="_self" style="color: #A91D3A;">thỏa thuận bảo mật và chính sách
+                    mua
+                    hàng</a></label>
+        </div>
+        <div class="accept-3">
+            <input type="checkbox" id="">
+            <label for="">Yêu cầu xuất hóa đơn GTGT cho đơn hàng này</label>
+        </div>
+        <button class="normal">
+            THANH TOÁN
+            <i class="fa-solid fa-angles-right"></i>
+        </button>
     </div>
+
     <footer class="section-p1">
         <div class="col">
             <img src="../../favicon/favicon-32x32.png" alt="" class="logo">
@@ -292,125 +377,101 @@
     <div class="section-p1 copyright">
         <p>Website created by Edward && Thomas 2024</p>
     </div>
+    </div>
     <div id="scollbutton" onclick="scollToTop()">
         <button class="normal">
             <i class="fa-solid fa-arrow-up" title="Go to top"></i>
         </button>
     </div>
-    </div>
-    <!-- 1:37:19 -->
-    <script>
-        window.onscroll = () => {
-            scroll();
-        };
-        function scroll() {
-            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-                scrollbutton.style.display = "block";
-            }
-            else {
-                scrollbutton.style.display = "none";
-            }
-        }
-        function scollToTop() {
-
-            window.scrollTo(0, 0);
-
-        }
-
-    </script>
-
-    <script>
-        window.onload = loadCart;
-        function loadCart(e) {
-            const maincart = document.querySelector(".main-cart");
-            var currentSession = JSON.parse(localStorage.getItem("cart")) || { cart: [] };
-            var cart = "";
-            currentSession.cart.map(element => {
-                cart += `<tr class="row">
-                    <td> <i class="far fa-times-circle remove"></i></td>
-                    <td><img src="${element.img}"></td>
-                    <td>${element.productName}</td>
-                    <td>${element.options.size}</td>
-                    <td class="capitalize">${element.options.color}</td>
-                    <td>$${element.price}</td>
-                    <td>${element.quantity}</td>
-                    <td class="subtotal">$${parseInt(element.price) * parseInt(element.quantity)}</td>
-                    </tr>`;
-
-            });
-            maincart.innerHTML += cart;
-
-            const x = maincart.querySelectorAll('.far.fa-times-circle.remove');
-            x.forEach((btn, index) => {
-                btn.addEventListener("click", (e) => {
-                    const row = e.target.closest(".row");
-                    row.remove();
-                    const currentCart = JSON.parse(localStorage.getItem("cart")).cart; // get current Session
-                    currentCart.pop(index);
-                    localStorage.setItem("cart", JSON.stringify({ cart: currentCart }));
-                }
-                )
-            });
-            const subtotal = document.querySelectorAll("td.subtotal");
-            const cartSubtotal = document.querySelector(".cart-subtotal");
-            const voucher = document.querySelector(".voucher");
-            const voucherBtn = document.querySelector(".voucher-btn");
-            const ship = document.querySelector(".ship");
-            const total = document.querySelector(".total");
-            var sum = 0;
-
-            subtotal.forEach((e) => {
-                let a = parseInt(e.textContent.replace(/[^0-9]/g, ""));
-                sum += a;
-            });
-            cartSubtotal.innerHTML = '$' + sum;
-
-            const getRandomnum = randomNum(10);
-            let totalCost = sum + getRandomnum;
-            total.innerHTML = '$' + totalCost;
-
-            voucherBtn.addEventListener("click", () => {
-                let reduceFactor = 1;
-                switch (voucher.value) {
-                    case "SNSD-1991":
-                        reduceFactor = 0.9
-                        break;
-                    case "CMT8-1945":
-                        reduceFactor = 0.8;
-                        break;
-                    case "Cô Lan xinh quá":
-                        reduceFactor = 0;
-                        break;
-                    default:
-                        break;
-                }
-                totalCost = Math.round((sum + getRandomnum) * reduceFactor);
-                total.innerHTML = '$' + totalCost + (reduceFactor !== 1 ? ` <span class="reduce">Giảm ${Math.round((1 - reduceFactor) * 100)}%</span>` : "");
-            });
-            if (getRandomnum == 0) {
-                ship.innerHTML = 'Free ship';
-            }
-            else {
-                ship.innerHTML = '$' + getRandomnum;
-            }
-            function randomNum(num) {
-                return Math.floor(Math.random() * num);
-            }
-        }
-
-    </script>
-    <script src="../main/script.js"></script>
-    <script src="https://kit.fontawesome.com/966a9482a5.js" crossorigin="anonymous"></script>
-    <script src="../main/main-navbar.js"></script>
-    <script src="../main/signUp.js"></script>
-    <script src="../main/search.js"></script>
-    <script>
-        const btn = document.querySelector("#cart-add .subtotal button.normal");
-        btn.addEventListener("click",()=>{
-            window.location.href="/master/checkOut/checkOut.html"
-        })
-    </script>
-
 </body>
+<script>
+    const scrollbutton = document.getElementById("scollbutton");
+    window.onscroll = () => {
+        scroll();
+    };
+    function scroll() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            scrollbutton.style.display = "block";
+        }
+        else {
+            scrollbutton.style.display = "none";
+        }
+    }
+    function scollToTop() {
+
+        window.scrollTo(0, 0);
+
+    }
+</script>
+<script>
+    const inViewPort = (entries, observer) => {
+        entries.forEach((entry) => {
+            const animation = entry.target.dataset.animation.split(" ");
+            if (entry.isIntersecting) {
+                entry.target.classList.remove("opacity-0");
+                entry.target.classList.add(...animation);
+            } else {
+                entry.target.classList.add("opacity-0");
+                entry.target.classList.remove(...animation);
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(inViewPort);
+    const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5,
+    };
+
+    setTimeout(() => {
+        const elements = document.querySelectorAll(".scroll-animation");
+        elements.forEach((element) => {
+            observer.observe(element, {
+                root: element.dataset.root || null,
+                rootMargin: "0px",
+                threshold: element.dataset.threshold || 0.5,
+            });
+        });
+    }, 1000);
+</script>
+<script src="https://kit.fontawesome.com/966a9482a5.js" crossorigin="anonymous"></script>
+<script src="../main/main-navbar.js"> </script>
+<script src="../main/signUp.js"></script>
+<script src="../main/search.js"></script>
+<script src="../main/script.js"></script>
+<script>
+    const truck = document.querySelector(".truck ");
+    const home = document.querySelector(".home");
+    truck.addEventListener("click", () => {
+        truck.classList.add("color");
+        home.classList.remove("color");
+    })
+    home.addEventListener("click", () => {
+        home.classList.add("color");
+        truck.classList.remove("color");
+    })
+</script>
+<script>
+    const pay = document.querySelector(".payment .devery");
+    const atm = document.querySelector(".payment .atm");
+    const card = document.querySelector(".payment .credit-card");
+
+    const vcb = document.querySelector(".pay .vcb ");
+    const credit = document.querySelector(".pay .creadit ");
+
+    pay.addEventListener("click", () => {
+        vcb.classList.add("hidden");
+        credit.classList.add("hidden");
+    })
+    atm.addEventListener("click",()=>{
+        vcb.classList.remove("hidden");
+        credit.classList.add("hidden");
+    })
+    card.addEventListener("click",()=>{
+        vcb.classList.add("hidden");
+        credit.classList.remove("hidden");
+    })
+</script>
 
 </html>
