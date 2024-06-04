@@ -53,11 +53,16 @@ p {
 .opacity-0 {
   opacity: 0;
 }
+
 .brand {
   text-align: center;
-  text-shadow: 0 5px 10px gray;
-
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.06);
+  font-family: "Shantell Sans", cursive;
+  background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+  background-clip: text;
+  color: transparent;
 }
+
 .feature {
   animation: feature 1s both;
 }
@@ -273,7 +278,7 @@ body {
 }
 
 .hero {
-  background: url(/img/img_Edward/Brand_Owl/product6/product6_feedback/3\(1\).jpg) no-repeat;
+  background: url(../../img/img_Edward/Brand_Owl/product6/product6_feedback/3\(1\).jpg) no-repeat;
   height: 100vh;
   width: 100%;
   background-size: cover;
@@ -599,7 +604,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background: url(/img/img_Edward/banner/banner3.jpg);
+    background: url(../../img/img_Edward/banner/banner3.jpg);
     min-width: 30%;
     height: 30vh;
     background-size: cover;
@@ -621,14 +626,14 @@ body {
   }
 
   .banner-box:nth-child(2) {
-    background: url(/img/img_Edward/banner/banner4.jpg);
+    background: url(../../img/img_Edward/banner/banner4.jpg);
     background-size: cover;
     background-position: center;
 
   }
 
   .banner-box:nth-child(3) {
-    background: url(/img/img_Edward/banner/banner5.jpg);
+    background: url(../../img/img_Edward/banner/banner5.jpg);
     background-size: cover;
     background-position: center;
 
