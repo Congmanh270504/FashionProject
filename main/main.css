@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #C38154;
+}
+
+body {
+    font-family: 'Poppins', 'sans-serif';
+    background-color: black;
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -10;
+}
+
+.logo {
+    img {
+        max-width: 2.5em;
+    }
+}
+
+.nav {
+    display: flex;
+    position: relative;
+    margin-left: 12em;
+
+    li {
+        margin: 0 10px;
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: 0.35s;
+        color: white;
+        font-size: 1.3em;
+    }
+
+
+    a:hover {
+        color: var(--primary);
+        transition: 0.3s;
+    }
+
+    /* a::after {
+        content: '';
+        height: 2px;
+        width: 100%;
+        background-color: #ee2a7b !important;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    a:hover::after {
+        opacity: 1;
+    } */
+
+    .shop,
+    .trend,
+    .collect {
+        border-right: 2px solid gold;
+        padding-right: 1em;
+    }
+
+
+}
+
+.search {
+    position: relative;
+    width: 300px;
+    height: 30px;
+
+    input[type=text]:not(.browser-default) {
+        width: fit-content;
+        height: 30px;
+    }
+
+    input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: white;
+        background-color: transparent;
+        border: none;
+        border-bottom: 3px solid gray;
+        outline: none;
+        border-radius: 4px;
+        padding: 0 10px 0 45px !important;
+        backdrop-filter: blur(10px);
+    }
+
+    i {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10px;
+        padding-right: 10px;
+        border-right: 1px solid gray;
+    }
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+
+    .content {
+        position: relative;
+        max-width: 550px;
+        display: none;
+        visibility: hidden;
+        transform: scale(0);
+        transition: 0.5s;
+    }
+
+    .img-title {
+        max-width: 400px;
+    }
+
+    .img-title-Gucci {
+        width: 400px;
+        height: 237.5px;
+    }
+
+    .content>p {
+        font-size: 1.3em;
+        font-weight: 300;
+        line-height: 1.6;
+        margin: 10px 0 20px;
+    }
+
+    .button {
+        position: relative;
+
+        a {
+            position: relative;
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+            text-transform: uppercase;
+            font-weight: 50;
+            padding: 6px 20px;
+            transition: 0.5s;
+            cursor: pointer;
+            background: var(--primary);
+            border-radius: 10px;
+            font-size: 1.3em;
+
+        }
+
+        i {
+            margin-right: 5px;
+        }
+
+        .show {
+            position: relative;
+            padding: 3px;
+
+        }
+
+
+        .add {
+            position: relative;
+            padding: 3px;
+        }
+
+        a:nth-child(2) {
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        a:hover:nth-child(2) {
+            background: var(--primary);
+        }
+
+    }
+
+    .carousel-box {
+        position: relative;
+        min-width: 950px;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        background: rgba(0, 0, 0, 0.2);
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(20px);
+    }
+
+    .carousel {
+        position: relative;
+        height: 550px;
+        perspective: 1500;
+        padding-top: 10em;
+    }
+
+    .carousel-item {
+        width: 250px;
+        cursor: pointer;
+
+        img {
+            max-width: 235px;
+            border-radius: 10px;
+            transform: translateX(8px) translateY(-100px);
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+
+.content.active {
+    display: block;
+    visibility: visible;
+    transform: scale(1);
+    transition: 0.5s;
+    color: white;
+}
+
+banner::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+
+.feedback {
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: 0.3s;
+
+    i {
+        margin-right: 1em;
+        color: white !important;
+        cursor: pointer !important;
+        font-size: 20px;
+    }
+}
+
+.feedback:hover {
+    color: red;
+}
+
+.contact {
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-size: 25px;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .fb {
+        color: rgb(24, 119, 242);
+    }
+
+    .inta {
+        i {
+            background-image: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
+            border-radius: 10px;
+            color: white;
+        }
+    }
+
+    i {
+        margin-right: 1em;
+    }
+
+    li>a {
+        color: black;
+        font-size: 30px;
+
+    }
+}
